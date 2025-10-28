@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Inicjalizacja PostalCodeSearch
     await initializePostalSearch();
     
+    // Inicjalizacja przycisków rozwijanych (raz na start)
+    initializeToggleButtons();
+    
     // Obsługa formularza
     document.getElementById('routeForm').addEventListener('submit', handleFormSubmit);
     
@@ -452,9 +455,6 @@ function displayResults(data) {
     
     // Wyświetlenie sugerowanych przewoźników
     displayCarriers(data.suggested_carriers);
-    
-    // Inicjalizacja przycisków rozwijanych
-    initializeToggleButtons();
     
     // Inicjalizacja przycisków dni
     initializeDaysSelector();
@@ -950,67 +950,70 @@ function updateRatesForSelectedDays(days) {
     }, 200);
 }
 
-// Inicjalizacja przycisków rozwijanych
+// Inicjalizacja przycisków rozwijanych (używając event delegation)
 function initializeToggleButtons() {
-    // Toggle dla stawek giełdowych
-    const exchangeToggle = document.getElementById('toggleExchangeDetails');
-    if (exchangeToggle) {
-        exchangeToggle.addEventListener('click', function(e) {
+    // Event delegation na całym dokumencie dla dynamicznie tworzonych elementów
+    document.addEventListener('click', function(e) {
+        // Sprawdź czy kliknięto link szczegółów giełdowych
+        if (e.target.id === 'toggleExchangeDetails' || e.target.closest('#toggleExchangeDetails')) {
             e.preventDefault();
+            const link = e.target.closest('#toggleExchangeDetails') || e.target;
             const details = document.getElementById('exchangeDetails');
-            const icon = this.querySelector('i');
+            const icon = link.querySelector('i');
             
-            if (details.style.display === 'none') {
-                details.style.display = 'block';
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
-            } else {
-                details.style.display = 'none';
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
+            if (details && icon) {
+                if (details.style.display === 'none' || !details.style.display) {
+                    details.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    details.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
             }
-        });
-    }
-    
-    // Toggle dla stawek historycznych
-    const historicalToggle = document.getElementById('toggleHistoricalDetails');
-    if (historicalToggle) {
-        historicalToggle.addEventListener('click', function(e) {
+        }
+        
+        // Sprawdź czy kliknięto link szczegółów historycznych
+        if (e.target.id === 'toggleHistoricalDetails' || e.target.closest('#toggleHistoricalDetails')) {
             e.preventDefault();
+            const link = e.target.closest('#toggleHistoricalDetails') || e.target;
             const details = document.getElementById('historicalDetails');
-            const icon = this.querySelector('i');
+            const icon = link.querySelector('i');
             
-            if (details.style.display === 'none') {
-                details.style.display = 'block';
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
-            } else {
-                details.style.display = 'none';
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
+            if (details && icon) {
+                if (details.style.display === 'none' || !details.style.display) {
+                    details.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    details.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
             }
-        });
-    }
-    
-    // Toggle dla opłat drogowych
-    const tollToggle = document.getElementById('toggleTollDetails');
-    if (tollToggle) {
-        tollToggle.addEventListener('click', function(e) {
+        }
+        
+        // Sprawdź czy kliknięto link szczegółów opłat
+        if (e.target.id === 'toggleTollDetails' || e.target.closest('#toggleTollDetails')) {
             e.preventDefault();
+            const link = e.target.closest('#toggleTollDetails') || e.target;
             const details = document.getElementById('tollDetails');
-            const icon = this.querySelector('i');
+            const icon = link.querySelector('i');
             
-            if (details.style.display === 'none') {
-                details.style.display = 'block';
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
-            } else {
-                details.style.display = 'none';
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
+            if (details && icon) {
+                if (details.style.display === 'none' || !details.style.display) {
+                    details.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    details.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
             }
-        });
-    }
+        }
+    });
 }
 
 // Wyświetlenie sugerowanych przewoźników
