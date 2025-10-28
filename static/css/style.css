@@ -430,20 +430,19 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 1000;
-    max-height: 300px;
-    overflow-y: auto;
     background: white;
     border: 1px solid #dee2e6;
     border-top: none;
     border-radius: 0 0 4px 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none;
-    margin-top: -1px;
+    display: none !important; /* Zawsze ukryte */
 }
 
 .autocomplete-suggestions.show {
-    display: block;
+    display: none !important; /* Wyłączone wyświetlanie podpowiedzi */
 }
 
 .autocomplete-item {

@@ -108,50 +108,29 @@ function setupAutocomplete(inputId, suggestionsId, onSelect) {
         const query = e.target.value.trim();
         
         if (query.length < 2) {
-            suggestionsContainer.classList.remove('show');
+            // Nie pokazuj sugestii (wyłączone)
+            // suggestionsContainer.classList.remove('show');
             return;
         }
         
         debounceTimer = setTimeout(() => {
-            showSuggestions(query, suggestionsContainer, input, onSelect);
+            // Mechanizm działa w tle, ale bez wyświetlania sugestii
+            // showSuggestions(query, suggestionsContainer, input, onSelect);
         }, 300);
     });
     
     input.addEventListener('focus', function(e) {
         const query = e.target.value.trim();
         if (query.length >= 2) {
-            showSuggestions(query, suggestionsContainer, input, onSelect);
+            // Nie pokazuj sugestii (wyłączone)
+            // showSuggestions(query, suggestionsContainer, input, onSelect);
         }
     });
     
-    // Obsługa klawiatury (strzałki i Enter)
+    // Obsługa klawiatury (strzałki i Enter) - wyłączone
     input.addEventListener('keydown', function(e) {
-        const items = suggestionsContainer.querySelectorAll('.autocomplete-item');
-        const activeItem = suggestionsContainer.querySelector('.autocomplete-item.active');
-        let activeIndex = -1;
-        
-        items.forEach((item, index) => {
-            if (item === activeItem) activeIndex = index;
-        });
-        
-        if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            if (activeIndex < items.length - 1) {
-                if (activeItem) activeItem.classList.remove('active');
-                items[activeIndex + 1].classList.add('active');
-            }
-        } else if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            if (activeIndex > 0) {
-                if (activeItem) activeItem.classList.remove('active');
-                items[activeIndex - 1].classList.add('active');
-            }
-        } else if (e.key === 'Enter') {
-            if (activeItem) {
-                e.preventDefault();
-                activeItem.click();
-            }
-        } else if (e.key === 'Escape') {
+        // Obsługa klawiszy wyłączona - sugestie nie są wyświetlane
+        if (e.key === 'Escape') {
             suggestionsContainer.classList.remove('show');
         }
     });
