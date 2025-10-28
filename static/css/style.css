@@ -1,0 +1,591 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.main-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* Map Styles */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #024b11;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Section Title */
+.section-title {
+    color: #024b11;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1d8b34;
+}
+
+.section-title-small {
+    color: #024b11;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1d8b34;
+    font-size: 1.1em;
+}
+
+/* Table Styles */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Badge Styles */
+.badge {
+    padding: 0.4em 0.8em;
+    font-weight: 500;
+}
+
+.badge.bg-primary {
+    background-color: #024b11 !important;
+}
+
+.badge.bg-success {
+    background-color: #1d8b34 !important;
+}
+
+.badge.bg-info {
+    background-color: #f8f9fa !important;
+    color: #070707 !important;
+}
+
+/* Carrier Card Styles */
+.carrier-card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.carrier-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.carrier-name {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #070707;
+    margin-bottom: 8px;
+}
+
+.carrier-info {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.carrier-info i {
+    width: 20px;
+    color: #024b11;
+}
+
+.carrier-card .dropdown-menu {
+    min-width: 150px;
+}
+
+.carrier-card .dropdown-item {
+    font-size: 0.9em;
+    padding: 8px 16px;
+}
+
+.carrier-card .dropdown-item i {
+    width: 20px;
+    margin-right: 8px;
+    color: #024b11;
+}
+
+/* Stats Card */
+.stats-card {
+    background: linear-gradient(135deg, #024b11 0%, #1d8b34 100%);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.stats-card h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.stats-card p {
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Alert Styles */
+.alert-custom {
+    border-left: 4px solid #024b11;
+    background-color: #BFD1C2;
+    border-radius: 4px;
+}
+
+.alert-info {
+    background-color: #e8f4ed !important;
+    border-color: #1d8b34 !important;
+    color: #070707 !important;
+}
+
+.alert-success {
+    background-color: #d4ead8 !important;
+    border-color: #024b11 !important;
+    color: #070707 !important;
+}
+
+.alert-warning {
+    background-color: #BFD1C2 !important;
+    border-color: #1d8b34 !important;
+    color: #070707 !important;
+}
+
+/* Cost Summary */
+#costSummary p {
+    margin-bottom: 10px;
+}
+
+#totalCost {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.text-primary {
+    color: #024b11 !important;
+}
+
+.total-cost-box {
+    background-color: #e8f4ed;
+    border: 2px solid #1d8b34;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Rate Group Box */
+.rate-group-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.rate-group-box:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-color: #1d8b34;
+}
+
+.rate-group-title {
+    color: #024b11;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.rate-group-title i {
+    margin-right: 8px;
+}
+
+.rate-value {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #070707;
+    margin-bottom: 10px;
+}
+
+.details-box {
+    background-color: #f8f9fa;
+    border-left: 3px solid #1d8b34;
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.details-box .detail-item {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.details-box .detail-item:last-child {
+    border-bottom: none;
+}
+
+#toggleExchangeDetails,
+#toggleHistoricalDetails,
+#toggleTollDetails {
+    color: #024b11;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#toggleExchangeDetails:hover,
+#toggleHistoricalDetails:hover,
+#toggleTollDetails:hover {
+    color: #1d8b34;
+    text-decoration: none;
+}
+
+#toggleExchangeDetails i,
+#toggleHistoricalDetails i,
+#toggleTollDetails i {
+    transition: transform 0.3s;
+}
+
+/* Loading Spinner */
+#loadingSpinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.spinner-border.text-primary {
+    color: #024b11 !important;
+    border-color: #024b11 !important;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 80px;
+    width: auto;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 60px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #024b11;
+    box-shadow: 0 0 0 0.2rem rgba(2, 75, 17, 0.25);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #024b11;
+    border-color: #024b11;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #1d8b34;
+    border-color: #1d8b34;
+}
+
+/* Navbar */
+.navbar-dark.bg-primary {
+    background-color: #024b11 !important;
+}
+
+.bg-primary {
+    background-color: #024b11 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #map {
+        height: 350px;
+    }
+    
+    .carrier-card {
+        margin-bottom: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Toll Section */
+.toll-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.toll-item:last-child {
+    border-bottom: none;
+}
+
+.toll-country {
+    font-weight: 600;
+    color: #070707;
+}
+
+.toll-system {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.toll-amount {
+    font-weight: 600;
+    color: #1d8b34;
+    font-size: 1.1em;
+}
+
+/* Rating Stars */
+.rating-stars {
+    color: #ffc107;
+}
+
+/* No Data Message */
+.no-data-message {
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+}
+
+.no-data-message i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+/* Autocomplete Styles */
+.autocomplete-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    margin-top: -1px;
+}
+
+.autocomplete-suggestions.show {
+    display: block;
+}
+
+.autocomplete-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f3f5;
+    transition: background-color 0.2s;
+}
+
+.autocomplete-item:hover,
+.autocomplete-item.active {
+    background-color: #e8f4ed;
+}
+
+.autocomplete-item:last-child {
+    border-bottom: none;
+}
+
+.autocomplete-code {
+    font-weight: 600;
+    color: #024b11;
+    font-size: 1em;
+}
+
+.autocomplete-details {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: 3px;
+}
+
+.autocomplete-country {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    font-size: 0.75em;
+    margin-right: 5px;
+}
+
+.autocomplete-loading {
+    padding: 15px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.autocomplete-no-results {
+    padding: 15px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Days Selector Styles */
+.days-selector .btn {
+    font-size: 0.9em;
+    padding: 6px 16px;
+    font-weight: 500;
+    border-color: #024b11;
+    color: #024b11;
+    transition: all 0.3s ease;
+}
+
+.days-selector .btn:hover {
+    background-color: #e8f4ed;
+    border-color: #024b11;
+    color: #024b11;
+}
+
+.days-selector .btn.active {
+    background-color: #024b11;
+    border-color: #024b11;
+    color: white;
+    box-shadow: 0 2px 4px rgba(2, 75, 17, 0.3);
+}
+
+.days-selector .btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(2, 75, 17, 0.25);
+}
+
+/* Specjalny styl dla przycisku "teraz" */
+#btnNow {
+    font-weight: 600;
+}
+
+#btnNow.active {
+    background: linear-gradient(135deg, #024b11 0%, #1d8b34 100%);
+    animation: pulseBolt 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseBolt {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Pasek postępu "teraz" */
+#nowLoadingProgress {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Płynne przejście opacity dla costSummary */
+#costSummary {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Animacja przy zmianie danych */
+.rate-value, .details-box {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.rate-updating {
+    opacity: 0.6;
+    transform: scale(0.98);
+}
+
+@keyframes pulseGreen {
+    0% {
+        box-shadow: 0 0 0 0 rgba(2, 75, 17, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(2, 75, 17, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(2, 75, 17, 0);
+    }
+}
+
+.rate-group-box.updated {
+    animation: pulseGreen 0.6s ease-out;
+}

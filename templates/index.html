@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyceniarka Tras - Narzędzie dla Spedytorów</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="#">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="navbar-logo">
+                Wycena Tras
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-container mt-4">
+        <div class="row">
+            <!-- Panel wyszukiwania -->
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-search"></i> Wyszukaj trasę
+                        </h5>
+                        <form id="routeForm">
+                            <div class="row align-items-end">
+                                <div class="col-md-5">
+                                    <label for="startLocation" class="form-label">Lokalizacja początkowa</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" id="startLocation" 
+                                               placeholder="np. PL50340, 50-340 Wrocław, DE10115" required autocomplete="off">
+                                        <div id="startLocationSuggestions" class="autocomplete-suggestions"></div>
+                                    </div>
+                                    <small class="text-muted">Wpisz kod pocztowy (np. PL50340, 50-340, DE10, 10115 Berlin)</small>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="endLocation" class="form-label">Lokalizacja końcowa</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" id="endLocation" 
+                                               placeholder="np. DE10115, 10115 Berlin, FR75001" required autocomplete="off">
+                                        <div id="endLocationSuggestions" class="autocomplete-suggestions"></div>
+                                    </div>
+                                    <small class="text-muted">Wpisz kod pocztowy (np. DE10115, 10115, FR75, 75001 Paris)</small>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary w-100" style="margin-bottom: 24px;">
+                                        <i class="fas fa-calculator"></i> Wyceń
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-3">
+                                    <label for="vehicleType" class="form-label">Typ samochodu</label>
+                                    <select class="form-select" id="vehicleType" required>
+                                        <option value="bus">Bus</option>
+                                        <option value="solo">Solo</option>
+                                        <option value="naczepa" selected>Naczepa</option>
+                                        <option value="zestaw">Zestaw</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3" id="bodyTypeContainer">
+                                    <label for="bodyType" class="form-label">Nadwozie</label>
+                                    <select class="form-select" id="bodyType">
+                                        <option value="standard" selected>Standard</option>
+                                        <option value="mega">Mega</option>
+                                        <option value="jumbo">Jumbo</option>
+                                        <option value="chlodnia">Chłodnia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekcja wyników -->
+        <div id="resultsSection" style="display: none;">
+            <!-- Podsumowanie -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="card-title mb-0">
+                                    <i class="fas fa-euro-sign"></i> Podsumowanie
+                                </h5>
+                                <div class="btn-group days-selector" role="group" aria-label="Okres czasu">
+                                    <button type="button" class="btn btn-outline-primary active" data-days="7">7 dni</button>
+                                    <button type="button" class="btn btn-outline-primary" data-days="30">30 dni</button>
+                                    <button type="button" class="btn btn-outline-primary" data-days="90">90 dni</button>
+                                    <button type="button" class="btn btn-outline-primary" data-days="now" id="btnNow">
+                                        <i class="fas fa-bolt"></i> teraz
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Pasek postępu dla trybu "teraz" -->
+                            <div id="nowLoadingProgress" style="display: none;" class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-sync fa-spin text-primary me-2"></i>
+                                    <div class="flex-grow-1">
+                                        <div class="progress" style="height: 20px;">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                                 role="progressbar" 
+                                                 id="nowProgressBar"
+                                                 style="width: 0%">
+                                                <span id="nowProgressText">Pobieranie danych...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="costSummary">
+                                <p><strong>Trasa:</strong> <span id="infoStart"></span> → <span id="infoEnd"></span> | <strong>Dystans:</strong> <span id="infoDistance"></span> km</p>
+                                
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <div class="rate-group-box">
+                                            <h6 class="rate-group-title">
+                                                <i class="fas fa-exchange-alt"></i> Średnia stawka giełdowa
+                                            </h6>
+                                            <p class="rate-value">
+                                                <span id="avgExchangeRate"></span> | <span id="avgExchange"></span>
+                                            </p>
+                                            <p class="text-muted" style="font-size: 0.9em; margin-top: -8px;">
+                                                <i class="fas fa-chart-line"></i> <span id="avgExchangeOffersPerDay"></span> ofert/dzień
+                                            </p>
+                                            <a href="#" id="toggleExchangeDetails" class="text-decoration-none">
+                                                <i class="fas fa-chevron-down"></i> szczegóły
+                                            </a>
+                                            <div id="exchangeDetails" style="display: none;" class="details-box mt-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="rate-group-box">
+                                            <h6 class="rate-group-title">
+                                                <i class="fas fa-history"></i> Średnia stawka historyczna
+                                            </h6>
+                                            <p class="rate-value">
+                                                <span id="avgHistoricalRate"></span> | <span id="avgHistorical"></span>
+                                            </p>
+                                            <p class="text-muted" style="font-size: 0.9em; margin-top: -8px;" id="historicalOffersPerDayContainer">
+                                                <i class="fas fa-chart-line"></i> <span id="avgHistoricalOffersPerDay"></span> zleceń/dzień
+                                            </p>
+                                            <span id="historicalDetailsToggle"></span>
+                                            <div id="historicalDetails" style="display: none;" class="details-box mt-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-4">
+                                    <p>
+                                        <strong>Opłaty drogowe:</strong> 
+                                        <span id="totalTolls"></span>
+                                        <a href="#" id="toggleTollDetails" class="ms-2 text-decoration-none">
+                                            <i class="fas fa-chevron-down"></i> szczegóły
+                                        </a>
+                                    </p>
+                                    <div id="tollDetails" style="display: none;" class="details-box mb-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sugerowani przewoźnicy -->
+            <div class="row mb-4">
+                <div class="col-md-12 mb-3">
+                    <h5 class="section-title-small">
+                        <i class="fas fa-users"></i> Sugerowani przewoźnicy
+                    </h5>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-star"></i> Przewoźnicy historyczni
+                            </h5>
+                            <p class="text-muted small">Przewoźnicy z którymi współpracowaliście wcześniej</p>
+                            <div id="historicalCarriers"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-exchange-alt"></i> Przewoźnicy z giełd
+                            </h5>
+                            <p class="text-muted small">Dostępni przewoźnicy z platform giełdowych</p>
+                            <div id="exchangeCarriers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mapa -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                <i class="fas fa-map"></i> Wizualizacja trasy
+                            </h5>
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading spinner -->
+    <div id="loadingSpinner" class="text-center mt-5" style="display: none;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Ładowanie...</span>
+        </div>
+        <p class="mt-2">Obliczanie wyceny trasy...</p>
+    </div>
+
+    <!-- SMS Modal -->
+    <div class="modal fade" id="smsModal" tabindex="-1" aria-labelledby="smsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="smsModalLabel">
+                        <i class="fas fa-sms"></i> Wyślij SMS z zapytaniem o wycenę
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="smsPhone" class="form-label">Numer telefonu</label>
+                        <input type="tel" class="form-control" id="smsPhone" placeholder="+48 123 456 789">
+                    </div>
+                    <div class="mb-3">
+                        <label for="smsMessage" class="form-label">Treść wiadomości</label>
+                        <textarea class="form-control" id="smsMessage" rows="8" readonly></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                    <button type="button" class="btn btn-primary" onclick="sendSms()">
+                        <i class="fas fa-paper-plane"></i> Wyślij
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Turf.js for geo operations -->
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+    
+    <!-- Postal Code Search -->
+    <script src="{{ url_for('static', filename='js/PostalCodeSearch.js') }}"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,9054 @@
+{
+  "AL50": {
+    "region_id": 77,
+    "distance_km": 60.89
+  },
+  "AL83": {
+    "region_id": 80,
+    "distance_km": 74.73
+  },
+  "AL80": {
+    "region_id": 80,
+    "distance_km": 104.02
+  },
+  "AL20": {
+    "region_id": 79,
+    "distance_km": 88.89
+  },
+  "AL30": {
+    "region_id": 77,
+    "distance_km": 94.29
+  },
+  "AL34": {
+    "region_id": 77,
+    "distance_km": 106.04
+  },
+  "AL93": {
+    "region_id": 77,
+    "distance_km": 66.27
+  },
+  "AL90": {
+    "region_id": 77,
+    "distance_km": 92.38
+  },
+  "AL60": {
+    "region_id": 77,
+    "distance_km": 25.75
+  },
+  "AL70": {
+    "region_id": 77,
+    "distance_km": 79.91
+  },
+  "AL87": {
+    "region_id": 79,
+    "distance_km": 77.38
+  },
+  "AL47": {
+    "region_id": 79,
+    "distance_km": 73.53
+  },
+  "AL40": {
+    "region_id": 79,
+    "distance_km": 32.59
+  },
+  "AL10": {
+    "region_id": 79,
+    "distance_km": 103.46
+  },
+  "AL25": {
+    "region_id": 77,
+    "distance_km": 109.18
+  },
+  "AL17": {
+    "region_id": 79,
+    "distance_km": 105.58
+  },
+  "AL97": {
+    "region_id": 77,
+    "distance_km": 28.37
+  },
+  "PL07": {
+    "region_id": 134,
+    "distance_km": 74.2
+  },
+  "PL05": {
+    "region_id": 134,
+    "distance_km": 43.56
+  },
+  "PL09": {
+    "region_id": 134,
+    "distance_km": 79.53
+  },
+  "PL06": {
+    "region_id": 134,
+    "distance_km": 71.62
+  },
+  "PL26": {
+    "region_id": 137,
+    "distance_km": 97.73
+  },
+  "PL27": {
+    "region_id": 135,
+    "distance_km": 100.37
+  },
+  "PL08": {
+    "region_id": 134,
+    "distance_km": 91.75
+  },
+  "PL96": {
+    "region_id": 134,
+    "distance_km": 44.39
+  },
+  "PL00": {
+    "region_id": 134,
+    "distance_km": 20.82
+  },
+  "PL01": {
+    "region_id": 134,
+    "distance_km": 19.45
+  },
+  "PL02": {
+    "region_id": 134,
+    "distance_km": 22.51
+  },
+  "PL22": {
+    "region_id": 135,
+    "distance_km": 78.51
+  },
+  "PL20": {
+    "region_id": 135,
+    "distance_km": 12.67
+  },
+  "PL66": {
+    "region_id": 126,
+    "distance_km": 56.99
+  },
+  "PL67": {
+    "region_id": 130,
+    "distance_km": 76.0
+  },
+  "PL69": {
+    "region_id": 107,
+    "distance_km": 78.14
+  },
+  "PL68": {
+    "region_id": 107,
+    "distance_km": 73.83
+  },
+  "PL65": {
+    "region_id": 107,
+    "distance_km": 97.46
+  },
+  "PL32": {
+    "region_id": 137,
+    "distance_km": 79.82
+  },
+  "PL33": {
+    "region_id": 136,
+    "distance_km": 65.0
+  },
+  "PL38": {
+    "region_id": 136,
+    "distance_km": 74.07
+  },
+  "PL34": {
+    "region_id": 138,
+    "distance_km": 98.65
+  },
+  "PL30": {
+    "region_id": 137,
+    "distance_km": 71.48
+  },
+  "PL31": {
+    "region_id": 137,
+    "distance_km": 71.49
+  },
+  "PL37": {
+    "region_id": 136,
+    "distance_km": 87.75
+  },
+  "PL39": {
+    "region_id": 136,
+    "distance_km": 35.91
+  },
+  "PL36": {
+    "region_id": 136,
+    "distance_km": 19.96
+  },
+  "PL35": {
+    "region_id": 136,
+    "distance_km": 11.92
+  },
+  "PL16": {
+    "region_id": 133,
+    "distance_km": 22.69
+  },
+  "PL18": {
+    "region_id": 151,
+    "distance_km": 53.04
+  },
+  "PL17": {
+    "region_id": 151,
+    "distance_km": 24.25
+  },
+  "PL19": {
+    "region_id": 133,
+    "distance_km": 55.48
+  },
+  "PL15": {
+    "region_id": 151,
+    "distance_km": 53.34
+  },
+  "PL81": {
+    "region_id": 127,
+    "distance_km": 17.39
+  },
+  "PL76": {
+    "region_id": 124,
+    "distance_km": 59.76
+  },
+  "PL42": {
+    "region_id": 137,
+    "distance_km": 55.9
+  },
+  "PL43": {
+    "region_id": 125,
+    "distance_km": 93.99
+  },
+  "PL44": {
+    "region_id": 125,
+    "distance_km": 66.39
+  },
+  "PL47": {
+    "region_id": 125,
+    "distance_km": 47.03
+  },
+  "PL40": {
+    "region_id": 137,
+    "distance_km": 76.42
+  },
+  "PL41": {
+    "region_id": 137,
+    "distance_km": 65.22
+  },
+  "PL28": {
+    "region_id": 137,
+    "distance_km": 64.73
+  },
+  "PL25": {
+    "region_id": 137,
+    "distance_km": 58.5
+  },
+  "PL29": {
+    "region_id": 137,
+    "distance_km": 33.25
+  },
+  "PL77": {
+    "region_id": 127,
+    "distance_km": 69.93
+  },
+  "PL89": {
+    "region_id": 124,
+    "distance_km": 59.55
+  },
+  "PL83": {
+    "region_id": 127,
+    "distance_km": 15.15
+  },
+  "PL82": {
+    "region_id": 127,
+    "distance_km": 69.55
+  },
+  "PL84": {
+    "region_id": 127,
+    "distance_km": 67.45
+  },
+  "PL80": {
+    "region_id": 127,
+    "distance_km": 3.29
+  },
+  "PL03": {
+    "region_id": 134,
+    "distance_km": 10.74
+  },
+  "PL04": {
+    "region_id": 134,
+    "distance_km": 22.35
+  },
+  "PL49": {
+    "region_id": 125,
+    "distance_km": 94.16
+  },
+  "PL48": {
+    "region_id": 125,
+    "distance_km": 22.76
+  },
+  "PL46": {
+    "region_id": 131,
+    "distance_km": 82.74
+  },
+  "PL45": {
+    "region_id": 125,
+    "distance_km": 85.74
+  },
+  "PL23": {
+    "region_id": 135,
+    "distance_km": 52.22
+  },
+  "PL21": {
+    "region_id": 135,
+    "distance_km": 23.66
+  },
+  "PL24": {
+    "region_id": 135,
+    "distance_km": 27.75
+  },
+  "CH32": {
+    "region_id": 43,
+    "distance_km": 77.79
+  },
+  "CH41": {
+    "region_id": 43,
+    "distance_km": 60.94
+  },
+  "CH46": {
+    "region_id": 43,
+    "distance_km": 34.59
+  },
+  "CH45": {
+    "region_id": 43,
+    "distance_km": 66.14
+  },
+  "CH88": {
+    "region_id": 43,
+    "distance_km": 46.04
+  },
+  "CH85": {
+    "region_id": 102,
+    "distance_km": 62.61
+  },
+  "CH82": {
+    "region_id": 43,
+    "distance_km": 59.71
+  },
+  "CH83": {
+    "region_id": 43,
+    "distance_km": 44.16
+  },
+  "CH95": {
+    "region_id": 43,
+    "distance_km": 55.57
+  },
+  "CH92": {
+    "region_id": 102,
+    "distance_km": 64.52
+  },
+  "CH65": {
+    "region_id": 44,
+    "distance_km": 15.35
+  },
+  "CH67": {
+    "region_id": 44,
+    "distance_km": 38.76
+  },
+  "CH68": {
+    "region_id": 44,
+    "distance_km": 24.96
+  },
+  "CH69": {
+    "region_id": 44,
+    "distance_km": 31.35
+  },
+  "CH64": {
+    "region_id": 43,
+    "distance_km": 60.37
+  },
+  "CH18": {
+    "region_id": 70,
+    "distance_km": 11.68
+  },
+  "CH15": {
+    "region_id": 70,
+    "distance_km": 53.17
+  },
+  "CH13": {
+    "region_id": 70,
+    "distance_km": 70.45
+  },
+  "CH14": {
+    "region_id": 70,
+    "distance_km": 72.42
+  },
+  "CH10": {
+    "region_id": 70,
+    "distance_km": 47.17
+  },
+  "CH11": {
+    "region_id": 70,
+    "distance_km": 56.29
+  },
+  "CH12": {
+    "region_id": 70,
+    "distance_km": 76.82
+  },
+  "CH39": {
+    "region_id": 70,
+    "distance_km": 68.15
+  },
+  "CH19": {
+    "region_id": 70,
+    "distance_km": 18.94
+  },
+  "CH63": {
+    "region_id": 43,
+    "distance_km": 33.4
+  },
+  "CH81": {
+    "region_id": 43,
+    "distance_km": 18.54
+  },
+  "CH89": {
+    "region_id": 43,
+    "distance_km": 26.47
+  },
+  "CH84": {
+    "region_id": 43,
+    "distance_km": 23.13
+  },
+  "CH80": {
+    "region_id": 43,
+    "distance_km": 18.46
+  },
+  "ES04": {
+    "region_id": 17,
+    "distance_km": 91.43
+  },
+  "ES11": {
+    "region_id": 8,
+    "distance_km": 47.34
+  },
+  "ES14": {
+    "region_id": 12,
+    "distance_km": 26.43
+  },
+  "ES18": {
+    "region_id": 16,
+    "distance_km": 31.3
+  },
+  "ES21": {
+    "region_id": 8,
+    "distance_km": 101.94
+  },
+  "ES23": {
+    "region_id": 18,
+    "distance_km": 91.59
+  },
+  "ES29": {
+    "region_id": 16,
+    "distance_km": 61.78
+  },
+  "ES41": {
+    "region_id": 8,
+    "distance_km": 48.74
+  },
+  "ES22": {
+    "region_id": 19,
+    "distance_km": 83.17
+  },
+  "ES44": {
+    "region_id": 20,
+    "distance_km": 116.83
+  },
+  "ES50": {
+    "region_id": 20,
+    "distance_km": 36.81
+  },
+  "ES33": {
+    "region_id": 7,
+    "distance_km": 91.5
+  },
+  "ES42": {
+    "region_id": 14,
+    "distance_km": 113.41
+  },
+  "ES47": {
+    "region_id": 9,
+    "distance_km": 11.3
+  },
+  "ES49": {
+    "region_id": 9,
+    "distance_km": 66.24
+  },
+  "ES02": {
+    "region_id": 18,
+    "distance_km": 100.62
+  },
+  "ES13": {
+    "region_id": 10,
+    "distance_km": 38.09
+  },
+  "ES16": {
+    "region_id": 15,
+    "distance_km": 86.08
+  },
+  "ES19": {
+    "region_id": 15,
+    "distance_km": 8.87
+  },
+  "ES28": {
+    "region_id": 15,
+    "distance_km": 74.26
+  },
+  "ES45": {
+    "region_id": 10,
+    "distance_km": 104.88
+  },
+  "ES35": {
+    "region_id": 1,
+    "distance_km": 1244.9
+  },
+  "ES37": {
+    "region_id": 10,
+    "distance_km": 93.18
+  },
+  "ES40": {
+    "region_id": 15,
+    "distance_km": 92.56
+  },
+  "LT86": {
+    "region_id": 159,
+    "distance_km": 59.72
+  },
+  "LT83": {
+    "region_id": 159,
+    "distance_km": 82.93
+  },
+  "LT82": {
+    "region_id": 159,
+    "distance_km": 67.11
+  },
+  "LT76": {
+    "region_id": 159,
+    "distance_km": 78.89
+  },
+  "LT80": {
+    "region_id": 159,
+    "distance_km": 75.87
+  },
+  "LT81": {
+    "region_id": 154,
+    "distance_km": 59.26
+  },
+  "LT99": {
+    "region_id": 154,
+    "distance_km": 70.12
+  },
+  "LT72": {
+    "region_id": 154,
+    "distance_km": 77.08
+  },
+  "LT73": {
+    "region_id": 159,
+    "distance_km": 70.39
+  },
+  "LT75": {
+    "region_id": 154,
+    "distance_km": 47.99
+  },
+  "LT74": {
+    "region_id": 159,
+    "distance_km": 65.86
+  },
+  "LT89": {
+    "region_id": 154,
+    "distance_km": 49.75
+  },
+  "LT90": {
+    "region_id": 154,
+    "distance_km": 9.67
+  },
+  "LT88": {
+    "region_id": 154,
+    "distance_km": 28.56
+  },
+  "LT29": {
+    "region_id": 159,
+    "distance_km": 101.55
+  },
+  "LT32": {
+    "region_id": 155,
+    "distance_km": 34.17
+  },
+  "MK14": {
+    "region_id": 80,
+    "distance_km": 99.68
+  },
+  "MK24": {
+    "region_id": 81,
+    "distance_km": 85.26
+  },
+  "MK72": {
+    "region_id": 80,
+    "distance_km": 85.52
+  },
+  "MTBR": {
+    "region_id": 50,
+    "distance_km": 374.69
+  },
+  "MTHM": {
+    "region_id": 50,
+    "distance_km": 375.78
+  },
+  "MTND": {
+    "region_id": 50,
+    "distance_km": 366.2
+  },
+  "MDMD": {
+    "region_id": 176,
+    "distance_km": 93.61
+  },
+  "MK12": {
+    "region_id": 80,
+    "distance_km": 34.97
+  },
+  "MK13": {
+    "region_id": 80,
+    "distance_km": 82.0
+  },
+  "LT17": {
+    "region_id": 152,
+    "distance_km": 32.96
+  },
+  "LT18": {
+    "region_id": 155,
+    "distance_km": 97.15
+  },
+  "LT19": {
+    "region_id": 159,
+    "distance_km": 90.21
+  },
+  "LUL-": {
+    "region_id": 37,
+    "distance_km": 27.73
+  },
+  "PL87": {
+    "region_id": 129,
+    "distance_km": 57.86
+  },
+  "PL88": {
+    "region_id": 128,
+    "distance_km": 43.86
+  },
+  "PL85": {
+    "region_id": 128,
+    "distance_km": 12.72
+  },
+  "PL97": {
+    "region_id": 129,
+    "distance_km": 53.82
+  },
+  "PL99": {
+    "region_id": 129,
+    "distance_km": 37.88
+  },
+  "PL98": {
+    "region_id": 129,
+    "distance_km": 30.36
+  },
+  "PL92": {
+    "region_id": 129,
+    "distance_km": 39.49
+  },
+  "PL95": {
+    "region_id": 129,
+    "distance_km": 45.47
+  },
+  "PL93": {
+    "region_id": 137,
+    "distance_km": 74.38
+  },
+  "PL90": {
+    "region_id": 129,
+    "distance_km": 29.75
+  },
+  "PL91": {
+    "region_id": 129,
+    "distance_km": 25.48
+  },
+  "PL94": {
+    "region_id": 129,
+    "distance_km": 25.16
+  },
+  "PL59": {
+    "region_id": 130,
+    "distance_km": 50.82
+  },
+  "PL56": {
+    "region_id": 131,
+    "distance_km": 65.18
+  },
+  "PL58": {
+    "region_id": 130,
+    "distance_km": 29.66
+  },
+  "PL57": {
+    "region_id": 130,
+    "distance_km": 92.91
+  },
+  "PL53": {
+    "region_id": 130,
+    "distance_km": 69.63
+  },
+  "PL55": {
+    "region_id": 131,
+    "distance_km": 80.31
+  },
+  "PL50": {
+    "region_id": 131,
+    "distance_km": 46.78
+  },
+  "PL52": {
+    "region_id": 131,
+    "distance_km": 70.64
+  },
+  "PL51": {
+    "region_id": 131,
+    "distance_km": 66.26
+  },
+  "PL54": {
+    "region_id": 130,
+    "distance_km": 72.18
+  },
+  "PL86": {
+    "region_id": 128,
+    "distance_km": 30.92
+  },
+  "LVLV": {
+    "region_id": 155,
+    "distance_km": 93.52
+  },
+  "MC98": {
+    "region_id": 32,
+    "distance_km": 34.21
+  },
+  "NL78": {
+    "region_id": 39,
+    "distance_km": 50.9
+  },
+  "NL77": {
+    "region_id": 39,
+    "distance_km": 62.62
+  },
+  "NL96": {
+    "region_id": 39,
+    "distance_km": 65.23
+  },
+  "NL94": {
+    "region_id": 39,
+    "distance_km": 47.12
+  },
+  "NL44": {
+    "region_id": 38,
+    "distance_km": 32.8
+  },
+  "NL43": {
+    "region_id": 38,
+    "distance_km": 42.7
+  },
+  "NL29": {
+    "region_id": 38,
+    "distance_km": 84.21
+  },
+  "NL26": {
+    "region_id": 38,
+    "distance_km": 87.85
+  },
+  "NL28": {
+    "region_id": 38,
+    "distance_km": 99.15
+  },
+  "NL25": {
+    "region_id": 38,
+    "distance_km": 96.42
+  },
+  "NL33": {
+    "region_id": 38,
+    "distance_km": 88.07
+  },
+  "NL30": {
+    "region_id": 38,
+    "distance_km": 87.32
+  },
+  "NL31": {
+    "region_id": 38,
+    "distance_km": 80.03
+  },
+  "NL27": {
+    "region_id": 38,
+    "distance_km": 100.32
+  },
+  "NL22": {
+    "region_id": 38,
+    "distance_km": 106.38
+  },
+  "NL21": {
+    "region_id": 38,
+    "distance_km": 116.97
+  },
+  "NL24": {
+    "region_id": 39,
+    "distance_km": 108.02
+  },
+  "NL32": {
+    "region_id": 38,
+    "distance_km": 68.72
+  },
+  "NL76": {
+    "region_id": 39,
+    "distance_km": 56.26
+  },
+  "NL74": {
+    "region_id": 39,
+    "distance_km": 47.29
+  },
+  "NL75": {
+    "region_id": 39,
+    "distance_km": 74.27
+  },
+  "NL82": {
+    "region_id": 39,
+    "distance_km": 18.98
+  },
+  "NL81": {
+    "region_id": 39,
+    "distance_km": 30.24
+  },
+  "NL83": {
+    "region_id": 39,
+    "distance_km": 15.0
+  },
+  "NL13": {
+    "region_id": 39,
+    "distance_km": 67.4
+  },
+  "NL38": {
+    "region_id": 39,
+    "distance_km": 53.82
+  },
+  "NO13": {
+    "region_id": 95,
+    "distance_km": 66.31
+  },
+  "NO20": {
+    "region_id": 243,
+    "distance_km": 46.38
+  },
+  "NO14": {
+    "region_id": 95,
+    "distance_km": 35.84
+  },
+  "NO15": {
+    "region_id": 95,
+    "distance_km": 29.35
+  },
+  "NO19": {
+    "region_id": 243,
+    "distance_km": 21.67
+  },
+  "NO21": {
+    "region_id": 243,
+    "distance_km": 44.29
+  },
+  "NO30": {
+    "region_id": 95,
+    "distance_km": 49.45
+  },
+  "NO35": {
+    "region_id": 244,
+    "distance_km": 67.77
+  },
+  "NO95": {
+    "region_id": 214,
+    "distance_km": 10.12
+  },
+  "NO96": {
+    "region_id": 213,
+    "distance_km": 72.4
+  },
+  "NO97": {
+    "region_id": 214,
+    "distance_km": 57.9
+  },
+  "NO99": {
+    "region_id": 211,
+    "distance_km": 62.49
+  },
+  "NO60": {
+    "region_id": 251,
+    "distance_km": 46.88
+  },
+  "NO61": {
+    "region_id": 251,
+    "distance_km": 23.33
+  },
+  "NO63": {
+    "region_id": 245,
+    "distance_km": 58.32
+  },
+  "NO66": {
+    "region_id": 245,
+    "distance_km": 17.26
+  },
+  "NO80": {
+    "region_id": 218,
+    "distance_km": 43.71
+  },
+  "NO85": {
+    "region_id": 217,
+    "distance_km": 15.5
+  },
+  "NO86": {
+    "region_id": 237,
+    "distance_km": 2.09
+  },
+  "NO88": {
+    "region_id": 237,
+    "distance_km": 27.2
+  },
+  "NO87": {
+    "region_id": 237,
+    "distance_km": 63.37
+  },
+  "NO81": {
+    "region_id": 237,
+    "distance_km": 85.66
+  },
+  "NO82": {
+    "region_id": 218,
+    "distance_km": 36.83
+  },
+  "NO83": {
+    "region_id": 219,
+    "distance_km": 113.5
+  },
+  "NO84": {
+    "region_id": 217,
+    "distance_km": 118.05
+  },
+  "NO01": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO02": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO03": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO04": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO05": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO06": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO07": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO08": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO09": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO10": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO11": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO12": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO17": {
+    "region_id": 95,
+    "distance_km": 49.44
+  },
+  "NO16": {
+    "region_id": 95,
+    "distance_km": 27.5
+  },
+  "NO18": {
+    "region_id": 95,
+    "distance_km": 38.65
+  },
+  "NO43": {
+    "region_id": 248,
+    "distance_km": 66.07
+  },
+  "NO55": {
+    "region_id": 248,
+    "distance_km": 38.49
+  },
+  "NO42": {
+    "region_id": 248,
+    "distance_km": 49.07
+  },
+  "NO39": {
+    "region_id": 95,
+    "distance_km": 60.49
+  },
+  "NO37": {
+    "region_id": 95,
+    "distance_km": 61.41
+  },
+  "NO38": {
+    "region_id": 247,
+    "distance_km": 73.04
+  },
+  "NO36": {
+    "region_id": 247,
+    "distance_km": 52.72
+  },
+  "NO92": {
+    "region_id": 216,
+    "distance_km": 56.05
+  },
+  "NO93": {
+    "region_id": 216,
+    "distance_km": 21.51
+  },
+  "NO91": {
+    "region_id": 215,
+    "distance_km": 52.11
+  },
+  "NO31": {
+    "region_id": 95,
+    "distance_km": 14.52
+  },
+  "NO32": {
+    "region_id": 95,
+    "distance_km": 32.21
+  },
+  "NO70": {
+    "region_id": 239,
+    "distance_km": 14.72
+  },
+  "NO74": {
+    "region_id": 239,
+    "distance_km": 14.72
+  },
+  "NO72": {
+    "region_id": 239,
+    "distance_km": 97.22
+  },
+  "NO77": {
+    "region_id": 238,
+    "distance_km": 85.1
+  },
+  "NO73": {
+    "region_id": 245,
+    "distance_km": 58.46
+  },
+  "NO75": {
+    "region_id": 239,
+    "distance_km": 7.28
+  },
+  "NO78": {
+    "region_id": 236,
+    "distance_km": 68.63
+  },
+  "NO79": {
+    "region_id": 238,
+    "distance_km": 68.15
+  },
+  "NO23": {
+    "region_id": 244,
+    "distance_km": 42.48
+  },
+  "NO26": {
+    "region_id": 244,
+    "distance_km": 8.24
+  },
+  "NO28": {
+    "region_id": 244,
+    "distance_km": 34.97
+  },
+  "NO22": {
+    "region_id": 243,
+    "distance_km": 18.0
+  },
+  "NO24": {
+    "region_id": 244,
+    "distance_km": 56.75
+  },
+  "NO48": {
+    "region_id": 249,
+    "distance_km": 76.0
+  },
+  "NO46": {
+    "region_id": 249,
+    "distance_km": 59.92
+  },
+  "NO45": {
+    "region_id": 249,
+    "distance_km": 27.85
+  },
+  "NO44": {
+    "region_id": 249,
+    "distance_km": 59.31
+  },
+  "NO49": {
+    "region_id": 249,
+    "distance_km": 79.42
+  },
+  "NO50": {
+    "region_id": 250,
+    "distance_km": 73.46
+  },
+  "NO51": {
+    "region_id": 250,
+    "distance_km": 68.45
+  },
+  "NO52": {
+    "region_id": 250,
+    "distance_km": 77.44
+  },
+  "NO58": {
+    "region_id": 250,
+    "distance_km": 73.46
+  },
+  "NO54": {
+    "region_id": 248,
+    "distance_km": 70.08
+  },
+  "NO56": {
+    "region_id": 248,
+    "distance_km": 87.57
+  },
+  "NO57": {
+    "region_id": 248,
+    "distance_km": 75.72
+  },
+  "NO53": {
+    "region_id": 250,
+    "distance_km": 86.98
+  },
+  "NO59": {
+    "region_id": 250,
+    "distance_km": 67.27
+  },
+  "NO69": {
+    "region_id": 250,
+    "distance_km": 99.14
+  },
+  "NO68": {
+    "region_id": 250,
+    "distance_km": 45.12
+  },
+  "NO67": {
+    "region_id": 251,
+    "distance_km": 60.28
+  },
+  "NL93": {
+    "region_id": 39,
+    "distance_km": 56.48
+  },
+  "NL89": {
+    "region_id": 39,
+    "distance_km": 57.46
+  },
+  "NL84": {
+    "region_id": 39,
+    "distance_km": 42.41
+  },
+  "NL92": {
+    "region_id": 39,
+    "distance_km": 46.28
+  },
+  "NL88": {
+    "region_id": 39,
+    "distance_km": 94.36
+  },
+  "NL91": {
+    "region_id": 39,
+    "distance_km": 69.1
+  },
+  "NL86": {
+    "region_id": 39,
+    "distance_km": 41.46
+  },
+  "NL87": {
+    "region_id": 39,
+    "distance_km": 57.89
+  },
+  "NL85": {
+    "region_id": 39,
+    "distance_km": 40.04
+  },
+  "NL90": {
+    "region_id": 39,
+    "distance_km": 68.95
+  },
+  "NL73": {
+    "region_id": 39,
+    "distance_km": 56.64
+  },
+  "NL66": {
+    "region_id": 39,
+    "distance_km": 98.52
+  },
+  "NL67": {
+    "region_id": 39,
+    "distance_km": 79.78
+  },
+  "NL80": {
+    "region_id": 39,
+    "distance_km": 30.57
+  },
+  "NL72": {
+    "region_id": 39,
+    "distance_km": 56.01
+  },
+  "NL40": {
+    "region_id": 39,
+    "distance_km": 99.27
+  },
+  "NL71": {
+    "region_id": 40,
+    "distance_km": 87.33
+  },
+  "NL69": {
+    "region_id": 40,
+    "distance_km": 86.71
+  },
+  "NL65": {
+    "region_id": 40,
+    "distance_km": 91.53
+  },
+  "NL41": {
+    "region_id": 39,
+    "distance_km": 104.67
+  },
+  "NL97": {
+    "region_id": 39,
+    "distance_km": 65.23
+  },
+  "NL99": {
+    "region_id": 39,
+    "distance_km": 83.31
+  },
+  "NL98": {
+    "region_id": 39,
+    "distance_km": 57.34
+  },
+  "NL59": {
+    "region_id": 40,
+    "distance_km": 46.24
+  },
+  "NL58": {
+    "region_id": 40,
+    "distance_km": 68.9
+  },
+  "NL64": {
+    "region_id": 40,
+    "distance_km": 54.62
+  },
+  "NL60": {
+    "region_id": 40,
+    "distance_km": 56.2
+  },
+  "NL62": {
+    "region_id": 40,
+    "distance_km": 73.43
+  },
+  "NL61": {
+    "region_id": 40,
+    "distance_km": 61.95
+  },
+  "NL46": {
+    "region_id": 38,
+    "distance_km": 36.41
+  },
+  "NL56": {
+    "region_id": 40,
+    "distance_km": 96.78
+  },
+  "NL54": {
+    "region_id": 40,
+    "distance_km": 81.6
+  },
+  "NL48": {
+    "region_id": 38,
+    "distance_km": 62.85
+  },
+  "NL52": {
+    "region_id": 38,
+    "distance_km": 104.67
+  },
+  "NL51": {
+    "region_id": 38,
+    "distance_km": 84.53
+  },
+  "NL50": {
+    "region_id": 38,
+    "distance_km": 92.73
+  },
+  "NL49": {
+    "region_id": 38,
+    "distance_km": 76.75
+  },
+  "NL53": {
+    "region_id": 40,
+    "distance_km": 101.31
+  },
+  "NL55": {
+    "region_id": 40,
+    "distance_km": 92.76
+  },
+  "NL57": {
+    "region_id": 40,
+    "distance_km": 81.7
+  },
+  "NL47": {
+    "region_id": 38,
+    "distance_km": 66.19
+  },
+  "NL14": {
+    "region_id": 39,
+    "distance_km": 85.97
+  },
+  "NL11": {
+    "region_id": 39,
+    "distance_km": 91.85
+  },
+  "NL10": {
+    "region_id": 39,
+    "distance_km": 87.68
+  },
+  "NL17": {
+    "region_id": 39,
+    "distance_km": 92.48
+  },
+  "NL16": {
+    "region_id": 39,
+    "distance_km": 61.71
+  },
+  "NL19": {
+    "region_id": 39,
+    "distance_km": 100.18
+  },
+  "NL15": {
+    "region_id": 39,
+    "distance_km": 91.63
+  },
+  "NL12": {
+    "region_id": 39,
+    "distance_km": 86.82
+  },
+  "NL35": {
+    "region_id": 39,
+    "distance_km": 91.05
+  },
+  "NL39": {
+    "region_id": 39,
+    "distance_km": 81.09
+  },
+  "NL34": {
+    "region_id": 39,
+    "distance_km": 103.21
+  },
+  "NL36": {
+    "region_id": 39,
+    "distance_km": 92.41
+  },
+  "LI94": {
+    "region_id": 102,
+    "distance_km": 33.82
+  },
+  "LT67": {
+    "region_id": 133,
+    "distance_km": 60.31
+  },
+  "LT62": {
+    "region_id": 152,
+    "distance_km": 74.99
+  },
+  "LT64": {
+    "region_id": 152,
+    "distance_km": 57.62
+  },
+  "LT65": {
+    "region_id": 152,
+    "distance_km": 38.64
+  },
+  "LT59": {
+    "region_id": 159,
+    "distance_km": 75.12
+  },
+  "LT48": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "LT55": {
+    "region_id": 159,
+    "distance_km": 45.92
+  },
+  "LT56": {
+    "region_id": 159,
+    "distance_km": 54.96
+  },
+  "LT53": {
+    "region_id": 159,
+    "distance_km": 34.09
+  },
+  "LT54": {
+    "region_id": 159,
+    "distance_km": 23.38
+  },
+  "LT57": {
+    "region_id": 159,
+    "distance_km": 25.84
+  },
+  "LT58": {
+    "region_id": 159,
+    "distance_km": 16.35
+  },
+  "LT21": {
+    "region_id": 152,
+    "distance_km": 53.01
+  },
+  "LT25": {
+    "region_id": 152,
+    "distance_km": 68.7
+  },
+  "LT20": {
+    "region_id": 159,
+    "distance_km": 74.42
+  },
+  "LT97": {
+    "region_id": 154,
+    "distance_km": 38.77
+  },
+  "LT98": {
+    "region_id": 154,
+    "distance_km": 29.72
+  },
+  "LT68": {
+    "region_id": 133,
+    "distance_km": 69.44
+  },
+  "LT69": {
+    "region_id": 159,
+    "distance_km": 71.51
+  },
+  "LT70": {
+    "region_id": 133,
+    "distance_km": 68.94
+  },
+  "LT71": {
+    "region_id": 159,
+    "distance_km": 30.68
+  },
+  "LT41": {
+    "region_id": 156,
+    "distance_km": 103.63
+  },
+  "LT40": {
+    "region_id": 155,
+    "distance_km": 98.61
+  },
+  "LT35": {
+    "region_id": 159,
+    "distance_km": 75.48
+  },
+  "LT38": {
+    "region_id": 159,
+    "distance_km": 73.46
+  },
+  "LT39": {
+    "region_id": 156,
+    "distance_km": 104.29
+  },
+  "LT42": {
+    "region_id": 155,
+    "distance_km": 58.44
+  },
+  "LT79": {
+    "region_id": 159,
+    "distance_km": 78.89
+  },
+  "LT85": {
+    "region_id": 154,
+    "distance_km": 71.86
+  },
+  "LT84": {
+    "region_id": 156,
+    "distance_km": 72.14
+  },
+  "LT60": {
+    "region_id": 159,
+    "distance_km": 33.75
+  },
+  "LT91": {
+    "region_id": 154,
+    "distance_km": 59.11
+  },
+  "LT96": {
+    "region_id": 154,
+    "distance_km": 43.21
+  },
+  "LT30": {
+    "region_id": 155,
+    "distance_km": 75.66
+  },
+  "LT33": {
+    "region_id": 155,
+    "distance_km": 109.92
+  },
+  "LT28": {
+    "region_id": 155,
+    "distance_km": 80.11
+  },
+  "LT01": {
+    "region_id": 152,
+    "distance_km": 70.53
+  },
+  "LT02": {
+    "region_id": 152,
+    "distance_km": 72.08
+  },
+  "LT03": {
+    "region_id": 152,
+    "distance_km": 69.85
+  },
+  "LT04": {
+    "region_id": 152,
+    "distance_km": 69.49
+  },
+  "LT05": {
+    "region_id": 152,
+    "distance_km": 73.96
+  },
+  "LT06": {
+    "region_id": 152,
+    "distance_km": 76.36
+  },
+  "LT07": {
+    "region_id": 152,
+    "distance_km": 75.67
+  },
+  "LT08": {
+    "region_id": 152,
+    "distance_km": 72.08
+  },
+  "LT09": {
+    "region_id": 152,
+    "distance_km": 74.86
+  },
+  "LT10": {
+    "region_id": 152,
+    "distance_km": 75.1
+  },
+  "LT11": {
+    "region_id": 152,
+    "distance_km": 72.08
+  },
+  "LT12": {
+    "region_id": 152,
+    "distance_km": 72.08
+  },
+  "LT14": {
+    "region_id": 152,
+    "distance_km": 72.08
+  },
+  "LT13": {
+    "region_id": 152,
+    "distance_km": 72.93
+  },
+  "LT15": {
+    "region_id": 152,
+    "distance_km": 90.68
+  },
+  "PT38": {
+    "region_id": 3,
+    "distance_km": 100.63
+  },
+  "PT37": {
+    "region_id": 3,
+    "distance_km": 57.0
+  },
+  "PT76": {
+    "region_id": 1,
+    "distance_km": 50.02
+  },
+  "PT77": {
+    "region_id": 1,
+    "distance_km": 10.32
+  },
+  "PT79": {
+    "region_id": 1,
+    "distance_km": 92.5
+  },
+  "PT72": {
+    "region_id": 5,
+    "distance_km": 47.95
+  },
+  "PT78": {
+    "region_id": 1,
+    "distance_km": 68.68
+  },
+  "PT47": {
+    "region_id": 3,
+    "distance_km": 31.72
+  },
+  "PL62": {
+    "region_id": 128,
+    "distance_km": 84.38
+  },
+  "PL64": {
+    "region_id": 126,
+    "distance_km": 80.0
+  },
+  "PL60": {
+    "region_id": 126,
+    "distance_km": 88.16
+  },
+  "PL61": {
+    "region_id": 131,
+    "distance_km": 90.63
+  },
+  "PL78": {
+    "region_id": 124,
+    "distance_km": 31.51
+  },
+  "PL73": {
+    "region_id": 126,
+    "distance_km": 41.47
+  },
+  "PL72": {
+    "region_id": 108,
+    "distance_km": 52.08
+  },
+  "PL74": {
+    "region_id": 108,
+    "distance_km": 58.56
+  },
+  "PL71": {
+    "region_id": 108,
+    "distance_km": 41.99
+  },
+  "PL75": {
+    "region_id": 124,
+    "distance_km": 27.68
+  },
+  "PL70": {
+    "region_id": 108,
+    "distance_km": 45.42
+  },
+  "PL11": {
+    "region_id": 132,
+    "distance_km": 74.71
+  },
+  "PL14": {
+    "region_id": 132,
+    "distance_km": 71.26
+  },
+  "PL13": {
+    "region_id": 132,
+    "distance_km": 59.31
+  },
+  "PL10": {
+    "region_id": 132,
+    "distance_km": 22.18
+  },
+  "PL12": {
+    "region_id": 133,
+    "distance_km": 70.4
+  },
+  "PL63": {
+    "region_id": 131,
+    "distance_km": 45.7
+  },
+  "IT23": {
+    "region_id": 44,
+    "distance_km": 54.63
+  },
+  "IT26": {
+    "region_id": 44,
+    "distance_km": 93.85
+  },
+  "IT20": {
+    "region_id": 44,
+    "distance_km": 67.9
+  },
+  "IT46": {
+    "region_id": 47,
+    "distance_km": 85.14
+  },
+  "IT27": {
+    "region_id": 45,
+    "distance_km": 61.42
+  },
+  "IT21": {
+    "region_id": 44,
+    "distance_km": 57.02
+  },
+  "IT60": {
+    "region_id": 48,
+    "distance_km": 29.32
+  },
+  "IT63": {
+    "region_id": 48,
+    "distance_km": 83.47
+  },
+  "IT62": {
+    "region_id": 48,
+    "distance_km": 48.44
+  },
+  "IT61": {
+    "region_id": 48,
+    "distance_km": 34.31
+  },
+  "IT86": {
+    "region_id": 196,
+    "distance_km": 89.45
+  },
+  "IT15": {
+    "region_id": 45,
+    "distance_km": 18.49
+  },
+  "IT14": {
+    "region_id": 45,
+    "distance_km": 42.97
+  },
+  "IT13": {
+    "region_id": 70,
+    "distance_km": 101.73
+  },
+  "IT12": {
+    "region_id": 32,
+    "distance_km": 48.4
+  },
+  "IT28": {
+    "region_id": 44,
+    "distance_km": 76.85
+  },
+  "IT10": {
+    "region_id": 70,
+    "distance_km": 104.32
+  },
+  "IT70": {
+    "region_id": 51,
+    "distance_km": 82.49
+  },
+  "IT72": {
+    "region_id": 51,
+    "distance_km": 55.51
+  },
+  "IT71": {
+    "region_id": 196,
+    "distance_km": 100.47
+  },
+  "IT73": {
+    "region_id": 51,
+    "distance_km": 57.25
+  },
+  "IT09": {
+    "region_id": 49,
+    "distance_km": 453.91
+  },
+  "IT08": {
+    "region_id": 49,
+    "distance_km": 359.54
+  },
+  "IT33": {
+    "region_id": 72,
+    "distance_km": 37.03
+  },
+  "IT03": {
+    "region_id": 52,
+    "distance_km": 33.73
+  },
+  "IT04": {
+    "region_id": 52,
+    "distance_km": 71.49
+  },
+  "IT02": {
+    "region_id": 52,
+    "distance_km": 48.7
+  },
+  "IT00": {
+    "region_id": 52,
+    "distance_km": 68.53
+  },
+  "IT01": {
+    "region_id": 49,
+    "distance_km": 59.88
+  },
+  "IT16": {
+    "region_id": 45,
+    "distance_km": 25.37
+  },
+  "IT18": {
+    "region_id": 32,
+    "distance_km": 51.64
+  },
+  "IT19": {
+    "region_id": 45,
+    "distance_km": 86.57
+  },
+  "IT17": {
+    "region_id": 45,
+    "distance_km": 42.7
+  },
+  "IT24": {
+    "region_id": 44,
+    "distance_km": 49.2
+  },
+  "IT25": {
+    "region_id": 46,
+    "distance_km": 88.51
+  },
+  "IT22": {
+    "region_id": 44,
+    "distance_km": 12.42
+  },
+  "IT67": {
+    "region_id": 52,
+    "distance_km": 13.48
+  },
+  "IT66": {
+    "region_id": 52,
+    "distance_km": 64.07
+  },
+  "IT65": {
+    "region_id": 52,
+    "distance_km": 65.1
+  },
+  "IT64": {
+    "region_id": 52,
+    "distance_km": 83.37
+  },
+  "IT75": {
+    "region_id": 51,
+    "distance_km": 57.76
+  },
+  "IT85": {
+    "region_id": 196,
+    "distance_km": 72.85
+  },
+  "IT87": {
+    "region_id": 50,
+    "distance_km": 58.45
+  },
+  "IT88": {
+    "region_id": 50,
+    "distance_km": 35.92
+  },
+  "IT89": {
+    "region_id": 50,
+    "distance_km": 90.05
+  },
+  "IT83": {
+    "region_id": 196,
+    "distance_km": 46.78
+  },
+  "IT82": {
+    "region_id": 196,
+    "distance_km": 45.25
+  },
+  "IT81": {
+    "region_id": 52,
+    "distance_km": 96.23
+  },
+  "IT80": {
+    "region_id": 196,
+    "distance_km": 83.12
+  },
+  "IT84": {
+    "region_id": 196,
+    "distance_km": 68.22
+  },
+  "IT40": {
+    "region_id": 47,
+    "distance_km": 22.44
+  },
+  "IT47": {
+    "region_id": 47,
+    "distance_km": 50.91
+  },
+  "IT44": {
+    "region_id": 47,
+    "distance_km": 45.49
+  },
+  "IT41": {
+    "region_id": 47,
+    "distance_km": 68.9
+  },
+  "IT29": {
+    "region_id": 45,
+    "distance_km": 91.65
+  },
+  "IT43": {
+    "region_id": 45,
+    "distance_km": 114.39
+  },
+  "IT48": {
+    "region_id": 47,
+    "distance_km": 38.79
+  },
+  "IT42": {
+    "region_id": 47,
+    "distance_km": 69.65
+  },
+  "IT34": {
+    "region_id": 72,
+    "distance_km": 37.62
+  },
+  "IT07": {
+    "region_id": 49,
+    "distance_km": 254.76
+  },
+  "IT95": {
+    "region_id": 50,
+    "distance_km": 163.18
+  },
+  "IT94": {
+    "region_id": 50,
+    "distance_km": 197.8
+  },
+  "IT98": {
+    "region_id": 50,
+    "distance_km": 124.76
+  },
+  "IT90": {
+    "region_id": 50,
+    "distance_km": 224.75
+  },
+  "IT96": {
+    "region_id": 50,
+    "distance_km": 229.44
+  },
+  "IT91": {
+    "region_id": 50,
+    "distance_km": 342.04
+  },
+  "IT52": {
+    "region_id": 48,
+    "distance_km": 83.01
+  },
+  "IT50": {
+    "region_id": 47,
+    "distance_km": 82.3
+  },
+  "IT58": {
+    "region_id": 49,
+    "distance_km": 86.67
+  },
+  "IT57": {
+    "region_id": 49,
+    "distance_km": 130.12
+  },
+  "IT55": {
+    "region_id": 47,
+    "distance_km": 94.64
+  },
+  "IT54": {
+    "region_id": 45,
+    "distance_km": 103.88
+  },
+  "IT56": {
+    "region_id": 47,
+    "distance_km": 120.73
+  },
+  "IT59": {
+    "region_id": 47,
+    "distance_km": 69.71
+  },
+  "IT51": {
+    "region_id": 47,
+    "distance_km": 86.15
+  },
+  "IT53": {
+    "region_id": 49,
+    "distance_km": 78.51
+  },
+  "IT39": {
+    "region_id": 46,
+    "distance_km": 67.74
+  },
+  "IT38": {
+    "region_id": 46,
+    "distance_km": 24.61
+  },
+  "IT06": {
+    "region_id": 48,
+    "distance_km": 55.92
+  },
+  "IT32": {
+    "region_id": 46,
+    "distance_km": 84.98
+  },
+  "IT35": {
+    "region_id": 46,
+    "distance_km": 87.0
+  },
+  "IT45": {
+    "region_id": 47,
+    "distance_km": 79.26
+  },
+  "IT31": {
+    "region_id": 72,
+    "distance_km": 53.53
+  },
+  "IT30": {
+    "region_id": 47,
+    "distance_km": 89.69
+  },
+  "IT36": {
+    "region_id": 46,
+    "distance_km": 52.32
+  },
+  "IT37": {
+    "region_id": 46,
+    "distance_km": 53.67
+  },
+  "AT47": {
+    "region_id": 111,
+    "distance_km": 69.45
+  },
+  "AT49": {
+    "region_id": 111,
+    "distance_km": 73.95
+  },
+  "AT41": {
+    "region_id": 111,
+    "distance_km": 29.76
+  },
+  "AT40": {
+    "region_id": 111,
+    "distance_km": 42.82
+  },
+  "AT33": {
+    "region_id": 111,
+    "distance_km": 84.74
+  },
+  "AT44": {
+    "region_id": 111,
+    "distance_km": 55.56
+  },
+  "AT45": {
+    "region_id": 111,
+    "distance_km": 62.78
+  },
+  "AT42": {
+    "region_id": 111,
+    "distance_km": 27.42
+  },
+  "AT46": {
+    "region_id": 111,
+    "distance_km": 73.1
+  },
+  "AT48": {
+    "region_id": 111,
+    "distance_km": 80.3
+  },
+  "AT53": {
+    "region_id": 110,
+    "distance_km": 87.29
+  },
+  "AT54": {
+    "region_id": 110,
+    "distance_km": 63.2
+  },
+  "AT55": {
+    "region_id": 110,
+    "distance_km": 78.5
+  },
+  "AT50": {
+    "region_id": 110,
+    "distance_km": 65.88
+  },
+  "AT51": {
+    "region_id": 110,
+    "distance_km": 68.76
+  },
+  "AT52": {
+    "region_id": 110,
+    "distance_km": 81.31
+  },
+  "AT93": {
+    "region_id": 113,
+    "distance_km": 72.32
+  },
+  "AT95": {
+    "region_id": 113,
+    "distance_km": 85.53
+  },
+  "AT97": {
+    "region_id": 72,
+    "distance_km": 90.26
+  },
+  "AT98": {
+    "region_id": 110,
+    "distance_km": 101.83
+  },
+  "AT92": {
+    "region_id": 113,
+    "distance_km": 102.52
+  },
+  "AT90": {
+    "region_id": 113,
+    "distance_km": 68.68
+  },
+  "AT91": {
+    "region_id": 113,
+    "distance_km": 65.72
+  },
+  "AT94": {
+    "region_id": 113,
+    "distance_km": 42.27
+  },
+  "AT31": {
+    "region_id": 111,
+    "distance_km": 108.32
+  },
+  "AT25": {
+    "region_id": 115,
+    "distance_km": 87.43
+  },
+  "AT24": {
+    "region_id": 115,
+    "distance_km": 41.23
+  },
+  "AT22": {
+    "region_id": 115,
+    "distance_km": 73.8
+  },
+  "AT39": {
+    "region_id": 111,
+    "distance_km": 48.56
+  },
+  "AT20": {
+    "region_id": 114,
+    "distance_km": 74.13
+  },
+  "AT37": {
+    "region_id": 114,
+    "distance_km": 53.95
+  },
+  "AT35": {
+    "region_id": 114,
+    "distance_km": 69.23
+  },
+  "AT21": {
+    "region_id": 114,
+    "distance_km": 74.64
+  },
+  "AT34": {
+    "region_id": 114,
+    "distance_km": 85.5
+  },
+  "AT36": {
+    "region_id": 111,
+    "distance_km": 89.39
+  },
+  "AT32": {
+    "region_id": 111,
+    "distance_km": 97.16
+  },
+  "AT23": {
+    "region_id": 115,
+    "distance_km": 88.06
+  },
+  "AT26": {
+    "region_id": 113,
+    "distance_km": 90.79
+  },
+  "AT27": {
+    "region_id": 113,
+    "distance_km": 100.16
+  },
+  "AT28": {
+    "region_id": 115,
+    "distance_km": 99.36
+  },
+  "AT30": {
+    "region_id": 114,
+    "distance_km": 109.61
+  },
+  "AZAZ": {
+    "region_id": 183,
+    "distance_km": 1167.95
+  },
+  "CH54": {
+    "region_id": 43,
+    "distance_km": 7.37
+  },
+  "CH56": {
+    "region_id": 43,
+    "distance_km": 14.03
+  },
+  "CH51": {
+    "region_id": 43,
+    "distance_km": 18.15
+  },
+  "CH52": {
+    "region_id": 43,
+    "distance_km": 18.3
+  },
+  "CH43": {
+    "region_id": 43,
+    "distance_km": 33.49
+  },
+  "CH57": {
+    "region_id": 43,
+    "distance_km": 29.71
+  },
+  "CH53": {
+    "region_id": 43,
+    "distance_km": 9.98
+  },
+  "CH94": {
+    "region_id": 102,
+    "distance_km": 38.28
+  },
+  "CH33": {
+    "region_id": 43,
+    "distance_km": 52.76
+  },
+  "CH34": {
+    "region_id": 43,
+    "distance_km": 65.09
+  },
+  "CH30": {
+    "region_id": 70,
+    "distance_km": 80.74
+  },
+  "CH35": {
+    "region_id": 43,
+    "distance_km": 76.35
+  },
+  "CH36": {
+    "region_id": 70,
+    "distance_km": 69.12
+  },
+  "CH37": {
+    "region_id": 70,
+    "distance_km": 19.98
+  },
+  "CH38": {
+    "region_id": 43,
+    "distance_km": 77.95
+  },
+  "CH42": {
+    "region_id": 43,
+    "distance_km": 60.68
+  },
+  "AT56": {
+    "region_id": 110,
+    "distance_km": 49.71
+  },
+  "AT57": {
+    "region_id": 110,
+    "distance_km": 41.15
+  },
+  "AT80": {
+    "region_id": 113,
+    "distance_km": 29.71
+  },
+  "AT85": {
+    "region_id": 113,
+    "distance_km": 24.0
+  },
+  "AT81": {
+    "region_id": 113,
+    "distance_km": 10.11
+  },
+  "AT83": {
+    "region_id": 113,
+    "distance_km": 32.88
+  },
+  "AT84": {
+    "region_id": 113,
+    "distance_km": 39.74
+  },
+  "GBEX": {
+    "region_id": 54,
+    "distance_km": 15.75
+  },
+  "GBPL": {
+    "region_id": 54,
+    "distance_km": 68.77
+  },
+  "GBTQ": {
+    "region_id": 54,
+    "distance_km": 54.74
+  },
+  "GBNE": {
+    "region_id": 59,
+    "distance_km": 79.74
+  },
+  "GBTD": {
+    "region_id": 58,
+    "distance_km": 78.59
+  },
+  "GBTR": {
+    "region_id": 53,
+    "distance_km": 38.73
+  },
+  "GBHP": {
+    "region_id": 55,
+    "distance_km": 60.48
+  },
+  "GBMK": {
+    "region_id": 55,
+    "distance_km": 81.51
+  },
+  "GBNN": {
+    "region_id": 55,
+    "distance_km": 64.19
+  },
+  "GBRG": {
+    "region_id": 55,
+    "distance_km": 52.91
+  },
+  "GBCB": {
+    "region_id": 62,
+    "distance_km": 66.75
+  },
+  "GBPE": {
+    "region_id": 62,
+    "distance_km": 22.54
+  },
+  "GBSG": {
+    "region_id": 63,
+    "distance_km": 68.83
+  },
+  "GBCA": {
+    "region_id": 59,
+    "distance_km": 48.63
+  },
+  "GBLA": {
+    "region_id": 59,
+    "distance_km": 81.85
+  },
+  "GBDE": {
+    "region_id": 62,
+    "distance_km": 93.33
+  },
+  "GBNG": {
+    "region_id": 62,
+    "distance_km": 86.49
+  },
+  "GBS1": {
+    "region_id": 61,
+    "distance_km": 75.36
+  },
+  "GBS4": {
+    "region_id": 61,
+    "distance_km": 75.79
+  },
+  "GBSK": {
+    "region_id": 61,
+    "distance_km": 48.67
+  },
+  "GBBH": {
+    "region_id": 55,
+    "distance_km": 100.43
+  },
+  "GBDT": {
+    "region_id": 55,
+    "distance_km": 90.66
+  },
+  "GBBN": {
+    "region_id": 63,
+    "distance_km": 95.17
+  },
+  "GBTN": {
+    "region_id": 63,
+    "distance_km": 67.17
+  },
+  "GBCM": {
+    "region_id": 63,
+    "distance_km": 12.82
+  },
+  "GBCO": {
+    "region_id": 63,
+    "distance_km": 50.91
+  },
+  "GBIG": {
+    "region_id": 63,
+    "distance_km": 35.89
+  },
+  "GBRM": {
+    "region_id": 63,
+    "distance_km": 22.94
+  },
+  "GBSS": {
+    "region_id": 63,
+    "distance_km": 2.52
+  },
+  "GBBS": {
+    "region_id": 55,
+    "distance_km": 57.51
+  },
+  "GBGL": {
+    "region_id": 55,
+    "distance_km": 57.4
+  },
+  "GBGU": {
+    "region_id": 55,
+    "distance_km": 69.46
+  },
+  "GBPO": {
+    "region_id": 55,
+    "distance_km": 89.96
+  },
+  "GBSO": {
+    "region_id": 55,
+    "distance_km": 80.26
+  },
+  "GBSP": {
+    "region_id": 55,
+    "distance_km": 42.49
+  },
+  "GBWD": {
+    "region_id": 63,
+    "distance_km": 66.48
+  },
+  "GBCT": {
+    "region_id": 63,
+    "distance_km": 48.72
+  },
+  "GBME": {
+    "region_id": 63,
+    "distance_km": 35.83
+  },
+  "GBCV": {
+    "region_id": 62,
+    "distance_km": 88.34
+  },
+  "GBLE": {
+    "region_id": 62,
+    "distance_km": 49.47
+  },
+  "GBDN": {
+    "region_id": 60,
+    "distance_km": 54.98
+  },
+  "GBLN": {
+    "region_id": 62,
+    "distance_km": 66.73
+  },
+  "GBDL": {
+    "region_id": 60,
+    "distance_km": 77.7
+  },
+  "GBTS": {
+    "region_id": 60,
+    "distance_km": 67.05
+  },
+  "GBBD": {
+    "region_id": 60,
+    "distance_km": 65.64
+  },
+  "GBHD": {
+    "region_id": 61,
+    "distance_km": 55.53
+  },
+  "GBWF": {
+    "region_id": 60,
+    "distance_km": 67.98
+  },
+  "GBB9": {
+    "region_id": 55,
+    "distance_km": 99.72
+  },
+  "GBDY": {
+    "region_id": 55,
+    "distance_km": 100.88
+  },
+  "GBWV": {
+    "region_id": 61,
+    "distance_km": 95.88
+  },
+  "GBDH": {
+    "region_id": 60,
+    "distance_km": 93.26
+  },
+  "GBSR": {
+    "region_id": 60,
+    "distance_km": 96.22
+  },
+  "GBS3": {
+    "region_id": 61,
+    "distance_km": 65.14
+  },
+  "GBS6": {
+    "region_id": 60,
+    "distance_km": 77.35
+  },
+  "GBS7": {
+    "region_id": 60,
+    "distance_km": 68.75
+  },
+  "GBS9": {
+    "region_id": 61,
+    "distance_km": 74.58
+  },
+  "GBL1": {
+    "region_id": 61,
+    "distance_km": 20.52
+  },
+  "GBL2": {
+    "region_id": 61,
+    "distance_km": 28.63
+  },
+  "GBL3": {
+    "region_id": 61,
+    "distance_km": 13.91
+  },
+  "GBL5": {
+    "region_id": 61,
+    "distance_km": 25.71
+  },
+  "GBPR": {
+    "region_id": 61,
+    "distance_km": 36.2
+  },
+  "GBBL": {
+    "region_id": 61,
+    "distance_km": 25.52
+  },
+  "GBWN": {
+    "region_id": 61,
+    "distance_km": 13.78
+  },
+  "GBCH": {
+    "region_id": 61,
+    "distance_km": 32.46
+  },
+  "GBCW": {
+    "region_id": 61,
+    "distance_km": 42.39
+  },
+  "GBSY": {
+    "region_id": 61,
+    "distance_km": 45.19
+  },
+  "GBWA": {
+    "region_id": 61,
+    "distance_km": 16.05
+  },
+  "GBLU": {
+    "region_id": 63,
+    "distance_km": 84.07
+  },
+  "GBLL": {
+    "region_id": 61,
+    "distance_km": 61.87
+  },
+  "GBNP": {
+    "region_id": 64,
+    "distance_km": 87.42
+  },
+  "GBBT": {
+    "region_id": 57,
+    "distance_km": 162.39
+  },
+  "GBAB": {
+    "region_id": 58,
+    "distance_km": 70.35
+  },
+  "GBDD": {
+    "region_id": 58,
+    "distance_km": 63.38
+  },
+  "GBFK": {
+    "region_id": 57,
+    "distance_km": 59.67
+  },
+  "GBG8": {
+    "region_id": 57,
+    "distance_km": 28.39
+  },
+  "GBPA": {
+    "region_id": 57,
+    "distance_km": 13.0
+  },
+  "GBDG": {
+    "region_id": 59,
+    "distance_km": 30.2
+  },
+  "GBKA": {
+    "region_id": 57,
+    "distance_km": 79.47
+  },
+  "GBG6": {
+    "region_id": 57,
+    "distance_km": 44.0
+  },
+  "GBEH": {
+    "region_id": 58,
+    "distance_km": 34.33
+  },
+  "GBG7": {
+    "region_id": 57,
+    "distance_km": 41.83
+  },
+  "GBKY": {
+    "region_id": 58,
+    "distance_km": 50.3
+  },
+  "GBIV": {
+    "region_id": 56,
+    "distance_km": 24.72
+  },
+  "GBKW": {
+    "region_id": 56,
+    "distance_km": 98.06
+  },
+  "GBW4": {
+    "region_id": 63,
+    "distance_km": 60.59
+  },
+  "GBWC": {
+    "region_id": 63,
+    "distance_km": 50.7
+  },
+  "GBOX": {
+    "region_id": 55,
+    "distance_km": 59.25
+  },
+  "GBHG": {
+    "region_id": 60,
+    "distance_km": 49.52
+  },
+  "GBLS": {
+    "region_id": 60,
+    "distance_km": 45.8
+  },
+  "GBYO": {
+    "region_id": 60,
+    "distance_km": 35.06
+  },
+  "GBSN": {
+    "region_id": 55,
+    "distance_km": 5.12
+  },
+  "GBBA": {
+    "region_id": 55,
+    "distance_km": 73.12
+  },
+  "GBTA": {
+    "region_id": 54,
+    "distance_km": 71.81
+  },
+  "GBBB": {
+    "region_id": 61,
+    "distance_km": 43.91
+  },
+  "GBFY": {
+    "region_id": 61,
+    "distance_km": 45.93
+  },
+  "GBOL": {
+    "region_id": 61,
+    "distance_km": 40.4
+  },
+  "GBHX": {
+    "region_id": 61,
+    "distance_km": 52.21
+  },
+  "GBB2": {
+    "region_id": 55,
+    "distance_km": 96.59
+  },
+  "GBB6": {
+    "region_id": 55,
+    "distance_km": 102.14
+  },
+  "GBW1": {
+    "region_id": 63,
+    "distance_km": 57.81
+  },
+  "GBW2": {
+    "region_id": 63,
+    "distance_km": 55.54
+  },
+  "GBWR": {
+    "region_id": 55,
+    "distance_km": 71.7
+  },
+  "GBBR": {
+    "region_id": 63,
+    "distance_km": 47.35
+  },
+  "GBCR": {
+    "region_id": 63,
+    "distance_km": 57.82
+  },
+  "GBE1": {
+    "region_id": 63,
+    "distance_km": 47.59
+  },
+  "GBE7": {
+    "region_id": 63,
+    "distance_km": 47.31
+  },
+  "GBEC": {
+    "region_id": 63,
+    "distance_km": 51.26
+  },
+  "GBEN": {
+    "region_id": 63,
+    "distance_km": 55.13
+  },
+  "GBHA": {
+    "region_id": 63,
+    "distance_km": 70.62
+  },
+  "GBN1": {
+    "region_id": 63,
+    "distance_km": 52.35
+  },
+  "GBN3": {
+    "region_id": 63,
+    "distance_km": 54.86
+  },
+  "GBN5": {
+    "region_id": 63,
+    "distance_km": 48.74
+  },
+  "GBNW": {
+    "region_id": 63,
+    "distance_km": 59.0
+  },
+  "GBSE": {
+    "region_id": 63,
+    "distance_km": 50.74
+  },
+  "GBSW": {
+    "region_id": 63,
+    "distance_km": 52.67
+  },
+  "GBIP": {
+    "region_id": 62,
+    "distance_km": 71.69
+  },
+  "GBNR": {
+    "region_id": 62,
+    "distance_km": 93.77
+  },
+  "BE22": {
+    "region_id": 38,
+    "distance_km": 62.32
+  },
+  "BE23": {
+    "region_id": 38,
+    "distance_km": 54.88
+  },
+  "BE25": {
+    "region_id": 38,
+    "distance_km": 29.55
+  },
+  "BE28": {
+    "region_id": 38,
+    "distance_km": 19.01
+  },
+  "BE16": {
+    "region_id": 38,
+    "distance_km": 53.4
+  },
+  "BE17": {
+    "region_id": 38,
+    "distance_km": 44.15
+  },
+  "BE18": {
+    "region_id": 38,
+    "distance_km": 29.43
+  },
+  "BE19": {
+    "region_id": 38,
+    "distance_km": 50.2
+  },
+  "BE30": {
+    "region_id": 38,
+    "distance_km": 59.89
+  },
+  "BE32": {
+    "region_id": 38,
+    "distance_km": 64.72
+  },
+  "BE33": {
+    "region_id": 38,
+    "distance_km": 83.23
+  },
+  "BE34": {
+    "region_id": 38,
+    "distance_km": 58.4
+  },
+  "BE36": {
+    "region_id": 40,
+    "distance_km": 86.61
+  },
+  "BE37": {
+    "region_id": 40,
+    "distance_km": 93.08
+  },
+  "BE38": {
+    "region_id": 38,
+    "distance_km": 91.7
+  },
+  "BE39": {
+    "region_id": 40,
+    "distance_km": 82.75
+  },
+  "BE91": {
+    "region_id": 38,
+    "distance_km": 18.8
+  },
+  "BE92": {
+    "region_id": 38,
+    "distance_km": 24.41
+  },
+  "BE94": {
+    "region_id": 38,
+    "distance_km": 31.85
+  },
+  "BE95": {
+    "region_id": 38,
+    "distance_km": 41.25
+  },
+  "BE96": {
+    "region_id": 38,
+    "distance_km": 42.9
+  },
+  "BE98": {
+    "region_id": 38,
+    "distance_km": 34.28
+  },
+  "BE82": {
+    "region_id": 38,
+    "distance_km": 58.05
+  },
+  "BE83": {
+    "region_id": 38,
+    "distance_km": 48.95
+  },
+  "BE84": {
+    "region_id": 38,
+    "distance_km": 71.07
+  },
+  "BY22": {
+    "region_id": 151,
+    "distance_km": 71.51
+  },
+  "BY24": {
+    "region_id": 170,
+    "distance_km": 58.07
+  },
+  "BY23": {
+    "region_id": 152,
+    "distance_km": 67.41
+  },
+  "BY21": {
+    "region_id": 162,
+    "distance_km": 71.07
+  },
+  "CH44": {
+    "region_id": 43,
+    "distance_km": 46.88
+  },
+  "CH40": {
+    "region_id": 43,
+    "distance_km": 57.02
+  },
+  "CH16": {
+    "region_id": 70,
+    "distance_km": 42.21
+  },
+  "CH17": {
+    "region_id": 70,
+    "distance_km": 55.59
+  },
+  "CH74": {
+    "region_id": 44,
+    "distance_km": 55.99
+  },
+  "CH77": {
+    "region_id": 46,
+    "distance_km": 62.42
+  },
+  "CH75": {
+    "region_id": 46,
+    "distance_km": 71.48
+  },
+  "CH70": {
+    "region_id": 102,
+    "distance_km": 69.7
+  },
+  "CH76": {
+    "region_id": 44,
+    "distance_km": 33.82
+  },
+  "CH71": {
+    "region_id": 44,
+    "distance_km": 67.18
+  },
+  "CH29": {
+    "region_id": 69,
+    "distance_km": 87.95
+  },
+  "CH60": {
+    "region_id": 43,
+    "distance_km": 34.1
+  },
+  "CH61": {
+    "region_id": 43,
+    "distance_km": 45.88
+  },
+  "CH20": {
+    "region_id": 70,
+    "distance_km": 81.94
+  },
+  "CH21": {
+    "region_id": 70,
+    "distance_km": 83.01
+  },
+  "CH23": {
+    "region_id": 70,
+    "distance_km": 86.74
+  },
+  "CH90": {
+    "region_id": 102,
+    "distance_km": 49.33
+  },
+  "CH73": {
+    "region_id": 102,
+    "distance_km": 59.94
+  },
+  "CH96": {
+    "region_id": 43,
+    "distance_km": 51.44
+  },
+  "AT38": {
+    "region_id": 114,
+    "distance_km": 57.3
+  },
+  "AT43": {
+    "region_id": 111,
+    "distance_km": 37.96
+  },
+  "CZ10": {
+    "region_id": 112,
+    "distance_km": 15.8
+  },
+  "CZ11": {
+    "region_id": 112,
+    "distance_km": 15.83
+  },
+  "CZ13": {
+    "region_id": 112,
+    "distance_km": 14.14
+  },
+  "CZ14": {
+    "region_id": 112,
+    "distance_km": 19.5
+  },
+  "CZ15": {
+    "region_id": 112,
+    "distance_km": 24.12
+  },
+  "CZ16": {
+    "region_id": 112,
+    "distance_km": 12.24
+  },
+  "CZ18": {
+    "region_id": 112,
+    "distance_km": 8.62
+  },
+  "CZ19": {
+    "region_id": 112,
+    "distance_km": 10.76
+  },
+  "CZ67": {
+    "region_id": 114,
+    "distance_km": 47.59
+  },
+  "CZ68": {
+    "region_id": 114,
+    "distance_km": 56.19
+  },
+  "CZ61": {
+    "region_id": 114,
+    "distance_km": 37.22
+  },
+  "CZ62": {
+    "region_id": 114,
+    "distance_km": 33.52
+  },
+  "CZ63": {
+    "region_id": 114,
+    "distance_km": 35.02
+  },
+  "CZ66": {
+    "region_id": 114,
+    "distance_km": 26.92
+  },
+  "CZ69": {
+    "region_id": 114,
+    "distance_km": 55.13
+  },
+  "CZ37": {
+    "region_id": 111,
+    "distance_km": 45.84
+  },
+  "CZ38": {
+    "region_id": 111,
+    "distance_km": 34.94
+  },
+  "CZ39": {
+    "region_id": 111,
+    "distance_km": 81.55
+  },
+  "CZ75": {
+    "region_id": 125,
+    "distance_km": 51.28
+  },
+  "CZ78": {
+    "region_id": 125,
+    "distance_km": 56.21
+  },
+  "CZ79": {
+    "region_id": 125,
+    "distance_km": 85.8
+  },
+  "CZ73": {
+    "region_id": 125,
+    "distance_km": 53.39
+  },
+  "CZ74": {
+    "region_id": 125,
+    "distance_km": 28.08
+  },
+  "CZ72": {
+    "region_id": 125,
+    "distance_km": 27.24
+  },
+  "CZ53": {
+    "region_id": 112,
+    "distance_km": 91.56
+  },
+  "CZ56": {
+    "region_id": 114,
+    "distance_km": 58.56
+  },
+  "CZ57": {
+    "region_id": 114,
+    "distance_km": 82.26
+  },
+  "CZ34": {
+    "region_id": 109,
+    "distance_km": 39.73
+  },
+  "CZ33": {
+    "region_id": 109,
+    "distance_km": 58.59
+  },
+  "CY55": {
+    "region_id": 75,
+    "distance_km": 1002.36
+  },
+  "CY56": {
+    "region_id": 75,
+    "distance_km": 985.94
+  },
+  "CY57": {
+    "region_id": 75,
+    "distance_km": 1008.87
+  },
+  "CY95": {
+    "region_id": 75,
+    "distance_km": 954.79
+  },
+  "CY96": {
+    "region_id": 75,
+    "distance_km": 943.24
+  },
+  "CY60": {
+    "region_id": 75,
+    "distance_km": 994.66
+  },
+  "CY77": {
+    "region_id": 75,
+    "distance_km": 979.79
+  },
+  "CY10": {
+    "region_id": 75,
+    "distance_km": 961.98
+  },
+  "CY20": {
+    "region_id": 75,
+    "distance_km": 960.56
+  },
+  "CY22": {
+    "region_id": 75,
+    "distance_km": 966.42
+  },
+  "CY23": {
+    "region_id": 75,
+    "distance_km": 960.07
+  },
+  "CY25": {
+    "region_id": 75,
+    "distance_km": 973.4
+  },
+  "CY26": {
+    "region_id": 75,
+    "distance_km": 960.79
+  },
+  "CY27": {
+    "region_id": 75,
+    "distance_km": 941.72
+  },
+  "CY28": {
+    "region_id": 75,
+    "distance_km": 929.23
+  },
+  "CY29": {
+    "region_id": 75,
+    "distance_km": 910.44
+  },
+  "CY40": {
+    "region_id": 75,
+    "distance_km": 956.89
+  },
+  "CY41": {
+    "region_id": 75,
+    "distance_km": 952.9
+  },
+  "CY45": {
+    "region_id": 75,
+    "distance_km": 958.88
+  },
+  "CY47": {
+    "region_id": 75,
+    "distance_km": 937.91
+  },
+  "CY85": {
+    "region_id": 75,
+    "distance_km": 907.97
+  },
+  "CY87": {
+    "region_id": 75,
+    "distance_km": 891.08
+  },
+  "CY88": {
+    "region_id": 75,
+    "distance_km": 902.22
+  },
+  "ES39": {
+    "region_id": 13,
+    "distance_km": 67.4
+  },
+  "ES51": {
+    "region_id": 8,
+    "distance_km": 111.37
+  },
+  "ES05": {
+    "region_id": 9,
+    "distance_km": 112.97
+  },
+  "ES09": {
+    "region_id": 9,
+    "distance_km": 101.06
+  },
+  "ES34": {
+    "region_id": 13,
+    "distance_km": 60.01
+  },
+  "ES24": {
+    "region_id": 7,
+    "distance_km": 79.13
+  },
+  "FR39": {
+    "region_id": 67,
+    "distance_km": 94.49
+  },
+  "FR58": {
+    "region_id": 36,
+    "distance_km": 69.07
+  },
+  "FR70": {
+    "region_id": 69,
+    "distance_km": 20.26
+  },
+  "FR71": {
+    "region_id": 67,
+    "distance_km": 32.93
+  },
+  "FR89": {
+    "region_id": 68,
+    "distance_km": 35.63
+  },
+  "FR90": {
+    "region_id": 69,
+    "distance_km": 67.94
+  },
+  "FR14": {
+    "region_id": 26,
+    "distance_km": 14.16
+  },
+  "FR27": {
+    "region_id": 34,
+    "distance_km": 73.67
+  },
+  "FR50": {
+    "region_id": 26,
+    "distance_km": 95.55
+  },
+  "FR61": {
+    "region_id": 27,
+    "distance_km": 91.77
+  },
+  "FR76": {
+    "region_id": 34,
+    "distance_km": 101.7
+  },
+  "FR41": {
+    "region_id": 36,
+    "distance_km": 45.56
+  },
+  "FR45": {
+    "region_id": 36,
+    "distance_km": 79.73
+  },
+  "FR21": {
+    "region_id": 69,
+    "distance_km": 79.05
+  },
+  "FR25": {
+    "region_id": 69,
+    "distance_km": 44.78
+  },
+  "FR62": {
+    "region_id": 33,
+    "distance_km": 24.29
+  },
+  "FR80": {
+    "region_id": 33,
+    "distance_km": 57.45
+  },
+  "FR08": {
+    "region_id": 35,
+    "distance_km": 71.49
+  },
+  "FR10": {
+    "region_id": 68,
+    "distance_km": 72.14
+  },
+  "FR51": {
+    "region_id": 35,
+    "distance_km": 3.83
+  },
+  "FR52": {
+    "region_id": 69,
+    "distance_km": 79.1
+  },
+  "FR54": {
+    "region_id": 42,
+    "distance_km": 85.74
+  },
+  "FR55": {
+    "region_id": 35,
+    "distance_km": 99.34
+  },
+  "FI99": {
+    "region_id": 212,
+    "distance_km": 34.12
+  },
+  "FR75": {
+    "region_id": 34,
+    "distance_km": 19.95
+  },
+  "FR77": {
+    "region_id": 34,
+    "distance_km": 84.72
+  },
+  "FR78": {
+    "region_id": 34,
+    "distance_km": 2.31
+  },
+  "FR91": {
+    "region_id": 34,
+    "distance_km": 31.41
+  },
+  "FR92": {
+    "region_id": 34,
+    "distance_km": 12.15
+  },
+  "FR93": {
+    "region_id": 34,
+    "distance_km": 27.86
+  },
+  "FR94": {
+    "region_id": 34,
+    "distance_km": 29.46
+  },
+  "FR95": {
+    "region_id": 34,
+    "distance_km": 25.9
+  },
+  "FR18": {
+    "region_id": 36,
+    "distance_km": 18.82
+  },
+  "FR57": {
+    "region_id": 37,
+    "distance_km": 78.81
+  },
+  "FR02": {
+    "region_id": 35,
+    "distance_km": 42.91
+  },
+  "FR59": {
+    "region_id": 33,
+    "distance_km": 49.32
+  },
+  "FR60": {
+    "region_id": 34,
+    "distance_km": 46.3
+  },
+  "FR28": {
+    "region_id": 34,
+    "distance_km": 60.29
+  },
+  "FR36": {
+    "region_id": 36,
+    "distance_km": 67.96
+  },
+  "FR37": {
+    "region_id": 27,
+    "distance_km": 34.29
+  },
+  "AT70": {
+    "region_id": 115,
+    "distance_km": 75.76
+  },
+  "AT75": {
+    "region_id": 113,
+    "distance_km": 96.27
+  },
+  "AT82": {
+    "region_id": 113,
+    "distance_km": 76.79
+  },
+  "AT72": {
+    "region_id": 115,
+    "distance_km": 85.91
+  },
+  "AT74": {
+    "region_id": 113,
+    "distance_km": 88.05
+  },
+  "AT96": {
+    "region_id": 72,
+    "distance_km": 79.2
+  },
+  "HR42": {
+    "region_id": 119,
+    "distance_km": 67.9
+  },
+  "HR33": {
+    "region_id": 118,
+    "distance_km": 68.74
+  },
+  "HR32": {
+    "region_id": 120,
+    "distance_km": 64.78
+  },
+  "HR23": {
+    "region_id": 122,
+    "distance_km": 67.15
+  },
+  "HR10": {
+    "region_id": 119,
+    "distance_km": 31.86
+  },
+  "HU71": {
+    "region_id": 118,
+    "distance_km": 56.82
+  },
+  "HU73": {
+    "region_id": 118,
+    "distance_km": 45.99
+  },
+  "HU76": {
+    "region_id": 118,
+    "distance_km": 56.08
+  },
+  "HU77": {
+    "region_id": 118,
+    "distance_km": 85.19
+  },
+  "HU78": {
+    "region_id": 118,
+    "distance_km": 63.41
+  },
+  "HU79": {
+    "region_id": 118,
+    "distance_km": 44.94
+  },
+  "HU56": {
+    "region_id": 140,
+    "distance_km": 71.41
+  },
+  "HU61": {
+    "region_id": 120,
+    "distance_km": 103.57
+  },
+  "HU63": {
+    "region_id": 120,
+    "distance_km": 103.68
+  },
+  "HU64": {
+    "region_id": 120,
+    "distance_km": 55.77
+  },
+  "HU10": {
+    "region_id": 117,
+    "distance_km": 6.75
+  },
+  "HU11": {
+    "region_id": 117,
+    "distance_km": 6.75
+  },
+  "HU12": {
+    "region_id": 117,
+    "distance_km": 6.75
+  },
+  "HU35": {
+    "region_id": 140,
+    "distance_km": 78.32
+  },
+  "HU37": {
+    "region_id": 140,
+    "distance_km": 78.19
+  },
+  "HU38": {
+    "region_id": 139,
+    "distance_km": 99.04
+  },
+  "HU39": {
+    "region_id": 139,
+    "distance_km": 86.3
+  },
+  "HU67": {
+    "region_id": 120,
+    "distance_km": 57.91
+  },
+  "HU24": {
+    "region_id": 117,
+    "distance_km": 43.69
+  },
+  "HU70": {
+    "region_id": 117,
+    "distance_km": 79.92
+  },
+  "HU81": {
+    "region_id": 118,
+    "distance_km": 69.46
+  },
+  "HU90": {
+    "region_id": 115,
+    "distance_km": 49.35
+  },
+  "HU91": {
+    "region_id": 115,
+    "distance_km": 52.85
+  },
+  "HU93": {
+    "region_id": 115,
+    "distance_km": 59.04
+  },
+  "HU94": {
+    "region_id": 115,
+    "distance_km": 66.43
+  },
+  "HU40": {
+    "region_id": 140,
+    "distance_km": 26.08
+  },
+  "HU41": {
+    "region_id": 140,
+    "distance_km": 41.6
+  },
+  "HU42": {
+    "region_id": 140,
+    "distance_km": 75.48
+  },
+  "HU32": {
+    "region_id": 140,
+    "distance_km": 90.7
+  },
+  "HU33": {
+    "region_id": 140,
+    "distance_km": 57.65
+  },
+  "HU50": {
+    "region_id": 140,
+    "distance_km": 68.8
+  },
+  "HU51": {
+    "region_id": 117,
+    "distance_km": 65.6
+  },
+  "HU53": {
+    "region_id": 140,
+    "distance_km": 9.85
+  },
+  "HU54": {
+    "region_id": 140,
+    "distance_km": 48.26
+  },
+  "HU25": {
+    "region_id": 117,
+    "distance_km": 41.91
+  },
+  "HU26": {
+    "region_id": 117,
+    "distance_km": 50.84
+  },
+  "HU30": {
+    "region_id": 117,
+    "distance_km": 69.34
+  },
+  "HU31": {
+    "region_id": 117,
+    "distance_km": 80.69
+  },
+  "HU20": {
+    "region_id": 117,
+    "distance_km": 28.19
+  },
+  "HU21": {
+    "region_id": 117,
+    "distance_km": 24.86
+  },
+  "HU23": {
+    "region_id": 117,
+    "distance_km": 34.56
+  },
+  "HU75": {
+    "region_id": 118,
+    "distance_km": 12.87
+  },
+  "HU86": {
+    "region_id": 118,
+    "distance_km": 56.86
+  },
+  "HU87": {
+    "region_id": 118,
+    "distance_km": 36.21
+  },
+  "HU88": {
+    "region_id": 118,
+    "distance_km": 50.16
+  },
+  "HU43": {
+    "region_id": 139,
+    "distance_km": 93.94
+  },
+  "HU44": {
+    "region_id": 140,
+    "distance_km": 87.79
+  },
+  "HU45": {
+    "region_id": 139,
+    "distance_km": 72.4
+  },
+  "HU46": {
+    "region_id": 139,
+    "distance_km": 42.19
+  },
+  "HU49": {
+    "region_id": 139,
+    "distance_km": 83.14
+  },
+  "HU95": {
+    "region_id": 118,
+    "distance_km": 97.56
+  },
+  "HU96": {
+    "region_id": 115,
+    "distance_km": 88.37
+  },
+  "HU97": {
+    "region_id": 115,
+    "distance_km": 109.7
+  },
+  "HU99": {
+    "region_id": 118,
+    "distance_km": 105.55
+  },
+  "HU82": {
+    "region_id": 118,
+    "distance_km": 57.62
+  },
+  "HU83": {
+    "region_id": 118,
+    "distance_km": 57.19
+  },
+  "HU84": {
+    "region_id": 115,
+    "distance_km": 88.45
+  },
+  "HU85": {
+    "region_id": 115,
+    "distance_km": 67.55
+  },
+  "HU89": {
+    "region_id": 118,
+    "distance_km": 78.21
+  },
+  "GBPH": {
+    "region_id": 58,
+    "distance_km": 77.26
+  },
+  "GBCF": {
+    "region_id": 54,
+    "distance_km": 70.55
+  },
+  "GBSA": {
+    "region_id": 64,
+    "distance_km": 72.61
+  },
+  "HR43": {
+    "region_id": 118,
+    "distance_km": 75.4
+  },
+  "HR35": {
+    "region_id": 120,
+    "distance_km": 123.48
+  },
+  "HR20": {
+    "region_id": 79,
+    "distance_km": 102.71
+  },
+  "HR52": {
+    "region_id": 116,
+    "distance_km": 38.82
+  },
+  "HR47": {
+    "region_id": 119,
+    "distance_km": 48.63
+  },
+  "HR48": {
+    "region_id": 118,
+    "distance_km": 73.52
+  },
+  "HR49": {
+    "region_id": 119,
+    "distance_km": 52.24
+  },
+  "HR53": {
+    "region_id": 122,
+    "distance_km": 68.98
+  },
+  "HR40": {
+    "region_id": 119,
+    "distance_km": 88.18
+  },
+  "HR31": {
+    "region_id": 120,
+    "distance_km": 87.79
+  },
+  "HR34": {
+    "region_id": 118,
+    "distance_km": 115.56
+  },
+  "HR51": {
+    "region_id": 116,
+    "distance_km": 11.2
+  },
+  "HR22": {
+    "region_id": 122,
+    "distance_km": 53.18
+  },
+  "HR44": {
+    "region_id": 119,
+    "distance_km": 31.2
+  },
+  "HR21": {
+    "region_id": 122,
+    "distance_km": 54.28
+  },
+  "GBLD": {
+    "region_id": 64,
+    "distance_km": 44.3
+  },
+  "GBIM": {
+    "region_id": 59,
+    "distance_km": 129.84
+  },
+  "GBML": {
+    "region_id": 57,
+    "distance_km": 66.21
+  },
+  "GBZE": {
+    "region_id": 56,
+    "distance_km": 339.43
+  },
+  "GBG1": {
+    "region_id": 57,
+    "distance_km": 42.99
+  },
+  "GBG3": {
+    "region_id": 57,
+    "distance_km": 49.03
+  },
+  "GBG4": {
+    "region_id": 57,
+    "distance_km": 51.5
+  },
+  "GBHS": {
+    "region_id": 56,
+    "distance_km": 154.15
+  },
+  "DE27": {
+    "region_id": 97,
+    "distance_km": 66.84
+  },
+  "DE28": {
+    "region_id": 73,
+    "distance_km": 74.28
+  },
+  "DE29": {
+    "region_id": 99,
+    "distance_km": 39.07
+  },
+  "DE30": {
+    "region_id": 99,
+    "distance_km": 40.43
+  },
+  "DE31": {
+    "region_id": 99,
+    "distance_km": 49.3
+  },
+  "DE37": {
+    "region_id": 104,
+    "distance_km": 84.63
+  },
+  "DE38": {
+    "region_id": 99,
+    "distance_km": 14.56
+  },
+  "DE49": {
+    "region_id": 98,
+    "distance_km": 16.36
+  },
+  "DE40": {
+    "region_id": 40,
+    "distance_km": 11.58
+  },
+  "DE41": {
+    "region_id": 40,
+    "distance_km": 1.53
+  },
+  "DE45": {
+    "region_id": 40,
+    "distance_km": 37.46
+  },
+  "DE46": {
+    "region_id": 40,
+    "distance_km": 54.23
+  },
+  "DE47": {
+    "region_id": 40,
+    "distance_km": 20.8
+  },
+  "DE42": {
+    "region_id": 40,
+    "distance_km": 36.83
+  },
+  "DE50": {
+    "region_id": 40,
+    "distance_km": 30.78
+  },
+  "DE51": {
+    "region_id": 40,
+    "distance_km": 73.07
+  },
+  "DE52": {
+    "region_id": 40,
+    "distance_km": 60.6
+  },
+  "DE53": {
+    "region_id": 40,
+    "distance_km": 56.17
+  },
+  "DE48": {
+    "region_id": 98,
+    "distance_km": 20.15
+  },
+  "DE33": {
+    "region_id": 98,
+    "distance_km": 32.63
+  },
+  "DE44": {
+    "region_id": 40,
+    "distance_km": 67.75
+  },
+  "DE57": {
+    "region_id": 104,
+    "distance_km": 44.68
+  },
+  "DE58": {
+    "region_id": 40,
+    "distance_km": 58.25
+  },
+  "DE59": {
+    "region_id": 98,
+    "distance_km": 65.36
+  },
+  "DE54": {
+    "region_id": 37,
+    "distance_km": 61.5
+  },
+  "DE55": {
+    "region_id": 41,
+    "distance_km": 38.87
+  },
+  "DE56": {
+    "region_id": 41,
+    "distance_km": 56.72
+  },
+  "DE66": {
+    "region_id": 42,
+    "distance_km": 73.59
+  },
+  "DE67": {
+    "region_id": 41,
+    "distance_km": 67.29
+  },
+  "DE76": {
+    "region_id": 100,
+    "distance_km": 85.62
+  },
+  "DE21": {
+    "region_id": 97,
+    "distance_km": 64.41
+  },
+  "DE22": {
+    "region_id": 97,
+    "distance_km": 32.08
+  },
+  "DE23": {
+    "region_id": 97,
+    "distance_km": 63.11
+  },
+  "DE24": {
+    "region_id": 85,
+    "distance_km": 75.89
+  },
+  "DE25": {
+    "region_id": 97,
+    "distance_km": 6.25
+  },
+  "DE01": {
+    "region_id": 105,
+    "distance_km": 81.45
+  },
+  "DE02": {
+    "region_id": 107,
+    "distance_km": 68.23
+  },
+  "DE04": {
+    "region_id": 105,
+    "distance_km": 63.77
+  },
+  "DE08": {
+    "region_id": 105,
+    "distance_km": 18.23
+  },
+  "DE09": {
+    "region_id": 105,
+    "distance_km": 19.46
+  },
+  "DE06": {
+    "region_id": 106,
+    "distance_km": 57.27
+  },
+  "DE39": {
+    "region_id": 106,
+    "distance_km": 33.29
+  },
+  "DE07": {
+    "region_id": 105,
+    "distance_km": 39.01
+  },
+  "DE36": {
+    "region_id": 103,
+    "distance_km": 64.56
+  },
+  "DE98": {
+    "region_id": 103,
+    "distance_km": 42.94
+  },
+  "DE99": {
+    "region_id": 103,
+    "distance_km": 71.31
+  },
+  "DK10": {
+    "region_id": 88,
+    "distance_km": 130.15
+  },
+  "DK11": {
+    "region_id": 88,
+    "distance_km": 129.62
+  },
+  "DK13": {
+    "region_id": 88,
+    "distance_km": 129.7
+  },
+  "DK16": {
+    "region_id": 88,
+    "distance_km": 128.42
+  },
+  "DK17": {
+    "region_id": 88,
+    "distance_km": 128.86
+  },
+  "DK18": {
+    "region_id": 88,
+    "distance_km": 127.79
+  },
+  "DK19": {
+    "region_id": 88,
+    "distance_km": 127.77
+  },
+  "DK36": {
+    "region_id": 88,
+    "distance_km": 101.27
+  },
+  "DK72": {
+    "region_id": 86,
+    "distance_km": 51.77
+  },
+  "DK85": {
+    "region_id": 88,
+    "distance_km": 26.66
+  },
+  "DK89": {
+    "region_id": 88,
+    "distance_km": 32.2
+  },
+  "DK84": {
+    "region_id": 86,
+    "distance_km": 26.06
+  },
+  "DK86": {
+    "region_id": 86,
+    "distance_km": 23.81
+  },
+  "DK82": {
+    "region_id": 88,
+    "distance_km": 31.63
+  },
+  "DK87": {
+    "region_id": 86,
+    "distance_km": 35.3
+  },
+  "DK97": {
+    "region_id": 87,
+    "distance_km": 49.33
+  },
+  "DK99": {
+    "region_id": 87,
+    "distance_km": 82.49
+  },
+  "DK96": {
+    "region_id": 87,
+    "distance_km": 46.63
+  },
+  "DK93": {
+    "region_id": 87,
+    "distance_km": 21.93
+  },
+  "DK43": {
+    "region_id": 88,
+    "distance_km": 90.13
+  },
+  "DK44": {
+    "region_id": 88,
+    "distance_km": 78.86
+  },
+  "DK42": {
+    "region_id": 88,
+    "distance_km": 91.43
+  },
+  "DK48": {
+    "region_id": 96,
+    "distance_km": 101.17
+  },
+  "DK54": {
+    "region_id": 85,
+    "distance_km": 88.32
+  },
+  "DK67": {
+    "region_id": 85,
+    "distance_km": 81.9
+  },
+  "DK68": {
+    "region_id": 86,
+    "distance_km": 97.6
+  },
+  "DK66": {
+    "region_id": 86,
+    "distance_km": 76.35
+  },
+  "DK60": {
+    "region_id": 85,
+    "distance_km": 69.67
+  },
+  "DK15": {
+    "region_id": 88,
+    "distance_km": 129.05
+  },
+  "BE86": {
+    "region_id": 33,
+    "distance_km": 69.03
+  },
+  "BE87": {
+    "region_id": 38,
+    "distance_km": 53.2
+  },
+  "BE88": {
+    "region_id": 38,
+    "distance_km": 67.8
+  },
+  "BE89": {
+    "region_id": 33,
+    "distance_km": 62.55
+  },
+  "BE14": {
+    "region_id": 38,
+    "distance_km": 72.26
+  },
+  "BE60": {
+    "region_id": 38,
+    "distance_km": 94.62
+  },
+  "BE64": {
+    "region_id": 35,
+    "distance_km": 97.16
+  },
+  "BE65": {
+    "region_id": 38,
+    "distance_km": 94.25
+  },
+  "BE70": {
+    "region_id": 38,
+    "distance_km": 86.83
+  },
+  "BE71": {
+    "region_id": 38,
+    "distance_km": 80.93
+  },
+  "BE73": {
+    "region_id": 38,
+    "distance_km": 88.11
+  },
+  "BE76": {
+    "region_id": 38,
+    "distance_km": 80.96
+  },
+  "BE77": {
+    "region_id": 38,
+    "distance_km": 71.99
+  },
+  "BE78": {
+    "region_id": 38,
+    "distance_km": 63.34
+  },
+  "BE79": {
+    "region_id": 38,
+    "distance_km": 73.42
+  },
+  "BE40": {
+    "region_id": 37,
+    "distance_km": 96.38
+  },
+  "BE41": {
+    "region_id": 37,
+    "distance_km": 78.83
+  },
+  "BE42": {
+    "region_id": 38,
+    "distance_km": 100.88
+  },
+  "BE43": {
+    "region_id": 38,
+    "distance_km": 102.94
+  },
+  "BE46": {
+    "region_id": 40,
+    "distance_km": 87.05
+  },
+  "BE48": {
+    "region_id": 40,
+    "distance_km": 82.5
+  },
+  "BE49": {
+    "region_id": 37,
+    "distance_km": 79.3
+  },
+  "BE66": {
+    "region_id": 37,
+    "distance_km": 17.73
+  },
+  "BE68": {
+    "region_id": 37,
+    "distance_km": 32.76
+  },
+  "BE69": {
+    "region_id": 37,
+    "distance_km": 50.11
+  },
+  "BE50": {
+    "region_id": 38,
+    "distance_km": 99.25
+  },
+  "BE51": {
+    "region_id": 38,
+    "distance_km": 97.66
+  },
+  "BE53": {
+    "region_id": 37,
+    "distance_km": 84.94
+  },
+  "BE55": {
+    "region_id": 37,
+    "distance_km": 78.48
+  },
+  "BE56": {
+    "region_id": 37,
+    "distance_km": 102.03
+  },
+  "BG81": {
+    "region_id": 83,
+    "distance_km": 64.34
+  },
+  "BG82": {
+    "region_id": 83,
+    "distance_km": 113.7
+  },
+  "BG84": {
+    "region_id": 83,
+    "distance_km": 29.02
+  },
+  "BG27": {
+    "region_id": 81,
+    "distance_km": 96.11
+  },
+  "BG28": {
+    "region_id": 81,
+    "distance_km": 69.62
+  },
+  "BG29": {
+    "region_id": 81,
+    "distance_km": 63.34
+  },
+  "BG96": {
+    "region_id": 83,
+    "distance_km": 92.98
+  },
+  "BG95": {
+    "region_id": 144,
+    "distance_km": 86.72
+  },
+  "BG93": {
+    "region_id": 83,
+    "distance_km": 89.16
+  },
+  "BG94": {
+    "region_id": 83,
+    "distance_km": 78.07
+  },
+  "BG53": {
+    "region_id": 84,
+    "distance_km": 93.75
+  },
+  "BG54": {
+    "region_id": 84,
+    "distance_km": 73.48
+  },
+  "BG69": {
+    "region_id": 82,
+    "distance_km": 40.96
+  },
+  "BG63": {
+    "region_id": 82,
+    "distance_km": 8.47
+  },
+  "BG87": {
+    "region_id": 83,
+    "distance_km": 97.06
+  },
+  "BG86": {
+    "region_id": 83,
+    "distance_km": 88.26
+  },
+  "BG25": {
+    "region_id": 141,
+    "distance_km": 115.38
+  },
+  "BG26": {
+    "region_id": 141,
+    "distance_km": 132.75
+  },
+  "BG68": {
+    "region_id": 82,
+    "distance_km": 32.05
+  },
+  "BG66": {
+    "region_id": 82,
+    "distance_km": 22.11
+  },
+  "BG67": {
+    "region_id": 82,
+    "distance_km": 27.03
+  },
+  "BG57": {
+    "region_id": 84,
+    "distance_km": 37.23
+  },
+  "BG55": {
+    "region_id": 84,
+    "distance_km": 33.79
+  },
+  "BG35": {
+    "region_id": 141,
+    "distance_km": 63.2
+  },
+  "BG34": {
+    "region_id": 84,
+    "distance_km": 71.12
+  },
+  "BG36": {
+    "region_id": 84,
+    "distance_km": 79.69
+  },
+  "BG45": {
+    "region_id": 82,
+    "distance_km": 111.64
+  },
+  "BG46": {
+    "region_id": 81,
+    "distance_km": 114.54
+  },
+  "BG44": {
+    "region_id": 82,
+    "distance_km": 127.73
+  },
+  "BG42": {
+    "region_id": 82,
+    "distance_km": 52.74
+  },
+  "BG41": {
+    "region_id": 82,
+    "distance_km": 80.9
+  },
+  "BG43": {
+    "region_id": 84,
+    "distance_km": 78.37
+  },
+  "BG48": {
+    "region_id": 82,
+    "distance_km": 67.99
+  },
+  "BG24": {
+    "region_id": 141,
+    "distance_km": 89.59
+  },
+  "BG23": {
+    "region_id": 141,
+    "distance_km": 89.33
+  },
+  "BG59": {
+    "region_id": 84,
+    "distance_km": 47.55
+  },
+  "BG58": {
+    "region_id": 84,
+    "distance_km": 27.14
+  },
+  "BG74": {
+    "region_id": 83,
+    "distance_km": 68.38
+  },
+  "BG73": {
+    "region_id": 83,
+    "distance_km": 96.64
+  },
+  "BG72": {
+    "region_id": 83,
+    "distance_km": 75.2
+  },
+  "BG70": {
+    "region_id": 83,
+    "distance_km": 97.63
+  },
+  "BG71": {
+    "region_id": 83,
+    "distance_km": 102.44
+  },
+  "BG22": {
+    "region_id": 141,
+    "distance_km": 79.99
+  },
+  "BG20": {
+    "region_id": 84,
+    "distance_km": 115.35
+  },
+  "BG76": {
+    "region_id": 83,
+    "distance_km": 81.52
+  },
+  "BG75": {
+    "region_id": 144,
+    "distance_km": 92.53
+  },
+  "BG89": {
+    "region_id": 82,
+    "distance_km": 90.83
+  },
+  "BG88": {
+    "region_id": 83,
+    "distance_km": 89.1
+  },
+  "BG49": {
+    "region_id": 82,
+    "distance_km": 49.47
+  },
+  "BG47": {
+    "region_id": 82,
+    "distance_km": 83.37
+  },
+  "BG11": {
+    "region_id": 141,
+    "distance_km": 114.27
+  },
+  "BG17": {
+    "region_id": 141,
+    "distance_km": 95.93
+  },
+  "BG60": {
+    "region_id": 82,
+    "distance_km": 62.96
+  },
+  "FR69": {
+    "region_id": 67,
+    "distance_km": 31.67
+  },
+  "FR73": {
+    "region_id": 71,
+    "distance_km": 55.93
+  },
+  "FR74": {
+    "region_id": 70,
+    "distance_km": 31.41
+  },
+  "FR04": {
+    "region_id": 31,
+    "distance_km": 71.63
+  },
+  "FR05": {
+    "region_id": 71,
+    "distance_km": 58.87
+  },
+  "FR06": {
+    "region_id": 32,
+    "distance_km": 32.31
+  },
+  "FR13": {
+    "region_id": 31,
+    "distance_km": 72.64
+  },
+  "FR83": {
+    "region_id": 31,
+    "distance_km": 100.56
+  },
+  "FR84": {
+    "region_id": 31,
+    "distance_km": 44.55
+  },
+  "FR20": {
+    "region_id": 32,
+    "distance_km": 243.99
+  },
+  "GBHU": {
+    "region_id": 60,
+    "distance_km": 46.9
+  },
+  "GBTF": {
+    "region_id": 61,
+    "distance_km": 89.81
+  },
+  "GBHR": {
+    "region_id": 55,
+    "distance_km": 85.02
+  },
+  "FR47": {
+    "region_id": 30,
+    "distance_km": 81.85
+  },
+  "FR64": {
+    "region_id": 19,
+    "distance_km": 79.26
+  },
+  "FR79": {
+    "region_id": 25,
+    "distance_km": 34.07
+  },
+  "FR86": {
+    "region_id": 27,
+    "distance_km": 91.99
+  },
+  "FR87": {
+    "region_id": 28,
+    "distance_km": 56.68
+  },
+  "FR09": {
+    "region_id": 22,
+    "distance_km": 86.49
+  },
+  "FR11": {
+    "region_id": 22,
+    "distance_km": 59.35
+  },
+  "FR12": {
+    "region_id": 30,
+    "distance_km": 91.29
+  },
+  "FR30": {
+    "region_id": 65,
+    "distance_km": 53.18
+  },
+  "FR31": {
+    "region_id": 30,
+    "distance_km": 75.82
+  },
+  "FR32": {
+    "region_id": 30,
+    "distance_km": 98.28
+  },
+  "FR34": {
+    "region_id": 65,
+    "distance_km": 52.45
+  },
+  "FR46": {
+    "region_id": 30,
+    "distance_km": 60.23
+  },
+  "FR48": {
+    "region_id": 65,
+    "distance_km": 54.33
+  },
+  "FR65": {
+    "region_id": 19,
+    "distance_km": 58.34
+  },
+  "FR67": {
+    "region_id": 42,
+    "distance_km": 30.02
+  },
+  "FR68": {
+    "region_id": 42,
+    "distance_km": 63.95
+  },
+  "FR88": {
+    "region_id": 69,
+    "distance_km": 70.4
+  },
+  "FR44": {
+    "region_id": 24,
+    "distance_km": 101.49
+  },
+  "FR49": {
+    "region_id": 27,
+    "distance_km": 42.76
+  },
+  "FR53": {
+    "region_id": 24,
+    "distance_km": 97.19
+  },
+  "FR72": {
+    "region_id": 27,
+    "distance_km": 43.6
+  },
+  "FR85": {
+    "region_id": 25,
+    "distance_km": 55.22
+  },
+  "FR22": {
+    "region_id": 23,
+    "distance_km": 68.68
+  },
+  "FR29": {
+    "region_id": 23,
+    "distance_km": 46.92
+  },
+  "FR35": {
+    "region_id": 24,
+    "distance_km": 30.56
+  },
+  "FR56": {
+    "region_id": 23,
+    "distance_km": 15.43
+  },
+  "FR16": {
+    "region_id": 25,
+    "distance_km": 78.28
+  },
+  "FR17": {
+    "region_id": 25,
+    "distance_km": 26.65
+  },
+  "FR19": {
+    "region_id": 28,
+    "distance_km": 82.97
+  },
+  "FR23": {
+    "region_id": 66,
+    "distance_km": 92.14
+  },
+  "FR24": {
+    "region_id": 28,
+    "distance_km": 59.13
+  },
+  "FR33": {
+    "region_id": 29,
+    "distance_km": 58.55
+  },
+  "FR40": {
+    "region_id": 29,
+    "distance_km": 48.86
+  },
+  "FR38": {
+    "region_id": 71,
+    "distance_km": 21.31
+  },
+  "FR42": {
+    "region_id": 67,
+    "distance_km": 72.41
+  },
+  "FR43": {
+    "region_id": 66,
+    "distance_km": 105.01
+  },
+  "FR63": {
+    "region_id": 66,
+    "distance_km": 6.33
+  },
+  "FR66": {
+    "region_id": 22,
+    "distance_km": 31.45
+  },
+  "FR81": {
+    "region_id": 30,
+    "distance_km": 99.48
+  },
+  "FR82": {
+    "region_id": 30,
+    "distance_km": 30.54
+  },
+  "FR01": {
+    "region_id": 67,
+    "distance_km": 51.74
+  },
+  "FR03": {
+    "region_id": 66,
+    "distance_km": 90.35
+  },
+  "FR07": {
+    "region_id": 65,
+    "distance_km": 65.33
+  },
+  "FR15": {
+    "region_id": 66,
+    "distance_km": 105.72
+  },
+  "FR26": {
+    "region_id": 71,
+    "distance_km": 89.53
+  },
+  "GBST": {
+    "region_id": 61,
+    "distance_km": 69.58
+  },
+  "GBWS": {
+    "region_id": 61,
+    "distance_km": 96.22
+  },
+  "GBKT": {
+    "region_id": 63,
+    "distance_km": 74.87
+  },
+  "GBRH": {
+    "region_id": 63,
+    "distance_km": 71.4
+  },
+  "GBB8": {
+    "region_id": 55,
+    "distance_km": 76.53
+  },
+  "AT87": {
+    "region_id": 113,
+    "distance_km": 24.32
+  },
+  "AT89": {
+    "region_id": 113,
+    "distance_km": 85.16
+  },
+  "AT88": {
+    "region_id": 113,
+    "distance_km": 54.16
+  },
+  "AT86": {
+    "region_id": 113,
+    "distance_km": 54.13
+  },
+  "AT64": {
+    "region_id": 102,
+    "distance_km": 83.13
+  },
+  "AT60": {
+    "region_id": 110,
+    "distance_km": 68.69
+  },
+  "AT61": {
+    "region_id": 110,
+    "distance_km": 87.87
+  },
+  "AT62": {
+    "region_id": 110,
+    "distance_km": 31.2
+  },
+  "AT63": {
+    "region_id": 110,
+    "distance_km": 18.08
+  },
+  "AT65": {
+    "region_id": 102,
+    "distance_km": 36.6
+  },
+  "AT99": {
+    "region_id": 110,
+    "distance_km": 82.35
+  },
+  "AT66": {
+    "region_id": 102,
+    "distance_km": 57.01
+  },
+  "AT67": {
+    "region_id": 102,
+    "distance_km": 15.4
+  },
+  "AT69": {
+    "region_id": 102,
+    "distance_km": 22.02
+  },
+  "BG62": {
+    "region_id": 82,
+    "distance_km": 68.25
+  },
+  "BG61": {
+    "region_id": 83,
+    "distance_km": 107.98
+  },
+  "BG79": {
+    "region_id": 83,
+    "distance_km": 77.03
+  },
+  "BG78": {
+    "region_id": 83,
+    "distance_km": 81.73
+  },
+  "BG77": {
+    "region_id": 83,
+    "distance_km": 41.9
+  },
+  "BG92": {
+    "region_id": 83,
+    "distance_km": 29.63
+  },
+  "BG91": {
+    "region_id": 83,
+    "distance_km": 65.3
+  },
+  "BG37": {
+    "region_id": 141,
+    "distance_km": 56.67
+  },
+  "BG32": {
+    "region_id": 84,
+    "distance_km": 41.69
+  },
+  "BG30": {
+    "region_id": 84,
+    "distance_km": 71.55
+  },
+  "BG31": {
+    "region_id": 84,
+    "distance_km": 79.44
+  },
+  "BG33": {
+    "region_id": 84,
+    "distance_km": 53.33
+  },
+  "BG50": {
+    "region_id": 84,
+    "distance_km": 110.74
+  },
+  "BG51": {
+    "region_id": 83,
+    "distance_km": 93.22
+  },
+  "BG52": {
+    "region_id": 84,
+    "distance_km": 79.0
+  },
+  "EE76": {
+    "region_id": 194,
+    "distance_km": 85.52
+  },
+  "EE74": {
+    "region_id": 194,
+    "distance_km": 86.92
+  },
+  "EE75": {
+    "region_id": 158,
+    "distance_km": 123.59
+  },
+  "EE10": {
+    "region_id": 194,
+    "distance_km": 84.63
+  },
+  "EE11": {
+    "region_id": 194,
+    "distance_km": 90.37
+  },
+  "EE13": {
+    "region_id": 194,
+    "distance_km": 85.58
+  },
+  "EE15": {
+    "region_id": 194,
+    "distance_km": 84.41
+  },
+  "EE92": {
+    "region_id": 193,
+    "distance_km": 135.56
+  },
+  "EE41": {
+    "region_id": 158,
+    "distance_km": 63.73
+  },
+  "EE43": {
+    "region_id": 158,
+    "distance_km": 94.37
+  },
+  "EE72": {
+    "region_id": 158,
+    "distance_km": 87.88
+  },
+  "EE73": {
+    "region_id": 158,
+    "distance_km": 92.74
+  },
+  "EE49": {
+    "region_id": 158,
+    "distance_km": 50.17
+  },
+  "EE42": {
+    "region_id": 158,
+    "distance_km": 42.8
+  },
+  "EE48": {
+    "region_id": 158,
+    "distance_km": 69.9
+  },
+  "EE90": {
+    "region_id": 193,
+    "distance_km": 123.88
+  },
+  "EE91": {
+    "region_id": 193,
+    "distance_km": 102.05
+  },
+  "EE45": {
+    "region_id": 158,
+    "distance_km": 119.06
+  },
+  "EE44": {
+    "region_id": 158,
+    "distance_km": 97.19
+  },
+  "EE46": {
+    "region_id": 158,
+    "distance_km": 91.3
+  },
+  "EE86": {
+    "region_id": 157,
+    "distance_km": 73.27
+  },
+  "EE88": {
+    "region_id": 157,
+    "distance_km": 136.03
+  },
+  "EE80": {
+    "region_id": 157,
+    "distance_km": 99.84
+  },
+  "EE87": {
+    "region_id": 157,
+    "distance_km": 121.75
+  },
+  "EE63": {
+    "region_id": 158,
+    "distance_km": 58.09
+  },
+  "EE64": {
+    "region_id": 158,
+    "distance_km": 49.52
+  },
+  "EE79": {
+    "region_id": 158,
+    "distance_km": 135.34
+  },
+  "EE78": {
+    "region_id": 193,
+    "distance_km": 138.43
+  },
+  "EE94": {
+    "region_id": 193,
+    "distance_km": 153.81
+  },
+  "EE93": {
+    "region_id": 156,
+    "distance_km": 177.97
+  },
+  "EE60": {
+    "region_id": 158,
+    "distance_km": 51.58
+  },
+  "EE61": {
+    "region_id": 158,
+    "distance_km": 71.97
+  },
+  "EE62": {
+    "region_id": 158,
+    "distance_km": 52.2
+  },
+  "EE50": {
+    "region_id": 158,
+    "distance_km": 30.15
+  },
+  "EE67": {
+    "region_id": 157,
+    "distance_km": 66.16
+  },
+  "EE68": {
+    "region_id": 157,
+    "distance_km": 47.68
+  },
+  "EE69": {
+    "region_id": 157,
+    "distance_km": 56.6
+  },
+  "EE70": {
+    "region_id": 158,
+    "distance_km": 81.12
+  },
+  "EE71": {
+    "region_id": 157,
+    "distance_km": 94.18
+  },
+  "EE66": {
+    "region_id": 157,
+    "distance_km": 72.36
+  },
+  "EE65": {
+    "region_id": 157,
+    "distance_km": 105.12
+  },
+  "PT48": {
+    "region_id": 3,
+    "distance_km": 40.79
+  },
+  "PT46": {
+    "region_id": 3,
+    "distance_km": 25.23
+  },
+  "PT26": {
+    "region_id": 2,
+    "distance_km": 82.92
+  },
+  "PT27": {
+    "region_id": 2,
+    "distance_km": 84.79
+  },
+  "PT10": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT11": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT12": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT50": {
+    "region_id": 3,
+    "distance_km": 44.49
+  },
+  "PT44": {
+    "region_id": 3,
+    "distance_km": 24.85
+  },
+  "PT45": {
+    "region_id": 3,
+    "distance_km": 27.94
+  },
+  "PT16": {
+    "region_id": 2,
+    "distance_km": 69.03
+  },
+  "PT74": {
+    "region_id": 2,
+    "distance_km": 89.58
+  },
+  "PT73": {
+    "region_id": 5,
+    "distance_km": 75.28
+  },
+  "PT18": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT19": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT25": {
+    "region_id": 2,
+    "distance_km": 53.1
+  },
+  "PT14": {
+    "region_id": 2,
+    "distance_km": 76.36
+  },
+  "PT60": {
+    "region_id": 2,
+    "distance_km": 70.81
+  },
+  "PT13": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT15": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT17": {
+    "region_id": 2,
+    "distance_km": 70.32
+  },
+  "PT93": {
+    "region_id": 1,
+    "distance_km": 967.84
+  },
+  "PT90": {
+    "region_id": 1,
+    "distance_km": 960.89
+  },
+  "PT92": {
+    "region_id": 1,
+    "distance_km": 945.08
+  },
+  "PT91": {
+    "region_id": 1,
+    "distance_km": 952.4
+  },
+  "PT94": {
+    "region_id": 1,
+    "distance_km": 890.25
+  },
+  "PT35": {
+    "region_id": 6,
+    "distance_km": 61.9
+  },
+  "PT63": {
+    "region_id": 6,
+    "distance_km": 20.98
+  },
+  "PT64": {
+    "region_id": 6,
+    "distance_km": 48.9
+  },
+  "PT62": {
+    "region_id": 6,
+    "distance_km": 61.78
+  },
+  "PT51": {
+    "region_id": 6,
+    "distance_km": 57.87
+  },
+  "PT24": {
+    "region_id": 2,
+    "distance_km": 55.84
+  },
+  "PT22": {
+    "region_id": 2,
+    "distance_km": 49.01
+  },
+  "PT23": {
+    "region_id": 2,
+    "distance_km": 23.33
+  },
+  "PT20": {
+    "region_id": 2,
+    "distance_km": 8.29
+  },
+  "PT21": {
+    "region_id": 2,
+    "distance_km": 31.62
+  },
+  "PT61": {
+    "region_id": 2,
+    "distance_km": 82.4
+  },
+  "PT40": {
+    "region_id": 3,
+    "distance_km": 27.66
+  },
+  "PT41": {
+    "region_id": 3,
+    "distance_km": 27.66
+  },
+  "PT42": {
+    "region_id": 3,
+    "distance_km": 27.66
+  },
+  "PT43": {
+    "region_id": 3,
+    "distance_km": 27.66
+  },
+  "PT30": {
+    "region_id": 2,
+    "distance_km": 108.84
+  },
+  "PT31": {
+    "region_id": 2,
+    "distance_km": 99.22
+  },
+  "PT33": {
+    "region_id": 2,
+    "distance_km": 98.62
+  },
+  "PT32": {
+    "region_id": 2,
+    "distance_km": 103.67
+  },
+  "PT34": {
+    "region_id": 6,
+    "distance_km": 77.4
+  },
+  "PT70": {
+    "region_id": 2,
+    "distance_km": 84.94
+  },
+  "PT71": {
+    "region_id": 5,
+    "distance_km": 61.71
+  },
+  "PT29": {
+    "region_id": 2,
+    "distance_km": 72.89
+  },
+  "PT82": {
+    "region_id": 1,
+    "distance_km": 39.89
+  },
+  "PT89": {
+    "region_id": 1,
+    "distance_km": 53.42
+  },
+  "PT86": {
+    "region_id": 1,
+    "distance_km": 60.71
+  },
+  "PT80": {
+    "region_id": 1,
+    "distance_km": 48.33
+  },
+  "PT84": {
+    "region_id": 1,
+    "distance_km": 45.62
+  },
+  "PT81": {
+    "region_id": 1,
+    "distance_km": 22.18
+  },
+  "PT85": {
+    "region_id": 1,
+    "distance_km": 50.26
+  },
+  "PT87": {
+    "region_id": 1,
+    "distance_km": 52.8
+  },
+  "PT83": {
+    "region_id": 1,
+    "distance_km": 39.32
+  },
+  "PT88": {
+    "region_id": 1,
+    "distance_km": 35.61
+  },
+  "PT75": {
+    "region_id": 1,
+    "distance_km": 90.63
+  },
+  "PT28": {
+    "region_id": 2,
+    "distance_km": 78.71
+  },
+  "PT49": {
+    "region_id": 3,
+    "distance_km": 59.2
+  },
+  "PT36": {
+    "region_id": 3,
+    "distance_km": 64.33
+  },
+  "PT95": {
+    "region_id": 2,
+    "distance_km": 1452.18
+  },
+  "PT96": {
+    "region_id": 2,
+    "distance_km": 1440.19
+  },
+  "PT97": {
+    "region_id": 2,
+    "distance_km": 1600.13
+  },
+  "PT98": {
+    "region_id": 2,
+    "distance_km": 1678.63
+  },
+  "PT99": {
+    "region_id": 2,
+    "distance_km": 1694.22
+  },
+  "RO51": {
+    "region_id": 146,
+    "distance_km": 94.08
+  },
+  "RO31": {
+    "region_id": 142,
+    "distance_km": 82.93
+  },
+  "RO11": {
+    "region_id": 145,
+    "distance_km": 53.22
+  },
+  "RO60": {
+    "region_id": 147,
+    "distance_km": 78.25
+  },
+  "RO41": {
+    "region_id": 140,
+    "distance_km": 87.37
+  },
+  "RO42": {
+    "region_id": 148,
+    "distance_km": 56.79
+  },
+  "RO71": {
+    "region_id": 149,
+    "distance_km": 85.87
+  },
+  "RO81": {
+    "region_id": 144,
+    "distance_km": 82.34
+  },
+  "PT54": {
+    "region_id": 3,
+    "distance_km": 72.9
+  },
+  "RO05": {
+    "region_id": 145,
+    "distance_km": 70.93
+  },
+  "RO06": {
+    "region_id": 145,
+    "distance_km": 65.63
+  },
+  "RO12": {
+    "region_id": 147,
+    "distance_km": 81.14
+  },
+  "RO32": {
+    "region_id": 142,
+    "distance_km": 36.62
+  },
+  "RO40": {
+    "region_id": 143,
+    "distance_km": 70.6
+  },
+  "RO90": {
+    "region_id": 144,
+    "distance_km": 48.98
+  },
+  "RO52": {
+    "region_id": 147,
+    "distance_km": 94.93
+  },
+  "RO13": {
+    "region_id": 145,
+    "distance_km": 6.24
+  },
+  "RO20": {
+    "region_id": 146,
+    "distance_km": 106.7
+  },
+  "RO80": {
+    "region_id": 147,
+    "distance_km": 92.34
+  },
+  "RO21": {
+    "region_id": 146,
+    "distance_km": 21.87
+  },
+  "RO53": {
+    "region_id": 149,
+    "distance_km": 83.52
+  },
+  "RO33": {
+    "region_id": 146,
+    "distance_km": 81.96
+  },
+  "RO92": {
+    "region_id": 144,
+    "distance_km": 98.01
+  },
+  "RO70": {
+    "region_id": 176,
+    "distance_km": 76.45
+  },
+  "RO50": {
+    "region_id": 145,
+    "distance_km": 81.39
+  },
+  "RO01": {
+    "region_id": 145,
+    "distance_km": 63.04
+  },
+  "RO02": {
+    "region_id": 145,
+    "distance_km": 74.88
+  },
+  "RO03": {
+    "region_id": 145,
+    "distance_km": 74.88
+  },
+  "RO04": {
+    "region_id": 145,
+    "distance_km": 75.61
+  },
+  "CZ28": {
+    "region_id": 112,
+    "distance_km": 72.19
+  },
+  "CZ27": {
+    "region_id": 112,
+    "distance_km": 14.56
+  },
+  "CZ29": {
+    "region_id": 112,
+    "distance_km": 32.49
+  },
+  "CZ25": {
+    "region_id": 112,
+    "distance_km": 9.58
+  },
+  "CZ26": {
+    "region_id": 112,
+    "distance_km": 70.0
+  },
+  "CZ40": {
+    "region_id": 112,
+    "distance_km": 63.22
+  },
+  "CZ43": {
+    "region_id": 105,
+    "distance_km": 58.7
+  },
+  "CZ44": {
+    "region_id": 105,
+    "distance_km": 80.21
+  },
+  "CZ41": {
+    "region_id": 112,
+    "distance_km": 46.44
+  },
+  "CZ76": {
+    "region_id": 125,
+    "distance_km": 74.68
+  },
+  "DE70": {
+    "region_id": 100,
+    "distance_km": 7.2
+  },
+  "DE71": {
+    "region_id": 100,
+    "distance_km": 15.99
+  },
+  "DE73": {
+    "region_id": 100,
+    "distance_km": 32.42
+  },
+  "DE74": {
+    "region_id": 100,
+    "distance_km": 33.9
+  },
+  "DE69": {
+    "region_id": 100,
+    "distance_km": 71.81
+  },
+  "DE75": {
+    "region_id": 100,
+    "distance_km": 38.18
+  },
+  "DE78": {
+    "region_id": 43,
+    "distance_km": 51.64
+  },
+  "DE79": {
+    "region_id": 43,
+    "distance_km": 72.46
+  },
+  "DE88": {
+    "region_id": 102,
+    "distance_km": 64.2
+  },
+  "DE89": {
+    "region_id": 101,
+    "distance_km": 78.09
+  },
+  "DE80": {
+    "region_id": 101,
+    "distance_km": 81.97
+  },
+  "DE81": {
+    "region_id": 101,
+    "distance_km": 81.43
+  },
+  "DE82": {
+    "region_id": 101,
+    "distance_km": 62.36
+  },
+  "DE85": {
+    "region_id": 101,
+    "distance_km": 44.95
+  },
+  "DE86": {
+    "region_id": 101,
+    "distance_km": 69.71
+  },
+  "DE84": {
+    "region_id": 109,
+    "distance_km": 79.73
+  },
+  "DE94": {
+    "region_id": 111,
+    "distance_km": 63.63
+  },
+  "DE92": {
+    "region_id": 109,
+    "distance_km": 47.98
+  },
+  "DE93": {
+    "region_id": 109,
+    "distance_km": 34.99
+  },
+  "DE95": {
+    "region_id": 103,
+    "distance_km": 70.62
+  },
+  "DE96": {
+    "region_id": 103,
+    "distance_km": 37.39
+  },
+  "DE90": {
+    "region_id": 101,
+    "distance_km": 86.93
+  },
+  "DE91": {
+    "region_id": 103,
+    "distance_km": 74.34
+  },
+  "DE63": {
+    "region_id": 41,
+    "distance_km": 71.06
+  },
+  "DE97": {
+    "region_id": 103,
+    "distance_km": 35.04
+  },
+  "DE20": {
+    "region_id": 97,
+    "distance_km": 25.85
+  },
+  "DE60": {
+    "region_id": 41,
+    "distance_km": 45.32
+  },
+  "DE64": {
+    "region_id": 41,
+    "distance_km": 33.22
+  },
+  "DE65": {
+    "region_id": 41,
+    "distance_km": 38.4
+  },
+  "DE68": {
+    "region_id": 41,
+    "distance_km": 66.78
+  },
+  "DE35": {
+    "region_id": 104,
+    "distance_km": 30.74
+  },
+  "DE34": {
+    "region_id": 104,
+    "distance_km": 42.04
+  },
+  "DE26": {
+    "region_id": 73,
+    "distance_km": 10.66
+  },
+  "ES36": {
+    "region_id": 4,
+    "distance_km": 39.52
+  },
+  "ES07": {
+    "region_id": 21,
+    "distance_km": 216.22
+  },
+  "ES30": {
+    "region_id": 17,
+    "distance_km": 49.36
+  },
+  "ES52": {
+    "region_id": 16,
+    "distance_km": 211.25
+  },
+  "ES31": {
+    "region_id": 14,
+    "distance_km": 59.3
+  },
+  "ES48": {
+    "region_id": 14,
+    "distance_km": 95.58
+  },
+  "ES20": {
+    "region_id": 14,
+    "distance_km": 86.01
+  },
+  "ES01": {
+    "region_id": 14,
+    "distance_km": 19.72
+  },
+  "ES26": {
+    "region_id": 14,
+    "distance_km": 17.22
+  },
+  "ES03": {
+    "region_id": 17,
+    "distance_km": 123.58
+  },
+  "ES27": {
+    "region_id": 7,
+    "distance_km": 60.17
+  },
+  "ES32": {
+    "region_id": 4,
+    "distance_km": 58.11
+  },
+  "ES17": {
+    "region_id": 22,
+    "distance_km": 101.49
+  },
+  "ES25": {
+    "region_id": 21,
+    "distance_km": 66.4
+  },
+  "ES43": {
+    "region_id": 21,
+    "distance_km": 24.79
+  },
+  "ES06": {
+    "region_id": 5,
+    "distance_km": 37.45
+  },
+  "ES10": {
+    "region_id": 10,
+    "distance_km": 89.84
+  },
+  "ES15": {
+    "region_id": 4,
+    "distance_km": 74.21
+  },
+  "ES12": {
+    "region_id": 11,
+    "distance_km": 95.46
+  },
+  "ES46": {
+    "region_id": 11,
+    "distance_km": 29.22
+  },
+  "FI00": {
+    "region_id": 194,
+    "distance_km": 26.45
+  },
+  "FI01": {
+    "region_id": 194,
+    "distance_km": 35.9
+  },
+  "FI02": {
+    "region_id": 194,
+    "distance_km": 19.12
+  },
+  "FI04": {
+    "region_id": 194,
+    "distance_km": 42.75
+  },
+  "FI05": {
+    "region_id": 194,
+    "distance_km": 49.98
+  },
+  "FI08": {
+    "region_id": 194,
+    "distance_km": 23.82
+  },
+  "FI10": {
+    "region_id": 193,
+    "distance_km": 12.53
+  },
+  "FI06": {
+    "region_id": 188,
+    "distance_km": 70.0
+  },
+  "FI07": {
+    "region_id": 188,
+    "distance_km": 65.77
+  },
+  "FI25": {
+    "region_id": 195,
+    "distance_km": 53.6
+  },
+  "FI20": {
+    "region_id": 193,
+    "distance_km": 70.74
+  },
+  "FI23": {
+    "region_id": 192,
+    "distance_km": 59.06
+  },
+  "FI32": {
+    "region_id": 195,
+    "distance_km": 19.16
+  },
+  "FI27": {
+    "region_id": 192,
+    "distance_km": 8.72
+  },
+  "FI28": {
+    "region_id": 192,
+    "distance_km": 21.82
+  },
+  "FI29": {
+    "region_id": 192,
+    "distance_km": 24.45
+  },
+  "FI38": {
+    "region_id": 192,
+    "distance_km": 47.98
+  },
+  "FI13": {
+    "region_id": 195,
+    "distance_km": 62.85
+  },
+  "FI14": {
+    "region_id": 195,
+    "distance_km": 81.52
+  },
+  "FI12": {
+    "region_id": 188,
+    "distance_km": 67.56
+  },
+  "FI30": {
+    "region_id": 195,
+    "distance_km": 24.21
+  },
+  "FI31": {
+    "region_id": 195,
+    "distance_km": 19.28
+  },
+  "FI39": {
+    "region_id": 197,
+    "distance_km": 79.75
+  },
+  "FI37": {
+    "region_id": 195,
+    "distance_km": 41.68
+  },
+  "FI33": {
+    "region_id": 195,
+    "distance_km": 64.77
+  },
+  "FI35": {
+    "region_id": 197,
+    "distance_km": 85.25
+  },
+  "FI36": {
+    "region_id": 195,
+    "distance_km": 69.43
+  },
+  "FI15": {
+    "region_id": 188,
+    "distance_km": 25.09
+  },
+  "FI17": {
+    "region_id": 188,
+    "distance_km": 86.95
+  },
+  "FI45": {
+    "region_id": 188,
+    "distance_km": 29.8
+  },
+  "FI46": {
+    "region_id": 188,
+    "distance_km": 55.12
+  },
+  "FI47": {
+    "region_id": 188,
+    "distance_km": 38.72
+  },
+  "FI49": {
+    "region_id": 188,
+    "distance_km": 55.43
+  },
+  "FI54": {
+    "region_id": 189,
+    "distance_km": 54.78
+  },
+  "FI55": {
+    "region_id": 189,
+    "distance_km": 25.56
+  },
+  "FI59": {
+    "region_id": 189,
+    "distance_km": 94.12
+  },
+  "FI52": {
+    "region_id": 189,
+    "distance_km": 37.07
+  },
+  "FI71": {
+    "region_id": 199,
+    "distance_km": 61.53
+  },
+  "FI70": {
+    "region_id": 199,
+    "distance_km": 26.07
+  },
+  "FI78": {
+    "region_id": 199,
+    "distance_km": 53.6
+  },
+  "FI80": {
+    "region_id": 190,
+    "distance_km": 4.51
+  },
+  "FI81": {
+    "region_id": 190,
+    "distance_km": 30.79
+  },
+  "FI83": {
+    "region_id": 190,
+    "distance_km": 51.38
+  },
+  "FI41": {
+    "region_id": 197,
+    "distance_km": 43.41
+  },
+  "FI42": {
+    "region_id": 197,
+    "distance_km": 17.96
+  },
+  "FI44": {
+    "region_id": 197,
+    "distance_km": 53.67
+  },
+  "FI61": {
+    "region_id": 191,
+    "distance_km": 46.4
+  },
+  "FI62": {
+    "region_id": 198,
+    "distance_km": 45.32
+  },
+  "FI63": {
+    "region_id": 191,
+    "distance_km": 63.9
+  },
+  "FI65": {
+    "region_id": 191,
+    "distance_km": 67.38
+  },
+  "FI66": {
+    "region_id": 191,
+    "distance_km": 46.78
+  },
+  "FI64": {
+    "region_id": 191,
+    "distance_km": 63.72
+  },
+  "FI68": {
+    "region_id": 198,
+    "distance_km": 20.92
+  },
+  "FI69": {
+    "region_id": 201,
+    "distance_km": 21.81
+  },
+  "FI90": {
+    "region_id": 200,
+    "distance_km": 16.07
+  },
+  "FI91": {
+    "region_id": 200,
+    "distance_km": 50.81
+  },
+  "FI93": {
+    "region_id": 204,
+    "distance_km": 65.77
+  },
+  "FI86": {
+    "region_id": 201,
+    "distance_km": 65.27
+  },
+  "FI88": {
+    "region_id": 203,
+    "distance_km": 49.38
+  },
+  "FI89": {
+    "region_id": 203,
+    "distance_km": 84.16
+  },
+  "FI94": {
+    "region_id": 200,
+    "distance_km": 64.91
+  },
+  "FI95": {
+    "region_id": 200,
+    "distance_km": 86.26
+  },
+  "FI97": {
+    "region_id": 205,
+    "distance_km": 55.33
+  },
+  "ES38": {
+    "region_id": 1,
+    "distance_km": 1255.24
+  },
+  "ES08": {
+    "region_id": 21,
+    "distance_km": 114.98
+  },
+  "DE83": {
+    "region_id": 110,
+    "distance_km": 72.61
+  },
+  "DE87": {
+    "region_id": 102,
+    "distance_km": 52.01
+  },
+  "DE61": {
+    "region_id": 41,
+    "distance_km": 44.81
+  },
+  "DE17": {
+    "region_id": 108,
+    "distance_km": 44.62
+  },
+  "DE18": {
+    "region_id": 96,
+    "distance_km": 62.0
+  },
+  "DE19": {
+    "region_id": 96,
+    "distance_km": 38.12
+  },
+  "CZ58": {
+    "region_id": 114,
+    "distance_km": 71.17
+  },
+  "CZ59": {
+    "region_id": 114,
+    "distance_km": 40.33
+  },
+  "CZ35": {
+    "region_id": 105,
+    "distance_km": 77.79
+  },
+  "CZ36": {
+    "region_id": 105,
+    "distance_km": 64.81
+  },
+  "CZ50": {
+    "region_id": 130,
+    "distance_km": 82.59
+  },
+  "CZ54": {
+    "region_id": 130,
+    "distance_km": 79.72
+  },
+  "CZ55": {
+    "region_id": 130,
+    "distance_km": 61.64
+  },
+  "CZ51": {
+    "region_id": 130,
+    "distance_km": 97.73
+  },
+  "CZ46": {
+    "region_id": 130,
+    "distance_km": 62.99
+  },
+  "CZ77": {
+    "region_id": 125,
+    "distance_km": 52.56
+  },
+  "DE32": {
+    "region_id": 98,
+    "distance_km": 42.03
+  },
+  "DE10": {
+    "region_id": 107,
+    "distance_km": 82.84
+  },
+  "DE12": {
+    "region_id": 107,
+    "distance_km": 73.28
+  },
+  "DE13": {
+    "region_id": 107,
+    "distance_km": 80.9
+  },
+  "DE03": {
+    "region_id": 107,
+    "distance_km": 24.2
+  },
+  "DE14": {
+    "region_id": 107,
+    "distance_km": 86.29
+  },
+  "DE15": {
+    "region_id": 107,
+    "distance_km": 55.38
+  },
+  "DE16": {
+    "region_id": 107,
+    "distance_km": 87.8
+  },
+  "DE72": {
+    "region_id": 100,
+    "distance_km": 48.42
+  },
+  "DE77": {
+    "region_id": 42,
+    "distance_km": 47.91
+  },
+  "CZ30": {
+    "region_id": 109,
+    "distance_km": 80.22
+  },
+  "CZ32": {
+    "region_id": 109,
+    "distance_km": 87.23
+  },
+  "PT53": {
+    "region_id": 6,
+    "distance_km": 95.75
+  },
+  "PT52": {
+    "region_id": 9,
+    "distance_km": 107.14
+  },
+  "UA19": {
+    "region_id": 179,
+    "distance_km": 86.7
+  },
+  "UA20": {
+    "region_id": 174,
+    "distance_km": 25.81
+  },
+  "UA14": {
+    "region_id": 172,
+    "distance_km": 51.33
+  },
+  "UA15": {
+    "region_id": 172,
+    "distance_km": 87.72
+  },
+  "UA16": {
+    "region_id": 171,
+    "distance_km": 33.48
+  },
+  "UA17": {
+    "region_id": 172,
+    "distance_km": 38.59
+  },
+  "UA58": {
+    "region_id": 168,
+    "distance_km": 30.21
+  },
+  "UA59": {
+    "region_id": 169,
+    "distance_km": 50.69
+  },
+  "UA60": {
+    "region_id": 168,
+    "distance_km": 70.27
+  },
+  "UA49": {
+    "region_id": 185,
+    "distance_km": 52.43
+  },
+  "UA50": {
+    "region_id": 178,
+    "distance_km": 2.58
+  },
+  "UA51": {
+    "region_id": 185,
+    "distance_km": 43.16
+  },
+  "UA52": {
+    "region_id": 185,
+    "distance_km": 67.9
+  },
+  "UA53": {
+    "region_id": 178,
+    "distance_km": 25.16
+  },
+  "UA84": {
+    "region_id": 184,
+    "distance_km": 107.97
+  },
+  "UA85": {
+    "region_id": 185,
+    "distance_km": 87.8
+  },
+  "UA87": {
+    "region_id": 182,
+    "distance_km": 45.34
+  },
+  "UA77": {
+    "region_id": 167,
+    "distance_km": 71.03
+  },
+  "UA78": {
+    "region_id": 168,
+    "distance_km": 78.85
+  },
+  "UA61": {
+    "region_id": 187,
+    "distance_km": 78.23
+  },
+  "UA62": {
+    "region_id": 185,
+    "distance_km": 67.36
+  },
+  "UA63": {
+    "region_id": 187,
+    "distance_km": 55.42
+  },
+  "UA64": {
+    "region_id": 185,
+    "distance_km": 71.07
+  },
+  "UA73": {
+    "region_id": 180,
+    "distance_km": 52.19
+  },
+  "UA74": {
+    "region_id": 178,
+    "distance_km": 75.34
+  },
+  "UA75": {
+    "region_id": 178,
+    "distance_km": 74.62
+  },
+  "UA30": {
+    "region_id": 169,
+    "distance_km": 57.91
+  },
+  "UA31": {
+    "region_id": 169,
+    "distance_km": 78.81
+  },
+  "UA32": {
+    "region_id": 179,
+    "distance_km": 78.1
+  },
+  "UA26": {
+    "region_id": 179,
+    "distance_km": 90.05
+  },
+  "UA27": {
+    "region_id": 178,
+    "distance_km": 55.37
+  },
+  "UA28": {
+    "region_id": 178,
+    "distance_km": 73.47
+  },
+  "UA07": {
+    "region_id": 165,
+    "distance_km": 38.87
+  },
+  "UA08": {
+    "region_id": 173,
+    "distance_km": 32.35
+  },
+  "UA09": {
+    "region_id": 165,
+    "distance_km": 23.92
+  },
+  "UA01": {
+    "region_id": 173,
+    "distance_km": 41.31
+  },
+  "UA02": {
+    "region_id": 173,
+    "distance_km": 41.31
+  },
+  "UA03": {
+    "region_id": 173,
+    "distance_km": 41.31
+  },
+  "UA04": {
+    "region_id": 173,
+    "distance_km": 41.31
+  },
+  "UA92": {
+    "region_id": 183,
+    "distance_km": 104.03
+  },
+  "UA93": {
+    "region_id": 183,
+    "distance_km": 61.22
+  },
+  "UA79": {
+    "region_id": 167,
+    "distance_km": 31.47
+  },
+  "UA80": {
+    "region_id": 150,
+    "distance_km": 84.07
+  },
+  "UA81": {
+    "region_id": 167,
+    "distance_km": 62.18
+  },
+  "UA82": {
+    "region_id": 167,
+    "distance_km": 83.5
+  },
+  "UA54": {
+    "region_id": 177,
+    "distance_km": 85.24
+  },
+  "UA55": {
+    "region_id": 177,
+    "distance_km": 88.42
+  },
+  "UA56": {
+    "region_id": 180,
+    "distance_km": 105.9
+  },
+  "UA57": {
+    "region_id": 180,
+    "distance_km": 85.31
+  },
+  "UA65": {
+    "region_id": 175,
+    "distance_km": 68.55
+  },
+  "UA66": {
+    "region_id": 176,
+    "distance_km": 80.95
+  },
+  "UA67": {
+    "region_id": 177,
+    "distance_km": 92.16
+  },
+  "UA68": {
+    "region_id": 175,
+    "distance_km": 45.94
+  },
+  "UA36": {
+    "region_id": 185,
+    "distance_km": 83.78
+  },
+  "UA37": {
+    "region_id": 186,
+    "distance_km": 50.41
+  },
+  "UA38": {
+    "region_id": 186,
+    "distance_km": 58.19
+  },
+  "UA39": {
+    "region_id": 179,
+    "distance_km": 74.46
+  },
+  "UA33": {
+    "region_id": 169,
+    "distance_km": 41.54
+  },
+  "UA34": {
+    "region_id": 153,
+    "distance_km": 74.8
+  },
+  "UA35": {
+    "region_id": 169,
+    "distance_km": 91.89
+  },
+  "UA40": {
+    "region_id": 187,
+    "distance_km": 68.73
+  },
+  "UA41": {
+    "region_id": 171,
+    "distance_km": 66.62
+  },
+  "UA42": {
+    "region_id": 186,
+    "distance_km": 40.66
+  },
+  "UA47": {
+    "region_id": 167,
+    "distance_km": 92.36
+  },
+  "UA48": {
+    "region_id": 169,
+    "distance_km": 75.82
+  },
+  "UA21": {
+    "region_id": 166,
+    "distance_km": 34.24
+  },
+  "UA22": {
+    "region_id": 166,
+    "distance_km": 34.18
+  },
+  "UA23": {
+    "region_id": 166,
+    "distance_km": 42.61
+  },
+  "UA24": {
+    "region_id": 176,
+    "distance_km": 59.85
+  },
+  "UA43": {
+    "region_id": 150,
+    "distance_km": 75.63
+  },
+  "UA44": {
+    "region_id": 150,
+    "distance_km": 48.51
+  },
+  "UA45": {
+    "region_id": 150,
+    "distance_km": 28.71
+  },
+  "UA88": {
+    "region_id": 139,
+    "distance_km": 11.66
+  },
+  "UA89": {
+    "region_id": 139,
+    "distance_km": 17.41
+  },
+  "UA90": {
+    "region_id": 139,
+    "distance_km": 77.39
+  },
+  "UA69": {
+    "region_id": 181,
+    "distance_km": 30.22
+  },
+  "UA70": {
+    "region_id": 185,
+    "distance_km": 125.29
+  },
+  "UA71": {
+    "region_id": 182,
+    "distance_km": 68.79
+  },
+  "UA72": {
+    "region_id": 181,
+    "distance_km": 64.22
+  },
+  "UA10": {
+    "region_id": 173,
+    "distance_km": 99.04
+  },
+  "UA11": {
+    "region_id": 165,
+    "distance_km": 48.31
+  },
+  "UA12": {
+    "region_id": 165,
+    "distance_km": 84.99
+  },
+  "UA13": {
+    "region_id": 166,
+    "distance_km": 80.82
+  },
+  "SK95": {
+    "region_id": 115,
+    "distance_km": 80.91
+  },
+  "SK93": {
+    "region_id": 117,
+    "distance_km": 85.3
+  },
+  "SK94": {
+    "region_id": 115,
+    "distance_km": 54.55
+  },
+  "SK08": {
+    "region_id": 136,
+    "distance_km": 98.08
+  },
+  "SK06": {
+    "region_id": 139,
+    "distance_km": 45.86
+  },
+  "SK05": {
+    "region_id": 138,
+    "distance_km": 55.14
+  },
+  "SK09": {
+    "region_id": 139,
+    "distance_km": 67.02
+  },
+  "SK92": {
+    "region_id": 115,
+    "distance_km": 30.19
+  },
+  "SK90": {
+    "region_id": 114,
+    "distance_km": 80.97
+  },
+  "SK91": {
+    "region_id": 115,
+    "distance_km": 40.51
+  },
+  "SK01": {
+    "region_id": 125,
+    "distance_km": 110.59
+  },
+  "SK97": {
+    "region_id": 138,
+    "distance_km": 80.67
+  },
+  "SK02": {
+    "region_id": 138,
+    "distance_km": 73.89
+  },
+  "SK03": {
+    "region_id": 138,
+    "distance_km": 19.0
+  },
+  "TR02": {
+    "region_id": 181,
+    "distance_km": 1034.82
+  },
+  "TR03": {
+    "region_id": 82,
+    "distance_km": 541.93
+  },
+  "TR04": {
+    "region_id": 182,
+    "distance_km": 1024.31
+  },
+  "TR05": {
+    "region_id": 181,
+    "distance_km": 668.2
+  },
+  "TR07": {
+    "region_id": 82,
+    "distance_km": 794.66
+  },
+  "TR08": {
+    "region_id": 182,
+    "distance_km": 748.91
+  },
+  "TR09": {
+    "region_id": 75,
+    "distance_km": 407.43
+  },
+  "TR10": {
+    "region_id": 82,
+    "distance_km": 344.86
+  },
+  "TR11": {
+    "region_id": 83,
+    "distance_km": 426.02
+  },
+  "TR12": {
+    "region_id": 181,
+    "distance_km": 932.45
+  },
+  "TR13": {
+    "region_id": 182,
+    "distance_km": 1122.51
+  },
+  "TR14": {
+    "region_id": 83,
+    "distance_km": 496.63
+  },
+  "TR15": {
+    "region_id": 82,
+    "distance_km": 624.68
+  },
+  "TR16": {
+    "region_id": 82,
+    "distance_km": 337.98
+  },
+  "TR17": {
+    "region_id": 82,
+    "distance_km": 205.88
+  },
+  "TR43": {
+    "region_id": 82,
+    "distance_km": 436.54
+  },
+  "TR44": {
+    "region_id": 181,
+    "distance_km": 956.99
+  },
+  "TR45": {
+    "region_id": 82,
+    "distance_km": 428.74
+  },
+  "TR46": {
+    "region_id": 181,
+    "distance_km": 1047.36
+  },
+  "TR48": {
+    "region_id": 75,
+    "distance_km": 446.05
+  },
+  "TR49": {
+    "region_id": 182,
+    "distance_km": 1017.44
+  },
+  "TR50": {
+    "region_id": 83,
+    "distance_km": 841.08
+  },
+  "TR52": {
+    "region_id": 181,
+    "distance_km": 672.61
+  },
+  "TR53": {
+    "region_id": 181,
+    "distance_km": 768.8
+  },
+  "TR54": {
+    "region_id": 83,
+    "distance_km": 375.02
+  },
+  "TR55": {
+    "region_id": 181,
+    "distance_km": 573.74
+  },
+  "TR57": {
+    "region_id": 180,
+    "distance_km": 545.29
+  },
+  "TR58": {
+    "region_id": 181,
+    "distance_km": 815.72
+  },
+  "TR59": {
+    "region_id": 82,
+    "distance_km": 141.19
+  },
+  "TR60": {
+    "region_id": 181,
+    "distance_km": 689.02
+  },
+  "TR61": {
+    "region_id": 181,
+    "distance_km": 745.96
+  },
+  "TR62": {
+    "region_id": 181,
+    "distance_km": 904.52
+  },
+  "TR63": {
+    "region_id": 181,
+    "distance_km": 1138.97
+  },
+  "TR64": {
+    "region_id": 82,
+    "distance_km": 484.41
+  },
+  "TR65": {
+    "region_id": 182,
+    "distance_km": 1044.37
+  },
+  "TR66": {
+    "region_id": 180,
+    "distance_km": 747.52
+  },
+  "TR06": {
+    "region_id": 83,
+    "distance_km": 596.06
+  },
+  "TR29": {
+    "region_id": 181,
+    "distance_km": 780.17
+  },
+  "TR30": {
+    "region_id": 182,
+    "distance_km": 1252.29
+  },
+  "TR42": {
+    "region_id": 82,
+    "distance_km": 753.38
+  },
+  "TR47": {
+    "region_id": 181,
+    "distance_km": 1142.84
+  },
+  "TR51": {
+    "region_id": 83,
+    "distance_km": 816.74
+  },
+  "TR56": {
+    "region_id": 181,
+    "distance_km": 1141.93
+  },
+  "TR68": {
+    "region_id": 83,
+    "distance_km": 746.99
+  },
+  "TR72": {
+    "region_id": 181,
+    "distance_km": 1126.64
+  },
+  "TR69": {
+    "region_id": 181,
+    "distance_km": 818.65
+  },
+  "TR70": {
+    "region_id": 82,
+    "distance_km": 818.78
+  },
+  "TR71": {
+    "region_id": 83,
+    "distance_km": 639.13
+  },
+  "TR73": {
+    "region_id": 182,
+    "distance_km": 1213.13
+  },
+  "TR01": {
+    "region_id": 83,
+    "distance_km": 1011.62
+  },
+  "TR18": {
+    "region_id": 83,
+    "distance_km": 542.41
+  },
+  "TR27": {
+    "region_id": 181,
+    "distance_km": 1109.93
+  },
+  "TR36": {
+    "region_id": 182,
+    "distance_km": 931.19
+  },
+  "TR67": {
+    "region_id": 83,
+    "distance_km": 457.33
+  },
+  "TR75": {
+    "region_id": 182,
+    "distance_km": 821.43
+  },
+  "TR74": {
+    "region_id": 144,
+    "distance_km": 488.12
+  },
+  "TR76": {
+    "region_id": 182,
+    "distance_km": 946.53
+  },
+  "TR78": {
+    "region_id": 144,
+    "distance_km": 498.31
+  },
+  "TR79": {
+    "region_id": 181,
+    "distance_km": 1127.26
+  },
+  "TR80": {
+    "region_id": 83,
+    "distance_km": 1021.57
+  },
+  "TR77": {
+    "region_id": 83,
+    "distance_km": 332.54
+  },
+  "TR81": {
+    "region_id": 83,
+    "distance_km": 413.75
+  },
+  "TR99": {
+    "region_id": 83,
+    "distance_km": 715.06
+  },
+  "TR19": {
+    "region_id": 83,
+    "distance_km": 671.28
+  },
+  "TR20": {
+    "region_id": 82,
+    "distance_km": 536.92
+  },
+  "TR21": {
+    "region_id": 181,
+    "distance_km": 1085.85
+  },
+  "TR22": {
+    "region_id": 82,
+    "distance_km": 88.96
+  },
+  "TR23": {
+    "region_id": 181,
+    "distance_km": 940.64
+  },
+  "TR24": {
+    "region_id": 181,
+    "distance_km": 894.16
+  },
+  "TR25": {
+    "region_id": 182,
+    "distance_km": 868.49
+  },
+  "TR26": {
+    "region_id": 83,
+    "distance_km": 540.56
+  },
+  "TR28": {
+    "region_id": 181,
+    "distance_km": 733.82
+  },
+  "TR31": {
+    "region_id": 83,
+    "distance_km": 1034.18
+  },
+  "TR33": {
+    "region_id": 82,
+    "distance_km": 966.74
+  },
+  "TR32": {
+    "region_id": 82,
+    "distance_km": 659.83
+  },
+  "TR34": {
+    "region_id": 83,
+    "distance_km": 274.92
+  },
+  "TR35": {
+    "region_id": 82,
+    "distance_km": 337.33
+  },
+  "TR37": {
+    "region_id": 144,
+    "distance_km": 476.37
+  },
+  "TR38": {
+    "region_id": 83,
+    "distance_km": 931.45
+  },
+  "TR39": {
+    "region_id": 82,
+    "distance_km": 121.29
+  },
+  "TR40": {
+    "region_id": 83,
+    "distance_km": 700.75
+  },
+  "TR41": {
+    "region_id": 83,
+    "distance_km": 348.98
+  },
+  "SI13": {
+    "region_id": 116,
+    "distance_km": 53.64
+  },
+  "SI15": {
+    "region_id": 116,
+    "distance_km": 75.22
+  },
+  "SI22": {
+    "region_id": 113,
+    "distance_km": 75.11
+  },
+  "SI23": {
+    "region_id": 113,
+    "distance_km": 56.76
+  },
+  "SI32": {
+    "region_id": 119,
+    "distance_km": 82.46
+  },
+  "SI40": {
+    "region_id": 116,
+    "distance_km": 95.75
+  },
+  "SI42": {
+    "region_id": 116,
+    "distance_km": 96.79
+  },
+  "SI46": {
+    "region_id": 116,
+    "distance_km": 95.75
+  },
+  "SI52": {
+    "region_id": 72,
+    "distance_km": 70.32
+  },
+  "SI62": {
+    "region_id": 116,
+    "distance_km": 55.22
+  },
+  "SI63": {
+    "region_id": 116,
+    "distance_km": 61.76
+  },
+  "SI82": {
+    "region_id": 119,
+    "distance_km": 45.0
+  },
+  "SI83": {
+    "region_id": 119,
+    "distance_km": 53.42
+  },
+  "SI92": {
+    "region_id": 113,
+    "distance_km": 99.17
+  },
+  "SK96": {
+    "region_id": 138,
+    "distance_km": 76.31
+  },
+  "SK98": {
+    "region_id": 138,
+    "distance_km": 50.92
+  },
+  "SK99": {
+    "region_id": 138,
+    "distance_km": 74.44
+  },
+  "SK85": {
+    "region_id": 115,
+    "distance_km": 26.98
+  },
+  "SK81": {
+    "region_id": 115,
+    "distance_km": 30.53
+  },
+  "SK82": {
+    "region_id": 115,
+    "distance_km": 22.08
+  },
+  "SK83": {
+    "region_id": 115,
+    "distance_km": 28.55
+  },
+  "SK84": {
+    "region_id": 115,
+    "distance_km": 35.45
+  },
+  "SK04": {
+    "region_id": 139,
+    "distance_km": 82.68
+  },
+  "SK07": {
+    "region_id": 139,
+    "distance_km": 37.05
+  },
+  "RO24": {
+    "region_id": 146,
+    "distance_km": 75.72
+  },
+  "RO62": {
+    "region_id": 147,
+    "distance_km": 22.4
+  },
+  "RO91": {
+    "region_id": 144,
+    "distance_km": 93.7
+  },
+  "RO08": {
+    "region_id": 145,
+    "distance_km": 120.08
+  },
+  "RO07": {
+    "region_id": 145,
+    "distance_km": 66.3
+  },
+  "RS11": {
+    "region_id": 123,
+    "distance_km": 97.78
+  },
+  "RS14": {
+    "region_id": 123,
+    "distance_km": 65.3
+  },
+  "RS15": {
+    "region_id": 123,
+    "distance_km": 105.66
+  },
+  "RS16": {
+    "region_id": 141,
+    "distance_km": 41.95
+  },
+  "RS18": {
+    "region_id": 141,
+    "distance_km": 60.66
+  },
+  "RS19": {
+    "region_id": 141,
+    "distance_km": 95.18
+  },
+  "RS21": {
+    "region_id": 120,
+    "distance_km": 54.4
+  },
+  "RS22": {
+    "region_id": 120,
+    "distance_km": 66.37
+  },
+  "RS23": {
+    "region_id": 120,
+    "distance_km": 59.47
+  },
+  "RS24": {
+    "region_id": 120,
+    "distance_km": 21.33
+  },
+  "RS26": {
+    "region_id": 142,
+    "distance_km": 61.99
+  },
+  "RS31": {
+    "region_id": 123,
+    "distance_km": 26.44
+  },
+  "RS32": {
+    "region_id": 123,
+    "distance_km": 33.25
+  },
+  "RS34": {
+    "region_id": 123,
+    "distance_km": 76.25
+  },
+  "RS35": {
+    "region_id": 123,
+    "distance_km": 99.01
+  },
+  "RS36": {
+    "region_id": 123,
+    "distance_km": 24.68
+  },
+  "RS37": {
+    "region_id": 123,
+    "distance_km": 77.38
+  },
+  "SE26": {
+    "region_id": 88,
+    "distance_km": 140.16
+  },
+  "SE18": {
+    "region_id": 93,
+    "distance_km": 62.83
+  },
+  "SE13": {
+    "region_id": 93,
+    "distance_km": 91.77
+  },
+  "SE17": {
+    "region_id": 93,
+    "distance_km": 78.74
+  },
+  "SE14": {
+    "region_id": 93,
+    "distance_km": 96.33
+  },
+  "SE15": {
+    "region_id": 92,
+    "distance_km": 91.62
+  },
+  "SE10": {
+    "region_id": 93,
+    "distance_km": 82.57
+  },
+  "SE11": {
+    "region_id": 93,
+    "distance_km": 82.57
+  },
+  "SE12": {
+    "region_id": 93,
+    "distance_km": 85.62
+  },
+  "SE16": {
+    "region_id": 93,
+    "distance_km": 75.62
+  },
+  "SE76": {
+    "region_id": 93,
+    "distance_km": 73.49
+  },
+  "SE19": {
+    "region_id": 93,
+    "distance_km": 52.91
+  },
+  "SE91": {
+    "region_id": 221,
+    "distance_km": 73.47
+  },
+  "SE93": {
+    "region_id": 231,
+    "distance_km": 37.07
+  },
+  "SE92": {
+    "region_id": 232,
+    "distance_km": 76.9
+  },
+  "SE90": {
+    "region_id": 224,
+    "distance_km": 84.75
+  },
+  "SE98": {
+    "region_id": 228,
+    "distance_km": 68.51
+  },
+  "SE97": {
+    "region_id": 221,
+    "distance_km": 102.93
+  },
+  "SE94": {
+    "region_id": 221,
+    "distance_km": 60.62
+  },
+  "SE95": {
+    "region_id": 227,
+    "distance_km": 45.53
+  },
+  "SE74": {
+    "region_id": 93,
+    "distance_km": 50.03
+  },
+  "SE81": {
+    "region_id": 93,
+    "distance_km": 43.21
+  },
+  "SE75": {
+    "region_id": 93,
+    "distance_km": 19.54
+  },
+  "SE61": {
+    "region_id": 92,
+    "distance_km": 56.48
+  },
+  "SE64": {
+    "region_id": 92,
+    "distance_km": 45.76
+  },
+  "SE63": {
+    "region_id": 92,
+    "distance_km": 69.9
+  },
+  "SE59": {
+    "region_id": 91,
+    "distance_km": 95.4
+  },
+  "SE58": {
+    "region_id": 92,
+    "distance_km": 47.72
+  },
+  "SE60": {
+    "region_id": 92,
+    "distance_km": 23.24
+  },
+  "SE33": {
+    "region_id": 90,
+    "distance_km": 71.64
+  },
+  "SE56": {
+    "region_id": 90,
+    "distance_km": 73.76
+  },
+  "SE55": {
+    "region_id": 90,
+    "distance_km": 107.33
+  },
+  "SE57": {
+    "region_id": 90,
+    "distance_km": 72.89
+  },
+  "SE34": {
+    "region_id": 90,
+    "distance_km": 10.17
+  },
+  "SE35": {
+    "region_id": 90,
+    "distance_km": 6.24
+  },
+  "SE36": {
+    "region_id": 90,
+    "distance_km": 33.09
+  },
+  "SE28": {
+    "region_id": 90,
+    "distance_km": 69.93
+  },
+  "SE38": {
+    "region_id": 90,
+    "distance_km": 107.04
+  },
+  "SE39": {
+    "region_id": 90,
+    "distance_km": 103.15
+  },
+  "SE62": {
+    "region_id": 92,
+    "distance_km": 184.01
+  },
+  "SE37": {
+    "region_id": 90,
+    "distance_km": 94.8
+  },
+  "SE29": {
+    "region_id": 90,
+    "distance_km": 90.62
+  },
+  "SE23": {
+    "region_id": 88,
+    "distance_km": 165.4
+  },
+  "SE24": {
+    "region_id": 88,
+    "distance_km": 149.43
+  },
+  "SE27": {
+    "region_id": 90,
+    "distance_km": 170.26
+  },
+  "SE25": {
+    "region_id": 88,
+    "distance_km": 120.48
+  },
+  "SE20": {
+    "region_id": 88,
+    "distance_km": 156.51
+  },
+  "SE21": {
+    "region_id": 88,
+    "distance_km": 156.51
+  },
+  "SE22": {
+    "region_id": 90,
+    "distance_km": 159.46
+  },
+  "SE31": {
+    "region_id": 90,
+    "distance_km": 90.45
+  },
+  "SE30": {
+    "region_id": 90,
+    "distance_km": 114.85
+  },
+  "SE43": {
+    "region_id": 89,
+    "distance_km": 60.45
+  },
+  "SE42": {
+    "region_id": 89,
+    "distance_km": 33.8
+  },
+  "SE44": {
+    "region_id": 89,
+    "distance_km": 42.33
+  },
+  "SE47": {
+    "region_id": 89,
+    "distance_km": 40.1
+  },
+  "SE45": {
+    "region_id": 89,
+    "distance_km": 87.02
+  },
+  "SE66": {
+    "region_id": 95,
+    "distance_km": 87.64
+  },
+  "SE46": {
+    "region_id": 89,
+    "distance_km": 64.78
+  },
+  "SE54": {
+    "region_id": 91,
+    "distance_km": 67.57
+  },
+  "SE51": {
+    "region_id": 89,
+    "distance_km": 72.82
+  },
+  "SE52": {
+    "region_id": 89,
+    "distance_km": 54.79
+  },
+  "SE40": {
+    "region_id": 89,
+    "distance_km": 20.32
+  },
+  "SE41": {
+    "region_id": 89,
+    "distance_km": 20.32
+  },
+  "RO43": {
+    "region_id": 143,
+    "distance_km": 71.15
+  },
+  "RO22": {
+    "region_id": 146,
+    "distance_km": 88.27
+  },
+  "RO54": {
+    "region_id": 148,
+    "distance_km": 19.12
+  },
+  "RO61": {
+    "region_id": 149,
+    "distance_km": 23.47
+  },
+  "RO23": {
+    "region_id": 145,
+    "distance_km": 106.99
+  },
+  "RO10": {
+    "region_id": 145,
+    "distance_km": 38.06
+  },
+  "RO45": {
+    "region_id": 143,
+    "distance_km": 8.56
+  },
+  "RO44": {
+    "region_id": 143,
+    "distance_km": 59.69
+  },
+  "RO55": {
+    "region_id": 146,
+    "distance_km": 86.57
+  },
+  "RO72": {
+    "region_id": 149,
+    "distance_km": 63.95
+  },
+  "RO14": {
+    "region_id": 84,
+    "distance_km": 99.7
+  },
+  "RO30": {
+    "region_id": 142,
+    "distance_km": 43.45
+  },
+  "RO82": {
+    "region_id": 144,
+    "distance_km": 73.61
+  },
+  "RO73": {
+    "region_id": 147,
+    "distance_km": 101.17
+  },
+  "SE50": {
+    "region_id": 89,
+    "distance_km": 40.49
+  },
+  "SE53": {
+    "region_id": 91,
+    "distance_km": 40.85
+  },
+  "SE68": {
+    "region_id": 91,
+    "distance_km": 89.93
+  },
+  "SE65": {
+    "region_id": 91,
+    "distance_km": 60.92
+  },
+  "SE69": {
+    "region_id": 91,
+    "distance_km": 67.52
+  },
+  "SE71": {
+    "region_id": 94,
+    "distance_km": 68.46
+  },
+  "SE70": {
+    "region_id": 92,
+    "distance_km": 71.75
+  },
+  "SE73": {
+    "region_id": 93,
+    "distance_km": 78.85
+  },
+  "SE72": {
+    "region_id": 93,
+    "distance_km": 68.88
+  },
+  "SE78": {
+    "region_id": 94,
+    "distance_km": 54.35
+  },
+  "SE79": {
+    "region_id": 94,
+    "distance_km": 34.05
+  },
+  "SE77": {
+    "region_id": 94,
+    "distance_km": 47.17
+  },
+  "SE82": {
+    "region_id": 225,
+    "distance_km": 33.69
+  },
+  "SE80": {
+    "region_id": 93,
+    "distance_km": 75.65
+  },
+  "SE86": {
+    "region_id": 223,
+    "distance_km": 39.31
+  },
+  "SE85": {
+    "region_id": 223,
+    "distance_km": 39.98
+  },
+  "SE88": {
+    "region_id": 235,
+    "distance_km": 65.52
+  },
+  "SE89": {
+    "region_id": 224,
+    "distance_km": 47.02
+  },
+  "SE84": {
+    "region_id": 223,
+    "distance_km": 11.71
+  },
+  "SE83": {
+    "region_id": 222,
+    "distance_km": 50.47
+  },
+  "BG38": {
+    "region_id": 141,
+    "distance_km": 68.81
+  },
+  "BG39": {
+    "region_id": 141,
+    "distance_km": 57.25
+  },
+  "DE11": {
+    "region_id": 107,
+    "distance_km": 82.26
+  },
+  "BE85": {
+    "region_id": 38,
+    "distance_km": 70.68
+  },
+  "BE13": {
+    "region_id": 38,
+    "distance_km": 65.13
+  },
+  "BE62": {
+    "region_id": 38,
+    "distance_km": 93.13
+  },
+  "BE75": {
+    "region_id": 33,
+    "distance_km": 62.63
+  },
+  "BE44": {
+    "region_id": 40,
+    "distance_km": 100.1
+  },
+  "BE47": {
+    "region_id": 37,
+    "distance_km": 68.44
+  },
+  "BG85": {
+    "region_id": 83,
+    "distance_km": 46.17
+  },
+  "BG83": {
+    "region_id": 83,
+    "distance_km": 78.94
+  },
+  "BG64": {
+    "region_id": 82,
+    "distance_km": 44.78
+  },
+  "BG56": {
+    "region_id": 84,
+    "distance_km": 64.29
+  },
+  "BG21": {
+    "region_id": 84,
+    "distance_km": 89.76
+  },
+  "BG99": {
+    "region_id": 83,
+    "distance_km": 34.27
+  },
+  "BG97": {
+    "region_id": 83,
+    "distance_km": 31.93
+  },
+  "IT92": {
+    "region_id": 50,
+    "distance_km": 293.55
+  },
+  "IT93": {
+    "region_id": 50,
+    "distance_km": 265.03
+  },
+  "IT97": {
+    "region_id": 50,
+    "distance_km": 277.29
+  },
+  "IT05": {
+    "region_id": 49,
+    "distance_km": 38.57
+  },
+  "IT11": {
+    "region_id": 70,
+    "distance_km": 68.26
+  },
+  "IT74": {
+    "region_id": 51,
+    "distance_km": 25.1
+  },
+  "HU57": {
+    "region_id": 140,
+    "distance_km": 86.8
+  },
+  "HU60": {
+    "region_id": 117,
+    "distance_km": 84.63
+  },
+  "HU65": {
+    "region_id": 120,
+    "distance_km": 74.15
+  },
+  "HU34": {
+    "region_id": 140,
+    "distance_km": 58.45
+  },
+  "HU36": {
+    "region_id": 138,
+    "distance_km": 84.02
+  },
+  "HU80": {
+    "region_id": 117,
+    "distance_km": 69.76
+  },
+  "HU92": {
+    "region_id": 115,
+    "distance_km": 23.79
+  },
+  "HU52": {
+    "region_id": 140,
+    "distance_km": 27.77
+  },
+  "HU29": {
+    "region_id": 115,
+    "distance_km": 58.75
+  },
+  "HU22": {
+    "region_id": 117,
+    "distance_km": 36.38
+  },
+  "HU72": {
+    "region_id": 118,
+    "distance_km": 25.37
+  },
+  "HU74": {
+    "region_id": 118,
+    "distance_km": 20.07
+  },
+  "HU47": {
+    "region_id": 139,
+    "distance_km": 85.22
+  },
+  "HU48": {
+    "region_id": 139,
+    "distance_km": 66.29
+  },
+  "FI24": {
+    "region_id": 193,
+    "distance_km": 52.17
+  },
+  "FI21": {
+    "region_id": 193,
+    "distance_km": 61.55
+  },
+  "FI11": {
+    "region_id": 194,
+    "distance_km": 64.02
+  },
+  "FI19": {
+    "region_id": 188,
+    "distance_km": 71.74
+  },
+  "FI50": {
+    "region_id": 189,
+    "distance_km": 74.37
+  },
+  "FI76": {
+    "region_id": 199,
+    "distance_km": 68.43
+  },
+  "FI72": {
+    "region_id": 199,
+    "distance_km": 75.53
+  },
+  "FI74": {
+    "region_id": 202,
+    "distance_km": 62.63
+  },
+  "FI73": {
+    "region_id": 199,
+    "distance_km": 77.41
+  },
+  "FI79": {
+    "region_id": 199,
+    "distance_km": 47.71
+  },
+  "FI82": {
+    "region_id": 190,
+    "distance_km": 54.96
+  },
+  "FI40": {
+    "region_id": 197,
+    "distance_km": 55.66
+  },
+  "FI60": {
+    "region_id": 191,
+    "distance_km": 34.06
+  },
+  "FI67": {
+    "region_id": 198,
+    "distance_km": 37.52
+  },
+  "FI92": {
+    "region_id": 200,
+    "distance_km": 72.38
+  },
+  "FI84": {
+    "region_id": 201,
+    "distance_km": 27.94
+  },
+  "FI85": {
+    "region_id": 201,
+    "distance_km": 22.47
+  },
+  "FI87": {
+    "region_id": 203,
+    "distance_km": 63.87
+  },
+  "FI96": {
+    "region_id": 207,
+    "distance_km": 55.93
+  },
+  "FI98": {
+    "region_id": 206,
+    "distance_km": 51.4
+  },
+  "BE10": {
+    "region_id": 38,
+    "distance_km": 45.66
+  },
+  "BE29": {
+    "region_id": 38,
+    "distance_km": 32.37
+  },
+  "BE15": {
+    "region_id": 38,
+    "distance_km": 54.4
+  },
+  "BE31": {
+    "region_id": 38,
+    "distance_km": 55.22
+  },
+  "BE35": {
+    "region_id": 38,
+    "distance_km": 90.84
+  },
+  "BE90": {
+    "region_id": 38,
+    "distance_km": 19.68
+  },
+  "BE97": {
+    "region_id": 38,
+    "distance_km": 55.55
+  },
+  "BE99": {
+    "region_id": 38,
+    "distance_km": 36.29
+  },
+  "BE80": {
+    "region_id": 38,
+    "distance_km": 57.0
+  },
+  "CH87": {
+    "region_id": 43,
+    "distance_km": 74.24
+  },
+  "CH72": {
+    "region_id": 102,
+    "distance_km": 33.05
+  },
+  "CH28": {
+    "region_id": 43,
+    "distance_km": 75.82
+  },
+  "CH62": {
+    "region_id": 43,
+    "distance_km": 25.02
+  },
+  "CH93": {
+    "region_id": 102,
+    "distance_km": 50.65
+  },
+  "CH86": {
+    "region_id": 43,
+    "distance_km": 51.39
+  },
+  "CZ47": {
+    "region_id": 112,
+    "distance_km": 46.94
+  },
+  "CZ12": {
+    "region_id": 112,
+    "distance_km": 16.24
+  },
+  "CZ60": {
+    "region_id": 114,
+    "distance_km": 33.07
+  },
+  "CY52": {
+    "region_id": 75,
+    "distance_km": 1019.68
+  },
+  "CY58": {
+    "region_id": 82,
+    "distance_km": 1013.19
+  },
+  "CY75": {
+    "region_id": 75,
+    "distance_km": 983.79
+  },
+  "CY21": {
+    "region_id": 75,
+    "distance_km": 965.58
+  },
+  "CY24": {
+    "region_id": 75,
+    "distance_km": 960.47
+  },
+  "CY30": {
+    "region_id": 75,
+    "distance_km": 957.21
+  },
+  "CY31": {
+    "region_id": 75,
+    "distance_km": 957.21
+  },
+  "CY46": {
+    "region_id": 75,
+    "distance_km": 937.93
+  },
+  "CY48": {
+    "region_id": 75,
+    "distance_km": 935.68
+  },
+  "CY86": {
+    "region_id": 75,
+    "distance_km": 920.13
+  },
+  "CH50": {
+    "region_id": 43,
+    "distance_km": 26.63
+  },
+  "CH55": {
+    "region_id": 43,
+    "distance_km": 16.77
+  },
+  "CH48": {
+    "region_id": 43,
+    "distance_km": 42.27
+  },
+  "CH91": {
+    "region_id": 102,
+    "distance_km": 50.05
+  },
+  "CH25": {
+    "region_id": 43,
+    "distance_km": 95.67
+  },
+  "CH27": {
+    "region_id": 43,
+    "distance_km": 88.49
+  },
+  "CH49": {
+    "region_id": 43,
+    "distance_km": 45.16
+  },
+  "CH31": {
+    "region_id": 70,
+    "distance_km": 77.54
+  },
+  "AT68": {
+    "region_id": 102,
+    "distance_km": 27.07
+  },
+  "AT71": {
+    "region_id": 115,
+    "distance_km": 44.08
+  },
+  "AT73": {
+    "region_id": 115,
+    "distance_km": 87.8
+  },
+  "EE40": {
+    "region_id": 158,
+    "distance_km": 94.07
+  },
+  "EE30": {
+    "region_id": 158,
+    "distance_km": 96.47
+  },
+  "DK12": {
+    "region_id": 88,
+    "distance_km": 129.84
+  },
+  "DK14": {
+    "region_id": 88,
+    "distance_km": 130.78
+  },
+  "DK33": {
+    "region_id": 88,
+    "distance_km": 79.68
+  },
+  "DK46": {
+    "region_id": 88,
+    "distance_km": 118.99
+  },
+  "DK59": {
+    "region_id": 85,
+    "distance_km": 69.62
+  },
+  "DK63": {
+    "region_id": 85,
+    "distance_km": 16.59
+  },
+  "GBSL": {
+    "region_id": 55,
+    "distance_km": 69.71
+  },
+  "GBS8": {
+    "region_id": 62,
+    "distance_km": 89.14
+  },
+  "GBAL": {
+    "region_id": 63,
+    "distance_km": 63.99
+  },
+  "GBDA": {
+    "region_id": 63,
+    "distance_km": 25.73
+  },
+  "GBTW": {
+    "region_id": 63,
+    "distance_km": 68.78
+  },
+  "GBUB": {
+    "region_id": 63,
+    "distance_km": 74.77
+  },
+  "GBB7": {
+    "region_id": 61,
+    "distance_km": 100.05
+  },
+  "GBSM": {
+    "region_id": 63,
+    "distance_km": 63.64
+  },
+  "GBN2": {
+    "region_id": 63,
+    "distance_km": 54.21
+  },
+  "GBN8": {
+    "region_id": 63,
+    "distance_km": 50.08
+  },
+  "CH47": {
+    "region_id": 43,
+    "distance_km": 53.13
+  },
+  "AL53": {
+    "region_id": 77,
+    "distance_km": 76.12
+  },
+  "AL84": {
+    "region_id": 80,
+    "distance_km": 89.29
+  },
+  "AL74": {
+    "region_id": 77,
+    "distance_km": 42.51
+  },
+  "AL73": {
+    "region_id": 77,
+    "distance_km": 95.78
+  },
+  "AL86": {
+    "region_id": 80,
+    "distance_km": 81.44
+  },
+  "AL94": {
+    "region_id": 77,
+    "distance_km": 38.02
+  },
+  "LT78": {
+    "region_id": 159,
+    "distance_km": 78.89
+  },
+  "LT87": {
+    "region_id": 154,
+    "distance_km": 17.36
+  },
+  "MK22": {
+    "region_id": 80,
+    "distance_km": 80.32
+  },
+  "MK23": {
+    "region_id": 80,
+    "distance_km": 108.11
+  },
+  "MTBM": {
+    "region_id": 50,
+    "distance_km": 375.34
+  },
+  "MTMF": {
+    "region_id": 50,
+    "distance_km": 366.32
+  },
+  "MTZB": {
+    "region_id": 50,
+    "distance_km": 366.32
+  },
+  "NL79": {
+    "region_id": 39,
+    "distance_km": 27.93
+  },
+  "NL45": {
+    "region_id": 38,
+    "distance_km": 15.07
+  },
+  "NL42": {
+    "region_id": 38,
+    "distance_km": 95.73
+  },
+  "NO27": {
+    "region_id": 244,
+    "distance_km": 78.99
+  },
+  "NO34": {
+    "region_id": 95,
+    "distance_km": 57.15
+  },
+  "NO33": {
+    "region_id": 95,
+    "distance_km": 64.1
+  },
+  "NO65": {
+    "region_id": 245,
+    "distance_km": 61.1
+  },
+  "NO64": {
+    "region_id": 245,
+    "distance_km": 89.67
+  },
+  "NO62": {
+    "region_id": 251,
+    "distance_km": 53.21
+  },
+  "NO89": {
+    "region_id": 237,
+    "distance_km": 59.96
+  },
+  "NO00": {
+    "region_id": 243,
+    "distance_km": 63.35
+  },
+  "NO40": {
+    "region_id": 248,
+    "distance_km": 42.2
+  },
+  "NO41": {
+    "region_id": 248,
+    "distance_km": 13.8
+  },
+  "NO90": {
+    "region_id": 216,
+    "distance_km": 44.21
+  },
+  "NO94": {
+    "region_id": 217,
+    "distance_km": 60.58
+  },
+  "NO71": {
+    "region_id": 239,
+    "distance_km": 38.75
+  },
+  "NO25": {
+    "region_id": 240,
+    "distance_km": 63.47
+  },
+  "NL37": {
+    "region_id": 39,
+    "distance_km": 72.3
+  },
+  "NL70": {
+    "region_id": 39,
+    "distance_km": 81.61
+  },
+  "NL68": {
+    "region_id": 39,
+    "distance_km": 80.7
+  },
+  "NL18": {
+    "region_id": 39,
+    "distance_km": 82.99
+  },
+  "NL20": {
+    "region_id": 39,
+    "distance_km": 104.27
+  },
+  "RS12": {
+    "region_id": 123,
+    "distance_km": 104.43
+  },
+  "RS17": {
+    "region_id": 80,
+    "distance_km": 87.52
+  },
+  "RS25": {
+    "region_id": 120,
+    "distance_km": 69.46
+  },
+  "SE96": {
+    "region_id": 228,
+    "distance_km": 97.7
+  },
+  "SE67": {
+    "region_id": 243,
+    "distance_km": 25.22
+  },
+  "SE87": {
+    "region_id": 223,
+    "distance_km": 72.28
+  },
+  "UA25": {
+    "region_id": 179,
+    "distance_km": 95.21
+  },
+  "SI12": {
+    "region_id": 116,
+    "distance_km": 82.37
+  },
+  "SI14": {
+    "region_id": 119,
+    "distance_km": 86.01
+  },
+  "SI33": {
+    "region_id": 113,
+    "distance_km": 89.89
+  },
+  "SI65": {
+    "region_id": 116,
+    "distance_km": 55.72
+  },
+  "UA76": {
+    "region_id": 168,
+    "distance_km": 90.75
+  },
+  "UA46": {
+    "region_id": 169,
+    "distance_km": 103.72
+  },
+  "GBGY": {
+    "region_id": 26,
+    "distance_km": 155.01
+  },
+  "GBM3": {
+    "region_id": 61,
+    "distance_km": 17.64
+  },
+  "GBB1": {
+    "region_id": 55,
+    "distance_km": 92.59
+  },
+  "LT44": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "LT45": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "LT46": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "SM47": {
+    "region_id": 48,
+    "distance_km": 58.35
+  },
+  "UA86": {
+    "region_id": 182,
+    "distance_km": 79.03
+  },
+  "UA29": {
+    "region_id": 166,
+    "distance_km": 78.1
+  },
+  "SI10": {
+    "region_id": 116,
+    "distance_km": 75.22
+  },
+  "SI25": {
+    "region_id": 113,
+    "distance_km": 73.38
+  },
+  "SI56": {
+    "region_id": 72,
+    "distance_km": 54.21
+  },
+  "SI95": {
+    "region_id": 113,
+    "distance_km": 92.38
+  },
+  "LT27": {
+    "region_id": 152,
+    "distance_km": 66.18
+  },
+  "NL23": {
+    "region_id": 38,
+    "distance_km": 105.05
+  },
+  "NO98": {
+    "region_id": 211,
+    "distance_km": 36.84
+  },
+  "NO76": {
+    "region_id": 239,
+    "distance_km": 37.32
+  },
+  "NO29": {
+    "region_id": 244,
+    "distance_km": 65.76
+  },
+  "NO47": {
+    "region_id": 249,
+    "distance_km": 39.73
+  },
+  "NL63": {
+    "region_id": 40,
+    "distance_km": 66.16
+  },
+  "GBE2": {
+    "region_id": 63,
+    "distance_km": 45.87
+  },
+  "GBE3": {
+    "region_id": 63,
+    "distance_km": 44.53
+  },
+  "GBE4": {
+    "region_id": 63,
+    "distance_km": 41.53
+  },
+  "GBE8": {
+    "region_id": 63,
+    "distance_km": 46.23
+  },
+  "GBW3": {
+    "region_id": 63,
+    "distance_km": 60.93
+  },
+  "GBW5": {
+    "region_id": 63,
+    "distance_km": 61.6
+  },
+  "GBB4": {
+    "region_id": 55,
+    "distance_km": 68.75
+  },
+  "AL85": {
+    "region_id": 80,
+    "distance_km": 77.57
+  },
+  "AL44": {
+    "region_id": 79,
+    "distance_km": 75.36
+  },
+  "HU58": {
+    "region_id": 140,
+    "distance_km": 111.11
+  },
+  "HU28": {
+    "region_id": 117,
+    "distance_km": 67.51
+  },
+  "HU27": {
+    "region_id": 117,
+    "distance_km": 52.41
+  },
+  "CH66": {
+    "region_id": 44,
+    "distance_km": 25.55
+  },
+  "CZ17": {
+    "region_id": 112,
+    "distance_km": 11.95
+  },
+  "CZ64": {
+    "region_id": 114,
+    "distance_km": 35.55
+  },
+  "FI03": {
+    "region_id": 194,
+    "distance_km": 29.54
+  },
+  "FI09": {
+    "region_id": 194,
+    "distance_km": 30.54
+  },
+  "FI34": {
+    "region_id": 197,
+    "distance_km": 48.48
+  },
+  "FI16": {
+    "region_id": 188,
+    "distance_km": 42.67
+  },
+  "FI48": {
+    "region_id": 188,
+    "distance_km": 65.63
+  },
+  "FI53": {
+    "region_id": 189,
+    "distance_km": 18.42
+  },
+  "FI51": {
+    "region_id": 189,
+    "distance_km": 85.86
+  },
+  "FI58": {
+    "region_id": 190,
+    "distance_km": 53.48
+  },
+  "FI75": {
+    "region_id": 203,
+    "distance_km": 106.14
+  },
+  "FI43": {
+    "region_id": 197,
+    "distance_km": 22.55
+  },
+  "GBM9": {
+    "region_id": 61,
+    "distance_km": 27.23
+  },
+  "GBL6": {
+    "region_id": 61,
+    "distance_km": 25.13
+  },
+  "GBM2": {
+    "region_id": 61,
+    "distance_km": 24.24
+  },
+  "GBG5": {
+    "region_id": 57,
+    "distance_km": 46.94
+  },
+  "BE61": {
+    "region_id": 38,
+    "distance_km": 102.82
+  },
+  "BE67": {
+    "region_id": 37,
+    "distance_km": 8.21
+  },
+  "BG98": {
+    "region_id": 83,
+    "distance_km": 29.77
+  },
+  "BE21": {
+    "region_id": 38,
+    "distance_km": 33.14
+  },
+  "BE11": {
+    "region_id": 38,
+    "distance_km": 45.94
+  },
+  "IT76": {
+    "region_id": 196,
+    "distance_km": 99.82
+  },
+  "DK27": {
+    "region_id": 88,
+    "distance_km": 114.58
+  },
+  "DK35": {
+    "region_id": 88,
+    "distance_km": 104.54
+  },
+  "DK69": {
+    "region_id": 86,
+    "distance_km": 52.72
+  },
+  "DK88": {
+    "region_id": 86,
+    "distance_km": 23.78
+  },
+  "DK77": {
+    "region_id": 86,
+    "distance_km": 89.22
+  },
+  "DK94": {
+    "region_id": 87,
+    "distance_km": 30.6
+  },
+  "DK26": {
+    "region_id": 88,
+    "distance_km": 120.36
+  },
+  "DK45": {
+    "region_id": 88,
+    "distance_km": 75.46
+  },
+  "DK41": {
+    "region_id": 88,
+    "distance_km": 108.58
+  },
+  "DK49": {
+    "region_id": 96,
+    "distance_km": 91.23
+  },
+  "DK55": {
+    "region_id": 85,
+    "distance_km": 77.19
+  },
+  "DK52": {
+    "region_id": 85,
+    "distance_km": 96.49
+  },
+  "DK65": {
+    "region_id": 85,
+    "distance_km": 51.85
+  },
+  "CH26": {
+    "region_id": 69,
+    "distance_km": 96.39
+  },
+  "CH24": {
+    "region_id": 69,
+    "distance_km": 89.61
+  },
+  "CY53": {
+    "region_id": 75,
+    "distance_km": 1013.48
+  },
+  "CY71": {
+    "region_id": 75,
+    "distance_km": 990.61
+  },
+  "CY82": {
+    "region_id": 75,
+    "distance_km": 899.82
+  },
+  "LT37": {
+    "region_id": 159,
+    "distance_km": 73.46
+  },
+  "LT66": {
+    "region_id": 152,
+    "distance_km": 70.37
+  },
+  "LT47": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "MTGS": {
+    "region_id": 50,
+    "distance_km": 367.35
+  },
+  "MTXJ": {
+    "region_id": 50,
+    "distance_km": 374.04
+  },
+  "MK10": {
+    "region_id": 80,
+    "distance_km": 33.73
+  },
+  "BE20": {
+    "region_id": 38,
+    "distance_km": 24.63
+  },
+  "BE24": {
+    "region_id": 38,
+    "distance_km": 64.93
+  },
+  "BE26": {
+    "region_id": 38,
+    "distance_km": 25.5
+  },
+  "BE45": {
+    "region_id": 37,
+    "distance_km": 81.95
+  },
+  "HU59": {
+    "region_id": 140,
+    "distance_km": 84.24
+  },
+  "HU62": {
+    "region_id": 117,
+    "distance_km": 83.97
+  },
+  "HU98": {
+    "region_id": 118,
+    "distance_km": 95.89
+  },
+  "MK63": {
+    "region_id": 80,
+    "distance_km": 99.54
+  },
+  "MTKM": {
+    "region_id": 50,
+    "distance_km": 368.72
+  },
+  "MTGX": {
+    "region_id": 50,
+    "distance_km": 379.11
+  },
+  "MTIK": {
+    "region_id": 50,
+    "distance_km": 374.53
+  },
+  "MTMS": {
+    "region_id": 50,
+    "distance_km": 374.72
+  },
+  "MTIS": {
+    "region_id": 50,
+    "distance_km": 374.75
+  },
+  "MTSG": {
+    "region_id": 50,
+    "distance_km": 373.96
+  },
+  "LT52": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "GBB3": {
+    "region_id": 55,
+    "distance_km": 93.51
+  },
+  "GBS2": {
+    "region_id": 61,
+    "distance_km": 74.69
+  },
+  "GBM7": {
+    "region_id": 61,
+    "distance_km": 23.57
+  },
+  "GBL4": {
+    "region_id": 61,
+    "distance_km": 25.33
+  },
+  "AT11": {
+    "region_id": 115,
+    "distance_km": 86.91
+  },
+  "CY70": {
+    "region_id": 75,
+    "distance_km": 996.57
+  },
+  "CY76": {
+    "region_id": 75,
+    "distance_km": 980.33
+  },
+  "CY11": {
+    "region_id": 75,
+    "distance_km": 961.98
+  },
+  "CY80": {
+    "region_id": 75,
+    "distance_km": 902.37
+  },
+  "DK90": {
+    "region_id": 87,
+    "distance_km": 28.64
+  },
+  "DK98": {
+    "region_id": 87,
+    "distance_km": 80.69
+  },
+  "DK47": {
+    "region_id": 96,
+    "distance_km": 125.1
+  },
+  "DK56": {
+    "region_id": 85,
+    "distance_km": 77.05
+  },
+  "DK71": {
+    "region_id": 86,
+    "distance_km": 62.82
+  },
+  "FI26": {
+    "region_id": 192,
+    "distance_km": 30.9
+  },
+  "FI56": {
+    "region_id": 189,
+    "distance_km": 26.23
+  },
+  "BG65": {
+    "region_id": 82,
+    "distance_km": 73.33
+  },
+  "EE12": {
+    "region_id": 194,
+    "distance_km": 86.5
+  },
+  "EE31": {
+    "region_id": 158,
+    "distance_km": 89.51
+  },
+  "EE51": {
+    "region_id": 158,
+    "distance_km": 30.03
+  },
+  "ADAD": {
+    "region_id": 22,
+    "distance_km": 80.28
+  },
+  "NL95": {
+    "region_id": 73,
+    "distance_km": 58.82
+  },
+  "UA18": {
+    "region_id": 179,
+    "distance_km": 7.59
+  },
+  "CZ70": {
+    "region_id": 125,
+    "distance_km": 32.9
+  },
+  "CZ31": {
+    "region_id": 109,
+    "distance_km": 88.0
+  },
+  "LT63": {
+    "region_id": 152,
+    "distance_km": 74.99
+  },
+  "DK40": {
+    "region_id": 88,
+    "distance_km": 92.56
+  },
+  "DK37": {
+    "region_id": 124,
+    "distance_km": 165.93
+  },
+  "DK79": {
+    "region_id": 86,
+    "distance_km": 79.81
+  },
+  "DK57": {
+    "region_id": 85,
+    "distance_km": 80.08
+  },
+  "DK58": {
+    "region_id": 85,
+    "distance_km": 89.92
+  },
+  "DK62": {
+    "region_id": 85,
+    "distance_km": 52.64
+  },
+  "HU55": {
+    "region_id": 140,
+    "distance_km": 51.93
+  },
+  "HU66": {
+    "region_id": 140,
+    "distance_km": 85.65
+  },
+  "GBJE": {
+    "region_id": 26,
+    "distance_km": 124.9
+  },
+  "FI77": {
+    "region_id": 199,
+    "distance_km": 73.59
+  },
+  "AL43": {
+    "region_id": 79,
+    "distance_km": 27.02
+  },
+  "LT26": {
+    "region_id": 152,
+    "distance_km": 84.75
+  },
+  "MK62": {
+    "region_id": 80,
+    "distance_km": 60.35
+  },
+  "FI18": {
+    "region_id": 188,
+    "distance_km": 28.42
+  },
+  "FI57": {
+    "region_id": 189,
+    "distance_km": 80.79
+  },
+  "BG80": {
+    "region_id": 83,
+    "distance_km": 72.64
+  },
+  "BG13": {
+    "region_id": 141,
+    "distance_km": 90.05
+  },
+  "BG16": {
+    "region_id": 141,
+    "distance_km": 101.13
+  },
+  "CH22": {
+    "region_id": 70,
+    "distance_km": 87.37
+  },
+  "CZ71": {
+    "region_id": 125,
+    "distance_km": 40.42
+  },
+  "CY93": {
+    "region_id": 75,
+    "distance_km": 947.55
+  },
+  "LT51": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "AL54": {
+    "region_id": 77,
+    "distance_km": 41.67
+  },
+  "AL45": {
+    "region_id": 79,
+    "distance_km": 47.99
+  },
+  "GBW6": {
+    "region_id": 63,
+    "distance_km": 58.05
+  },
+  "GBW8": {
+    "region_id": 63,
+    "distance_km": 55.91
+  },
+  "MK75": {
+    "region_id": 80,
+    "distance_km": 77.31
+  },
+  "MTGR": {
+    "region_id": 50,
+    "distance_km": 367.88
+  },
+  "MTXL": {
+    "region_id": 50,
+    "distance_km": 370.81
+  },
+  "DK29": {
+    "region_id": 88,
+    "distance_km": 112.82
+  },
+  "DK32": {
+    "region_id": 88,
+    "distance_km": 94.11
+  },
+  "DK76": {
+    "region_id": 86,
+    "distance_km": 70.1
+  },
+  "DK75": {
+    "region_id": 86,
+    "distance_km": 52.12
+  },
+  "DK95": {
+    "region_id": 87,
+    "distance_km": 27.77
+  },
+  "DK70": {
+    "region_id": 86,
+    "distance_km": 78.43
+  },
+  "HU69": {
+    "region_id": 120,
+    "distance_km": 104.73
+  },
+  "GBL7": {
+    "region_id": 61,
+    "distance_km": 25.71
+  },
+  "GBM1": {
+    "region_id": 61,
+    "distance_km": 24.24
+  },
+  "BG10": {
+    "region_id": 141,
+    "distance_km": 101.98
+  },
+  "MTGH": {
+    "region_id": 50,
+    "distance_km": 373.12
+  },
+  "MTSW": {
+    "region_id": 50,
+    "distance_km": 372.83
+  },
+  "LT49": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "SI26": {
+    "region_id": 113,
+    "distance_km": 73.38
+  },
+  "SI36": {
+    "region_id": 119,
+    "distance_km": 84.82
+  },
+  "DK28": {
+    "region_id": 88,
+    "distance_km": 119.56
+  },
+  "DK74": {
+    "region_id": 86,
+    "distance_km": 30.05
+  },
+  "DK78": {
+    "region_id": 86,
+    "distance_km": 43.25
+  },
+  "DK50": {
+    "region_id": 85,
+    "distance_km": 91.38
+  },
+  "DK64": {
+    "region_id": 85,
+    "distance_km": 35.25
+  },
+  "EE85": {
+    "region_id": 157,
+    "distance_km": 108.37
+  },
+  "GBM4": {
+    "region_id": 61,
+    "distance_km": 14.04
+  },
+  "EE29": {
+    "region_id": 158,
+    "distance_km": 114.12
+  },
+  "AT13": {
+    "region_id": 115,
+    "distance_km": 71.51
+  },
+  "HU68": {
+    "region_id": 120,
+    "distance_km": 90.44
+  },
+  "LT36": {
+    "region_id": 159,
+    "distance_km": 73.46
+  },
+  "GBW9": {
+    "region_id": 63,
+    "distance_km": 55.04
+  },
+  "GBB5": {
+    "region_id": 55,
+    "distance_km": 64.81
+  },
+  "GBE9": {
+    "region_id": 63,
+    "distance_km": 45.2
+  },
+  "AT10": {
+    "region_id": 115,
+    "distance_km": 83.4
+  },
+  "BE12": {
+    "region_id": 38,
+    "distance_km": 49.14
+  },
+  "LT93": {
+    "region_id": 154,
+    "distance_km": 83.78
+  },
+  "MTAT": {
+    "region_id": 50,
+    "distance_km": 377.19
+  },
+  "DK22": {
+    "region_id": 88,
+    "distance_km": 127.13
+  },
+  "DK30": {
+    "region_id": 88,
+    "distance_km": 106.07
+  },
+  "DK83": {
+    "region_id": 88,
+    "distance_km": 48.43
+  },
+  "DK73": {
+    "region_id": 86,
+    "distance_km": 25.6
+  },
+  "DK53": {
+    "region_id": 88,
+    "distance_km": 92.51
+  },
+  "SI60": {
+    "region_id": 116,
+    "distance_km": 55.99
+  },
+  "SI90": {
+    "region_id": 113,
+    "distance_km": 92.35
+  },
+  "GBE6": {
+    "region_id": 63,
+    "distance_km": 38.8
+  },
+  "GBW7": {
+    "region_id": 63,
+    "distance_km": 65.5
+  },
+  "AL46": {
+    "region_id": 79,
+    "distance_km": 70.77
+  },
+  "GBM6": {
+    "region_id": 61,
+    "distance_km": 20.77
+  },
+  "MTMT": {
+    "region_id": 50,
+    "distance_km": 378.51
+  },
+  "MTSL": {
+    "region_id": 50,
+    "distance_km": 369.97
+  },
+  "MTVL": {
+    "region_id": 50,
+    "distance_km": 373.8
+  },
+  "SI20": {
+    "region_id": 113,
+    "distance_km": 73.38
+  },
+  "SI50": {
+    "region_id": 72,
+    "distance_km": 54.08
+  },
+  "DK21": {
+    "region_id": 88,
+    "distance_km": 127.59
+  },
+  "DK31": {
+    "region_id": 88,
+    "distance_km": 109.66
+  },
+  "DK34": {
+    "region_id": 88,
+    "distance_km": 110.36
+  },
+  "DK08": {
+    "region_id": 88,
+    "distance_km": 115.91
+  },
+  "MTBB": {
+    "region_id": 50,
+    "distance_km": 381.36
+  },
+  "MTZR": {
+    "region_id": 50,
+    "distance_km": 382.64
+  },
+  "AL15": {
+    "region_id": 79,
+    "distance_km": 91.4
+  },
+  "BE93": {
+    "region_id": 38,
+    "distance_km": 27.28
+  },
+  "BG40": {
+    "region_id": 82,
+    "distance_km": 103.08
+  },
+  "VA00": {
+    "region_id": 52,
+    "distance_km": 85.49
+  },
+  "CY13": {
+    "region_id": 75,
+    "distance_km": 946.69
+  },
+  "DK24": {
+    "region_id": 88,
+    "distance_km": 129.15
+  },
+  "DK92": {
+    "region_id": 87,
+    "distance_km": 24.45
+  },
+  "GBM5": {
+    "region_id": 61,
+    "distance_km": 20.56
+  },
+  "GBN7": {
+    "region_id": 63,
+    "distance_km": 50.16
+  },
+  "EE19": {
+    "region_id": 194,
+    "distance_km": 87.62
+  },
+  "CY83": {
+    "region_id": 75,
+    "distance_km": 907.13
+  },
+  "MK70": {
+    "region_id": 80,
+    "distance_km": 98.33
+  },
+  "AT12": {
+    "region_id": 115,
+    "distance_km": 87.79
+  },
+  "LT00": {
+    "region_id": 154,
+    "distance_km": 58.01
+  },
+  "LT94": {
+    "region_id": 154,
+    "distance_km": 59.11
+  },
+  "SI35": {
+    "region_id": 113,
+    "distance_km": 84.86
+  },
+  "MTST": {
+    "region_id": 50,
+    "distance_km": 372.62
+  },
+  "DK20": {
+    "region_id": 88,
+    "distance_km": 126.14
+  },
+  "AL18": {
+    "region_id": 79,
+    "distance_km": 105.58
+  },
+  "GBL8": {
+    "region_id": 61,
+    "distance_km": 25.58
+  },
+  "MTBK": {
+    "region_id": 50,
+    "distance_km": 375.49
+  },
+  "MTGD": {
+    "region_id": 50,
+    "distance_km": 378.96
+  },
+  "MTKK": {
+    "region_id": 50,
+    "distance_km": 380.34
+  },
+  "SI45": {
+    "region_id": 116,
+    "distance_km": 99.67
+  },
+  "SI66": {
+    "region_id": 116,
+    "distance_km": 55.72
+  },
+  "GBG2": {
+    "region_id": 57,
+    "distance_km": 49.03
+  },
+  "MTDG": {
+    "region_id": 50,
+    "distance_km": 382.16
+  },
+  "MTMG": {
+    "region_id": 50,
+    "distance_km": 376.74
+  },
+  "MTPB": {
+    "region_id": 50,
+    "distance_km": 371.67
+  },
+  "MTSN": {
+    "region_id": 50,
+    "distance_km": 370.42
+  },
+  "SI80": {
+    "region_id": 119,
+    "distance_km": 62.99
+  },
+  "CY92": {
+    "region_id": 75,
+    "distance_km": 940.89
+  },
+  "GBE5": {
+    "region_id": 63,
+    "distance_km": 45.69
+  },
+  "LT31": {
+    "region_id": 155,
+    "distance_km": 45.0
+  },
+  "MK73": {
+    "region_id": 80,
+    "distance_km": 94.99
+  },
+  "MTPL": {
+    "region_id": 50,
+    "distance_km": 376.57
+  },
+  "MTQR": {
+    "region_id": 50,
+    "distance_km": 377.3
+  },
+  "MTVC": {
+    "region_id": 50,
+    "distance_km": 368.57
+  },
+  "MTTX": {
+    "region_id": 50,
+    "distance_km": 377.06
+  },
+  "DK09": {
+    "region_id": 87,
+    "distance_km": 45.58
+  },
+  "GBN4": {
+    "region_id": 63,
+    "distance_km": 49.0
+  },
+  "MTSC": {
+    "region_id": 50,
+    "distance_km": 373.89
+  },
+  "MTRB": {
+    "region_id": 50,
+    "distance_km": 379.31
+  },
+  "MTXR": {
+    "region_id": 50,
+    "distance_km": 366.7
+  },
+  "MTXW": {
+    "region_id": 50,
+    "distance_km": 369.02
+  },
+  "FR98": {
+    "region_id": 57,
+    "distance_km": 9924.07
+  },
+  "GBS5": {
+    "region_id": 61,
+    "distance_km": 74.7
+  },
+  "UA91": {
+    "region_id": 183,
+    "distance_km": 20.17
+  },
+  "SI30": {
+    "region_id": 116,
+    "distance_km": 30.57
+  },
+  "MTGZ": {
+    "region_id": 50,
+    "distance_km": 373.7
+  },
+  "MTPT": {
+    "region_id": 50,
+    "distance_km": 375.02
+  },
+  "MTXB": {
+    "region_id": 50,
+    "distance_km": 374.23
+  },
+  "MTBZ": {
+    "region_id": 50,
+    "distance_km": 375.91
+  },
+  "GBN6": {
+    "region_id": 63,
+    "distance_km": 52.62
+  },
+  "BG90": {
+    "region_id": 83,
+    "distance_km": 72.4
+  },
+  "DK61": {
+    "region_id": 85,
+    "distance_km": 51.27
+  },
+  "LT50": {
+    "region_id": 159,
+    "distance_km": 42.98
+  },
+  "CY90": {
+    "region_id": 75,
+    "distance_km": 951.33
+  },
+  "GBM8": {
+    "region_id": 61,
+    "distance_km": 24.76
+  },
+  "MK60": {
+    "region_id": 80,
+    "distance_km": 97.02
+  },
+  "SI85": {
+    "region_id": 119,
+    "distance_km": 64.45
+  },
+  "SI96": {
+    "region_id": 113,
+    "distance_km": 92.38
+  },
+  "MTFN": {
+    "region_id": 50,
+    "distance_km": 369.57
+  },
+  "DK51": {
+    "region_id": 85,
+    "distance_km": 90.65
+  },
+  "DK23": {
+    "region_id": 88,
+    "distance_km": 132.51
+  },
+  "DK25": {
+    "region_id": 88,
+    "distance_km": 126.53
+  },
+  "MK65": {
+    "region_id": 80,
+    "distance_km": 32.4
+  },
+  "MTFR": {
+    "region_id": 50,
+    "distance_km": 374.76
+  },
+  "MTMR": {
+    "region_id": 50,
+    "distance_km": 376.74
+  },
+  "MTSF": {
+    "region_id": 50,
+    "distance_km": 381.07
+  },
+  "SI16": {
+    "region_id": 116,
+    "distance_km": 75.22
+  },
+  "GBL9": {
+    "region_id": 61,
+    "distance_km": 24.4
+  },
+  "GBN9": {
+    "region_id": 63,
+    "distance_km": 45.55
+  },
+  "CY63": {
+    "region_id": 75,
+    "distance_km": 1000.69
+  },
+  "CY33": {
+    "region_id": 75,
+    "distance_km": 954.53
+  },
+  "MK20": {
+    "region_id": 80,
+    "distance_km": 78.44
+  },
+  "MTLQ": {
+    "region_id": 50,
+    "distance_km": 378.76
+  },
+  "MTML": {
+    "region_id": 50,
+    "distance_km": 373.22
+  },
+  "MTSP": {
+    "region_id": 50,
+    "distance_km": 373.65
+  },
+  "MTSV": {
+    "region_id": 50,
+    "distance_km": 375.78
+  },
+  "MTKC": {
+    "region_id": 50,
+    "distance_km": 369.71
+  },
+  "MTMX": {
+    "region_id": 50,
+    "distance_km": 370.81
+  },
+  "SI86": {
+    "region_id": 119,
+    "distance_km": 64.45
+  },
+  "DK80": {
+    "region_id": 88,
+    "distance_km": 39.13
+  },
+  "DK81": {
+    "region_id": 88,
+    "distance_km": 38.58
+  },
+  "GBG9": {
+    "region_id": 57,
+    "distance_km": 49.46
+  },
+  "MTFG": {
+    "region_id": 50,
+    "distance_km": 376.19
+  },
+  "MTMD": {
+    "region_id": 50,
+    "distance_km": 378.57
+  },
+  "MTZT": {
+    "region_id": 50,
+    "distance_km": 377.33
+  },
+  "MTNX": {
+    "region_id": 50,
+    "distance_km": 372.73
+  },
+  "DK91": {
+    "region_id": 87,
+    "distance_km": 29.08
+  },
+  "MTMQ": {
+    "region_id": 50,
+    "distance_km": 380.81
+  },
+  "MTQL": {
+    "region_id": 50,
+    "distance_km": 366.48
+  },
+  "MTLJ": {
+    "region_id": 50,
+    "distance_km": 375.84
+  },
+  "BG12": {
+    "region_id": 141,
+    "distance_km": 100.72
+  }
+}
