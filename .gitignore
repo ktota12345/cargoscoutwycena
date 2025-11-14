@@ -41,9 +41,24 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+envapigieldy
+
+# OAuth tokens (zawiera wrażliwe dane - nieużywane)
+.transeu_tokens.json
+
+# CSV files (dane testowe/przetargowe)
+*.csv
+
+# API test files
+timoapi
+transapi
 
 # Logs
 *.log
 
 # Package/source files (duże pliki, nie deployuj)
 package/
+
+# Nieużywane pliki
+transeu_oauth.py
+database_indexes.sql

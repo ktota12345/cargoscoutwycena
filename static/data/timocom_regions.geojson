@@ -1,0 +1,1952 @@
+{
+  "type": "FeatureCollection",
+  "name": "timocom_regions",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "type": "City",
+        "city_name": "Portimão",
+        "latitude": 37.13,
+        "longitude": -8.53,
+        "country": "PT",
+        "postal_code": "8500",
+        "country_code": "PT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.53,
+          37.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "type": "City",
+        "city_name": "Córdoba",
+        "latitude": 18.92,
+        "longitude": -96.92,
+        "country": "ES",
+        "postal_code": "14001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.92,
+          18.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "type": "City",
+        "city_name": "Murcia",
+        "latitude": 37.98,
+        "longitude": -1.13,
+        "country": "ES",
+        "postal_code": "30001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.13,
+          37.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "type": "City",
+        "city_name": "Valladolid",
+        "latitude": 20.67,
+        "longitude": -88.2,
+        "country": "ES",
+        "postal_code": "47001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2,
+          20.67
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "type": "City",
+        "city_name": "Patra",
+        "latitude": 38.23,
+        "longitude": 21.73,
+        "country": "GR",
+        "postal_code": "26221",
+        "country_code": "GR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.73,
+          38.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "type": "City",
+        "city_name": "Tarragona",
+        "latitude": 41.12,
+        "longitude": 1.25,
+        "country": "ES",
+        "postal_code": "43001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.25,
+          41.12
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "type": "City",
+        "city_name": "Logroño",
+        "latitude": 42.47,
+        "longitude": -2.43,
+        "country": "ES",
+        "postal_code": "26001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.43,
+          42.47
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "type": "City",
+        "city_name": "Nîmes",
+        "latitude": 43.83,
+        "longitude": 4.35,
+        "country": "FR",
+        "postal_code": "30000",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.35,
+          43.83
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "type": "City",
+        "city_name": "Agen",
+        "latitude": 44.2,
+        "longitude": 0.63,
+        "country": "FR",
+        "postal_code": "47000",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.63,
+          44.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "type": "City",
+        "city_name": "London",
+        "latitude": 37.13,
+        "longitude": -84.08,
+        "country": "GB",
+        "postal_code": "10001",
+        "country_code": "GB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.08,
+          37.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "type": "City",
+        "city_name": "Asti",
+        "latitude": 44.93,
+        "longitude": 8.21,
+        "country": "IT",
+        "postal_code": "14100",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.21,
+          44.93
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "type": "City",
+        "city_name": "Lorient",
+        "latitude": 47.75,
+        "longitude": -3.37,
+        "country": "FR",
+        "postal_code": "56100",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.37,
+          47.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "type": "City",
+        "city_name": "Angers",
+        "latitude": 47.48,
+        "longitude": -0.53,
+        "country": "FR",
+        "postal_code": "49000",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.53,
+          47.48
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "type": "City",
+        "city_name": "Besançon",
+        "latitude": 47.23,
+        "longitude": 6.03,
+        "country": "FR",
+        "postal_code": "25000",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03,
+          47.23
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "type": "City",
+        "city_name": "Nevers",
+        "latitude": 46.98,
+        "longitude": 3.17,
+        "country": "FR",
+        "postal_code": "58000",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.17,
+          46.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 16,
+        "type": "City",
+        "city_name": "Amsterdam",
+        "latitude": 52.35,
+        "longitude": 4.91,
+        "country": "NL",
+        "postal_code": "1000",
+        "country_code": "NL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.91,
+          52.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 17,
+        "type": "City",
+        "city_name": "Banja Luka",
+        "latitude": 44.78,
+        "longitude": 17.18,
+        "country": "BA",
+        "postal_code": "78000",
+        "country_code": "BA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.18,
+          44.78
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 18,
+        "type": "City",
+        "city_name": "Bodø",
+        "latitude": 67.28,
+        "longitude": 14.43,
+        "country": "NO",
+        "postal_code": "8001",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.43,
+          67.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "type": "City",
+        "city_name": "Finnsnes",
+        "latitude": 69.24,
+        "longitude": 18.01,
+        "country": "NO",
+        "postal_code": "9300",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.01,
+          69.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 20,
+        "type": "City",
+        "city_name": "Kirkenes",
+        "latitude": 69.73,
+        "longitude": 30.05,
+        "country": "NO",
+        "postal_code": "9900",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.05,
+          69.73
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 21,
+        "type": "City",
+        "city_name": "Alta",
+        "latitude": 69.97,
+        "longitude": 23.24,
+        "country": "NO",
+        "postal_code": "9501",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.24,
+          69.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 22,
+        "type": "City",
+        "city_name": "Rovaniemi",
+        "latitude": 66.5,
+        "longitude": 25.72,
+        "country": "FI",
+        "postal_code": "96100",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.72,
+          66.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 23,
+        "type": "City",
+        "city_name": "Kiruna",
+        "latitude": 67.85,
+        "longitude": 20.22,
+        "country": "SE",
+        "postal_code": "98101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.22,
+          67.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 24,
+        "type": "City",
+        "city_name": "Sundsvall",
+        "latitude": 62.4,
+        "longitude": 17.32,
+        "country": "SE",
+        "postal_code": "85101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.32,
+          62.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 25,
+        "type": "City",
+        "city_name": "Östersund",
+        "latitude": 63.18,
+        "longitude": 14.65,
+        "country": "SE",
+        "postal_code": "83101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.65,
+          63.18
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 26,
+        "type": "City",
+        "city_name": "Västerås",
+        "latitude": 59.63,
+        "longitude": 16.54,
+        "country": "SE",
+        "postal_code": "72101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.54,
+          59.63
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 27,
+        "type": "City",
+        "city_name": "Karlskrona",
+        "latitude": 56.2,
+        "longitude": 15.3,
+        "country": "SE",
+        "postal_code": "37101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3,
+          56.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 28,
+        "type": "City",
+        "city_name": "Sorø",
+        "latitude": 55.43,
+        "longitude": 11.57,
+        "country": "DK",
+        "postal_code": "4180",
+        "country_code": "DK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.57,
+          55.43
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 29,
+        "type": "City",
+        "city_name": "Esbjerg",
+        "latitude": 55.47,
+        "longitude": 8.45,
+        "country": "DK",
+        "postal_code": "6700",
+        "country_code": "DK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.45,
+          55.47
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 30,
+        "type": "City",
+        "city_name": "Savonlinna",
+        "latitude": 61.87,
+        "longitude": 28.88,
+        "country": "FI",
+        "postal_code": "57100",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.88,
+          61.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 31,
+        "type": "City",
+        "city_name": "Lahti",
+        "latitude": 60.99,
+        "longitude": 25.66,
+        "country": "FI",
+        "postal_code": "15100",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.66,
+          60.99
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 32,
+        "type": "City",
+        "city_name": "Haapsalu",
+        "latitude": 58.94,
+        "longitude": 23.54,
+        "country": "EE",
+        "postal_code": "90501",
+        "country_code": "EE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.54,
+          58.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 33,
+        "type": "City",
+        "city_name": "Kaunas",
+        "latitude": 54.95,
+        "longitude": 23.88,
+        "country": "LT",
+        "postal_code": "44001",
+        "country_code": "LT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.88,
+          54.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 34,
+        "type": "City",
+        "city_name": "Osnabrück",
+        "latitude": 52.28,
+        "longitude": 8.05,
+        "country": "DE",
+        "postal_code": "49074",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.05,
+          52.28
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 35,
+        "type": "City",
+        "city_name": "Stuttgart",
+        "latitude": 48.78,
+        "longitude": 9.2,
+        "country": "DE",
+        "postal_code": "70173",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2,
+          48.78
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 36,
+        "type": "City",
+        "city_name": "Montana",
+        "latitude": 43.41,
+        "longitude": 23.24,
+        "country": "BG",
+        "postal_code": "3400",
+        "country_code": "BG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.24,
+          43.41
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 37,
+        "type": "City",
+        "city_name": "Braunschweig",
+        "latitude": 52.25,
+        "longitude": 10.5,
+        "country": "DE",
+        "postal_code": "38100",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5,
+          52.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 38,
+        "type": "City",
+        "city_name": "Regensburg",
+        "latitude": 49.02,
+        "longitude": 12.12,
+        "country": "DE",
+        "postal_code": "93047",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.12,
+          49.02
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 39,
+        "type": "City",
+        "city_name": "Klagenfurt",
+        "latitude": 46.62,
+        "longitude": 14.31,
+        "country": "AT",
+        "postal_code": "9020",
+        "country_code": "AT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.31,
+          46.62
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 40,
+        "type": "City",
+        "city_name": "Cluj-Napoca",
+        "latitude": 46.79,
+        "longitude": 23.6,
+        "country": "RO",
+        "postal_code": "400001",
+        "country_code": "RO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6,
+          46.79
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 41,
+        "type": "City",
+        "city_name": "Brașov",
+        "latitude": 45.65,
+        "longitude": 25.61,
+        "country": "RO",
+        "postal_code": "500001",
+        "country_code": "RO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.61,
+          45.65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 42,
+        "type": "City",
+        "city_name": "Stavanger",
+        "latitude": 58.97,
+        "longitude": 5.68,
+        "country": "NO",
+        "postal_code": "4001",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.68,
+          58.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 43,
+        "type": "Custom",
+        "city_name": "Custom_ES_1",
+        "latitude": 40.19,
+        "longitude": -2.57,
+        "country": "ES",
+        "postal_code": "16001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.57,
+          40.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 44,
+        "type": "City",
+        "city_name": "Skien",
+        "latitude": 59.2,
+        "longitude": 9.6,
+        "country": "NO",
+        "postal_code": "3717",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6,
+          59.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 45,
+        "type": "Custom",
+        "city_name": "Custom_NO_1",
+        "latitude": 61.22,
+        "longitude": 12.32,
+        "country": "NO",
+        "postal_code": "2317",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.32,
+          61.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 46,
+        "type": "Custom",
+        "city_name": "Custom_SE_1",
+        "latitude": 65.53,
+        "longitude": 17.38,
+        "country": "SE",
+        "postal_code": "90101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.38,
+          65.53
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 47,
+        "type": "Custom",
+        "city_name": "Custom_FI_1",
+        "latitude": 69.78,
+        "longitude": 26.33,
+        "country": "FI",
+        "postal_code": "99800",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.33,
+          69.78
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 48,
+        "type": "Custom",
+        "city_name": "Custom_FI_2",
+        "latitude": 63.81,
+        "longitude": 25.89,
+        "country": "FI",
+        "postal_code": "87100",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.89,
+          63.81
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 49,
+        "type": "Custom",
+        "city_name": "Custom_FI_3",
+        "latitude": 67.2,
+        "longitude": 28.73,
+        "country": "FI",
+        "postal_code": "99100",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.73,
+          67.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 50,
+        "type": "Custom",
+        "city_name": "Custom_FI_4",
+        "latitude": 64.77,
+        "longitude": 28.9,
+        "country": "FI",
+        "postal_code": "88600",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.9,
+          64.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 51,
+        "type": "Custom",
+        "city_name": "Custom_SE_2",
+        "latitude": 66.39,
+        "longitude": 22.43,
+        "country": "SE",
+        "postal_code": "94101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.43,
+          66.39
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 52,
+        "type": "City",
+        "city_name": "Izmayil",
+        "latitude": 45.35,
+        "longitude": 28.84,
+        "country": "RO",
+        "postal_code": "686001",
+        "country_code": "RO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.84,
+          45.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 53,
+        "type": "Custom",
+        "city_name": "Custom_LV_1",
+        "latitude": 56.76,
+        "longitude": 20.84,
+        "country": "LV",
+        "postal_code": "3401",
+        "country_code": "LV"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.84,
+          56.76
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 54,
+        "type": "Custom",
+        "city_name": "Custom_FI_5",
+        "latitude": 62.52,
+        "longitude": 22.16,
+        "country": "FI",
+        "postal_code": "60100",
+        "country_code": "FI"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.16,
+          62.52
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 55,
+        "type": "City",
+        "city_name": "Skellefteå",
+        "latitude": 64.77,
+        "longitude": 20.95,
+        "country": "SE",
+        "postal_code": "93101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.95,
+          64.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 56,
+        "type": "City",
+        "city_name": "Manchester",
+        "latitude": 43.0,
+        "longitude": -71.46,
+        "country": "GB",
+        "postal_code": "10002",
+        "country_code": "GB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.46,
+          43.0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 57,
+        "type": "Custom",
+        "city_name": "Custom_GB_1",
+        "latitude": 56.65,
+        "longitude": -4.35,
+        "country": "GB",
+        "postal_code": "10003",
+        "country_code": "GB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.35,
+          56.65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 58,
+        "type": "City",
+        "city_name": "London",
+        "latitude": 51.501941,
+        "longitude": -0.118668,
+        "country": "GB",
+        "postal_code": "10004",
+        "country_code": "GB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.118668,
+          51.501941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 59,
+        "type": "City",
+        "city_name": "Valladolid",
+        "latitude": 41.650002,
+        "longitude": -4.750031,
+        "country": "ES",
+        "postal_code": "47002",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.750031,
+          41.650002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 60,
+        "type": "City",
+        "city_name": "Verona",
+        "latitude": 45.44039,
+        "longitude": 10.990016,
+        "country": "IT",
+        "postal_code": "37121",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.990016,
+          45.44039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 61,
+        "type": "Custom",
+        "city_name": "Custom_IT_1",
+        "latitude": 40.352878,
+        "longitude": 16.13584,
+        "country": "IT",
+        "postal_code": "75010",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.13584,
+          40.352878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 62,
+        "type": "Custom",
+        "city_name": "Custom_IT_2",
+        "latitude": 42.343195,
+        "longitude": 12.855294,
+        "country": "IT",
+        "postal_code": "02010",
+        "country_code": "IT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.855294,
+          42.343195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 63,
+        "type": "City",
+        "city_name": "Swansea",
+        "latitude": 51.629987,
+        "longitude": -3.950002,
+        "country": "GB",
+        "postal_code": "10005",
+        "country_code": "GB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.950002,
+          51.629987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 64,
+        "type": "City",
+        "city_name": "Bradford",
+        "latitude": 53.791675,
+        "longitude": -1.754465,
+        "country": "GB",
+        "postal_code": "10006",
+        "country_code": "GB"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.754465,
+          53.791675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 65,
+        "type": "City",
+        "city_name": "Namsos",
+        "latitude": 64.483311,
+        "longitude": 11.500011,
+        "country": "NO",
+        "postal_code": "7800",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.500011,
+          64.483311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 66,
+        "type": "City",
+        "city_name": "Ålesund",
+        "latitude": 62.459799,
+        "longitude": 6.26328,
+        "country": "NO",
+        "postal_code": "6001",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.26328,
+          62.459799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 67,
+        "type": "Custom",
+        "city_name": "Custom_NO_2",
+        "latitude": 61.81603,
+        "longitude": 8.688113,
+        "country": "NO",
+        "postal_code": "2680",
+        "country_code": "NO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.688113,
+          61.81603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 68,
+        "type": "Custom",
+        "city_name": "Custom_SE_3",
+        "latitude": 58.642281,
+        "longitude": 13.209947,
+        "country": "SE",
+        "postal_code": "53101",
+        "country_code": "SE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.209947,
+          58.642281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 69,
+        "type": "City",
+        "city_name": "Córdoba",
+        "latitude": 37.879999,
+        "longitude": -4.770004,
+        "country": "ES",
+        "postal_code": "14002",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.770004,
+          37.879999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 70,
+        "type": "City",
+        "city_name": "Covilhã",
+        "latitude": 40.283341,
+        "longitude": -7.499992,
+        "country": "PT",
+        "postal_code": "6200",
+        "country_code": "PT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.499992,
+          40.283341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 71,
+        "type": "Custom",
+        "city_name": "Custom_ES_2",
+        "latitude": 43.36525,
+        "longitude": -7.271301,
+        "country": "ES",
+        "postal_code": "27001",
+        "country_code": "ES"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.271301,
+          43.36525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 72,
+        "type": "City",
+        "city_name": "Amiens",
+        "latitude": 49.900377,
+        "longitude": 2.300004,
+        "country": "FR",
+        "postal_code": "80000",
+        "country_code": "FR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300004,
+          49.900377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 73,
+        "type": "City",
+        "city_name": "Arlon",
+        "latitude": 49.683303,
+        "longitude": 5.8167,
+        "country": "LU",
+        "postal_code": "6700",
+        "country_code": "LU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8167,
+          49.683303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 74,
+        "type": "City",
+        "city_name": "Seres",
+        "latitude": 41.085979,
+        "longitude": 23.549715,
+        "country": "GR",
+        "postal_code": "62100",
+        "country_code": "GR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.549715,
+          41.085979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 75,
+        "type": "City",
+        "city_name": "Sliven",
+        "latitude": 42.67937,
+        "longitude": 26.33001,
+        "country": "BG",
+        "postal_code": "8800",
+        "country_code": "BG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.33001,
+          42.67937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 76,
+        "type": "City",
+        "city_name": "Burrel",
+        "latitude": 41.625999,
+        "longitude": 20.016001,
+        "country": "AL",
+        "postal_code": "8001",
+        "country_code": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.016001,
+          41.625999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 77,
+        "type": "City",
+        "city_name": "Belgrade",
+        "latitude": 44.820591,
+        "longitude": 20.466045,
+        "country": "RS",
+        "postal_code": "11000",
+        "country_code": "RS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.466045,
+          44.820591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 78,
+        "type": "City",
+        "city_name": "Bytom",
+        "latitude": 50.350039,
+        "longitude": 18.909998,
+        "country": "PL",
+        "postal_code": "41900",
+        "country_code": "PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.909998,
+          50.350039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 79,
+        "type": "City",
+        "city_name": "Lublin",
+        "latitude": 51.250398,
+        "longitude": 22.57272,
+        "country": "PL",
+        "postal_code": "20001",
+        "country_code": "PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.57272,
+          51.250398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 80,
+        "type": "Custom",
+        "city_name": "Custom_EE_1",
+        "latitude": 57.727811,
+        "longitude": 26.332132,
+        "country": "EE",
+        "postal_code": "66501",
+        "country_code": "EE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.332132,
+          57.727811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 81,
+        "type": "City",
+        "city_name": "Baranavichy",
+        "latitude": 53.136846,
+        "longitude": 26.01344,
+        "country": "BY",
+        "postal_code": "225320",
+        "country_code": "BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.01344,
+          53.136846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 82,
+        "type": "City",
+        "city_name": "Olsztyn",
+        "latitude": 53.772584,
+        "longitude": 20.485564,
+        "country": "PL",
+        "postal_code": "10001",
+        "country_code": "PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.485564,
+          53.772584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 83,
+        "type": "City",
+        "city_name": "Pardubice",
+        "latitude": 50.04042,
+        "longitude": 15.760009,
+        "country": "CZ",
+        "postal_code": "53002",
+        "country_code": "CZ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.760009,
+          50.04042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 84,
+        "type": "City",
+        "city_name": "Győr",
+        "latitude": 47.700356,
+        "longitude": 17.630024,
+        "country": "HU",
+        "postal_code": "9021",
+        "country_code": "HU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.630024,
+          47.700356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 85,
+        "type": "City",
+        "city_name": "Miskolc",
+        "latitude": 48.100409,
+        "longitude": 20.780013,
+        "country": "HU",
+        "postal_code": "3530",
+        "country_code": "HU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.780013,
+          48.100409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 86,
+        "type": "Custom",
+        "city_name": "Custom_PL_1",
+        "latitude": 53.532006,
+        "longitude": 17.288464,
+        "country": "PL",
+        "postal_code": "89001",
+        "country_code": "PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.288464,
+          53.532006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 87,
+        "type": "Custom",
+        "city_name": "Custom_DE_1",
+        "latitude": 52.402367,
+        "longitude": 13.830591,
+        "country": "DE",
+        "postal_code": "12555",
+        "country_code": "DE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.830591,
+          52.402367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 88,
+        "type": "Custom",
+        "city_name": "Custom_BY_1",
+        "latitude": 55.038193,
+        "longitude": 28.814708,
+        "country": "BY",
+        "postal_code": "211030",
+        "country_code": "BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.814708,
+          55.038193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 89,
+        "type": "City",
+        "city_name": "Homyel",
+        "latitude": 52.430016,
+        "longitude": 31.000009,
+        "country": "BY",
+        "postal_code": "246000",
+        "country_code": "BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.000009,
+          52.430016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 90,
+        "type": "Custom",
+        "city_name": "Custom_BY_1",
+        "latitude": 51.756859,
+        "longitude": 28.016737,
+        "country": "BY",
+        "postal_code": "247710",
+        "country_code": "BY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.016737,
+          51.756859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 91,
+        "type": "Custom",
+        "city_name": "Custom_UA_1",
+        "latitude": 49.874126,
+        "longitude": 24.913518,
+        "country": "UA",
+        "postal_code": "79000",
+        "country_code": "UA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.913518,
+          49.874126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 92,
+        "type": "City",
+        "city_name": "Bălți",
+        "latitude": 47.759086,
+        "longitude": 27.905314,
+        "country": "MD",
+        "postal_code": "3100",
+        "country_code": "MD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.905314,
+          47.759086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 93,
+        "type": "City",
+        "city_name": "Bila Tserkva",
+        "latitude": 49.774312,
+        "longitude": 30.130915,
+        "country": "UA",
+        "postal_code": "09100",
+        "country_code": "UA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.130915,
+          49.774312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 94,
+        "type": "City",
+        "city_name": "Mykolayiv",
+        "latitude": 46.967739,
+        "longitude": 31.984342,
+        "country": "UA",
+        "postal_code": "54001",
+        "country_code": "UA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.984342,
+          46.967739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 95,
+        "type": "City",
+        "city_name": "Zaporizhzhya",
+        "latitude": 47.859243,
+        "longitude": 35.174863,
+        "country": "UA",
+        "postal_code": "69001",
+        "country_code": "UA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.174863,
+          47.859243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 96,
+        "type": "Custom",
+        "city_name": "Custom_UA_2",
+        "latitude": 50.412049,
+        "longitude": 33.159215,
+        "country": "UA",
+        "postal_code": "38000",
+        "country_code": "UA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.159215,
+          50.412049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 97,
+        "type": "City",
+        "city_name": "Kramatorsk",
+        "latitude": 48.719363,
+        "longitude": 37.534391,
+        "country": "UA",
+        "postal_code": "84300",
+        "country_code": "UA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.534391,
+          48.719363
+        ]
+      }
+    }
+  ]
+}

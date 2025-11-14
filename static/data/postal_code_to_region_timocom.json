@@ -1,0 +1,1366 @@
+{
+  "PT85": {
+    "region_id": 1,
+    "distance_km": 0.0
+  },
+  "PT850": {
+    "region_id": 1,
+    "distance_km": 0.0
+  },
+  "PT8500": {
+    "region_id": 1,
+    "distance_km": 0.0
+  },
+  "ES14": {
+    "region_id": 2,
+    "distance_km": 0.0
+  },
+  "ES140": {
+    "region_id": 2,
+    "distance_km": 0.0
+  },
+  "ES1400": {
+    "region_id": 2,
+    "distance_km": 0.0
+  },
+  "ES14001": {
+    "region_id": 2,
+    "distance_km": 0.0
+  },
+  "ES30": {
+    "region_id": 3,
+    "distance_km": 0.0
+  },
+  "ES300": {
+    "region_id": 3,
+    "distance_km": 0.0
+  },
+  "ES3000": {
+    "region_id": 3,
+    "distance_km": 0.0
+  },
+  "ES30001": {
+    "region_id": 3,
+    "distance_km": 0.0
+  },
+  "ES47": {
+    "region_id": 4,
+    "distance_km": 0.0
+  },
+  "ES470": {
+    "region_id": 4,
+    "distance_km": 0.0
+  },
+  "ES4700": {
+    "region_id": 4,
+    "distance_km": 0.0
+  },
+  "ES47001": {
+    "region_id": 4,
+    "distance_km": 0.0
+  },
+  "GR26": {
+    "region_id": 5,
+    "distance_km": 0.0
+  },
+  "GR262": {
+    "region_id": 5,
+    "distance_km": 0.0
+  },
+  "GR2622": {
+    "region_id": 5,
+    "distance_km": 0.0
+  },
+  "GR26221": {
+    "region_id": 5,
+    "distance_km": 0.0
+  },
+  "ES43": {
+    "region_id": 6,
+    "distance_km": 0.0
+  },
+  "ES430": {
+    "region_id": 6,
+    "distance_km": 0.0
+  },
+  "ES4300": {
+    "region_id": 6,
+    "distance_km": 0.0
+  },
+  "ES43001": {
+    "region_id": 6,
+    "distance_km": 0.0
+  },
+  "ES26": {
+    "region_id": 7,
+    "distance_km": 0.0
+  },
+  "ES260": {
+    "region_id": 7,
+    "distance_km": 0.0
+  },
+  "ES2600": {
+    "region_id": 7,
+    "distance_km": 0.0
+  },
+  "ES26001": {
+    "region_id": 7,
+    "distance_km": 0.0
+  },
+  "FR30": {
+    "region_id": 8,
+    "distance_km": 0.0
+  },
+  "FR300": {
+    "region_id": 8,
+    "distance_km": 0.0
+  },
+  "FR3000": {
+    "region_id": 8,
+    "distance_km": 0.0
+  },
+  "FR30000": {
+    "region_id": 8,
+    "distance_km": 0.0
+  },
+  "FR47": {
+    "region_id": 9,
+    "distance_km": 0.0
+  },
+  "FR470": {
+    "region_id": 9,
+    "distance_km": 0.0
+  },
+  "FR4700": {
+    "region_id": 9,
+    "distance_km": 0.0
+  },
+  "FR47000": {
+    "region_id": 9,
+    "distance_km": 0.0
+  },
+  "GB10": {
+    "region_id": 10,
+    "distance_km": 0.0
+  },
+  "GB100": {
+    "region_id": 10,
+    "distance_km": 0.0
+  },
+  "GB1000": {
+    "region_id": 10,
+    "distance_km": 0.0
+  },
+  "GB10001": {
+    "region_id": 10,
+    "distance_km": 0.0
+  },
+  "IT14": {
+    "region_id": 11,
+    "distance_km": 0.0
+  },
+  "IT141": {
+    "region_id": 11,
+    "distance_km": 0.0
+  },
+  "IT1410": {
+    "region_id": 11,
+    "distance_km": 0.0
+  },
+  "IT14100": {
+    "region_id": 11,
+    "distance_km": 0.0
+  },
+  "FR56": {
+    "region_id": 12,
+    "distance_km": 0.0
+  },
+  "FR561": {
+    "region_id": 12,
+    "distance_km": 0.0
+  },
+  "FR5610": {
+    "region_id": 12,
+    "distance_km": 0.0
+  },
+  "FR56100": {
+    "region_id": 12,
+    "distance_km": 0.0
+  },
+  "FR49": {
+    "region_id": 13,
+    "distance_km": 0.0
+  },
+  "FR490": {
+    "region_id": 13,
+    "distance_km": 0.0
+  },
+  "FR4900": {
+    "region_id": 13,
+    "distance_km": 0.0
+  },
+  "FR49000": {
+    "region_id": 13,
+    "distance_km": 0.0
+  },
+  "FR25": {
+    "region_id": 14,
+    "distance_km": 0.0
+  },
+  "FR250": {
+    "region_id": 14,
+    "distance_km": 0.0
+  },
+  "FR2500": {
+    "region_id": 14,
+    "distance_km": 0.0
+  },
+  "FR25000": {
+    "region_id": 14,
+    "distance_km": 0.0
+  },
+  "FR58": {
+    "region_id": 15,
+    "distance_km": 0.0
+  },
+  "FR580": {
+    "region_id": 15,
+    "distance_km": 0.0
+  },
+  "FR5800": {
+    "region_id": 15,
+    "distance_km": 0.0
+  },
+  "FR58000": {
+    "region_id": 15,
+    "distance_km": 0.0
+  },
+  "NL10": {
+    "region_id": 16,
+    "distance_km": 0.0
+  },
+  "NL100": {
+    "region_id": 16,
+    "distance_km": 0.0
+  },
+  "NL1000": {
+    "region_id": 16,
+    "distance_km": 0.0
+  },
+  "BA78": {
+    "region_id": 17,
+    "distance_km": 0.0
+  },
+  "BA780": {
+    "region_id": 17,
+    "distance_km": 0.0
+  },
+  "BA7800": {
+    "region_id": 17,
+    "distance_km": 0.0
+  },
+  "BA78000": {
+    "region_id": 17,
+    "distance_km": 0.0
+  },
+  "NO80": {
+    "region_id": 18,
+    "distance_km": 0.0
+  },
+  "NO800": {
+    "region_id": 18,
+    "distance_km": 0.0
+  },
+  "NO8001": {
+    "region_id": 18,
+    "distance_km": 0.0
+  },
+  "NO93": {
+    "region_id": 19,
+    "distance_km": 0.0
+  },
+  "NO930": {
+    "region_id": 19,
+    "distance_km": 0.0
+  },
+  "NO9300": {
+    "region_id": 19,
+    "distance_km": 0.0
+  },
+  "NO99": {
+    "region_id": 20,
+    "distance_km": 0.0
+  },
+  "NO990": {
+    "region_id": 20,
+    "distance_km": 0.0
+  },
+  "NO9900": {
+    "region_id": 20,
+    "distance_km": 0.0
+  },
+  "NO95": {
+    "region_id": 21,
+    "distance_km": 0.0
+  },
+  "NO950": {
+    "region_id": 21,
+    "distance_km": 0.0
+  },
+  "NO9501": {
+    "region_id": 21,
+    "distance_km": 0.0
+  },
+  "FI96": {
+    "region_id": 22,
+    "distance_km": 0.0
+  },
+  "FI961": {
+    "region_id": 22,
+    "distance_km": 0.0
+  },
+  "FI9610": {
+    "region_id": 22,
+    "distance_km": 0.0
+  },
+  "FI96100": {
+    "region_id": 22,
+    "distance_km": 0.0
+  },
+  "SE98": {
+    "region_id": 23,
+    "distance_km": 0.0
+  },
+  "SE981": {
+    "region_id": 23,
+    "distance_km": 0.0
+  },
+  "SE9810": {
+    "region_id": 23,
+    "distance_km": 0.0
+  },
+  "SE98101": {
+    "region_id": 23,
+    "distance_km": 0.0
+  },
+  "SE85": {
+    "region_id": 24,
+    "distance_km": 0.0
+  },
+  "SE851": {
+    "region_id": 24,
+    "distance_km": 0.0
+  },
+  "SE8510": {
+    "region_id": 24,
+    "distance_km": 0.0
+  },
+  "SE85101": {
+    "region_id": 24,
+    "distance_km": 0.0
+  },
+  "SE83": {
+    "region_id": 25,
+    "distance_km": 0.0
+  },
+  "SE831": {
+    "region_id": 25,
+    "distance_km": 0.0
+  },
+  "SE8310": {
+    "region_id": 25,
+    "distance_km": 0.0
+  },
+  "SE83101": {
+    "region_id": 25,
+    "distance_km": 0.0
+  },
+  "SE72": {
+    "region_id": 26,
+    "distance_km": 0.0
+  },
+  "SE721": {
+    "region_id": 26,
+    "distance_km": 0.0
+  },
+  "SE7210": {
+    "region_id": 26,
+    "distance_km": 0.0
+  },
+  "SE72101": {
+    "region_id": 26,
+    "distance_km": 0.0
+  },
+  "SE37": {
+    "region_id": 27,
+    "distance_km": 0.0
+  },
+  "SE371": {
+    "region_id": 27,
+    "distance_km": 0.0
+  },
+  "SE3710": {
+    "region_id": 27,
+    "distance_km": 0.0
+  },
+  "SE37101": {
+    "region_id": 27,
+    "distance_km": 0.0
+  },
+  "DK41": {
+    "region_id": 28,
+    "distance_km": 0.0
+  },
+  "DK418": {
+    "region_id": 28,
+    "distance_km": 0.0
+  },
+  "DK4180": {
+    "region_id": 28,
+    "distance_km": 0.0
+  },
+  "DK67": {
+    "region_id": 29,
+    "distance_km": 0.0
+  },
+  "DK670": {
+    "region_id": 29,
+    "distance_km": 0.0
+  },
+  "DK6700": {
+    "region_id": 29,
+    "distance_km": 0.0
+  },
+  "FI57": {
+    "region_id": 30,
+    "distance_km": 0.0
+  },
+  "FI571": {
+    "region_id": 30,
+    "distance_km": 0.0
+  },
+  "FI5710": {
+    "region_id": 30,
+    "distance_km": 0.0
+  },
+  "FI57100": {
+    "region_id": 30,
+    "distance_km": 0.0
+  },
+  "FI15": {
+    "region_id": 31,
+    "distance_km": 0.0
+  },
+  "FI151": {
+    "region_id": 31,
+    "distance_km": 0.0
+  },
+  "FI1510": {
+    "region_id": 31,
+    "distance_km": 0.0
+  },
+  "FI15100": {
+    "region_id": 31,
+    "distance_km": 0.0
+  },
+  "EE90": {
+    "region_id": 32,
+    "distance_km": 0.0
+  },
+  "EE905": {
+    "region_id": 32,
+    "distance_km": 0.0
+  },
+  "EE9050": {
+    "region_id": 32,
+    "distance_km": 0.0
+  },
+  "EE90501": {
+    "region_id": 32,
+    "distance_km": 0.0
+  },
+  "LT44": {
+    "region_id": 33,
+    "distance_km": 0.0
+  },
+  "LT440": {
+    "region_id": 33,
+    "distance_km": 0.0
+  },
+  "LT4400": {
+    "region_id": 33,
+    "distance_km": 0.0
+  },
+  "LT44001": {
+    "region_id": 33,
+    "distance_km": 0.0
+  },
+  "DE49": {
+    "region_id": 34,
+    "distance_km": 0.0
+  },
+  "DE490": {
+    "region_id": 34,
+    "distance_km": 0.0
+  },
+  "DE4907": {
+    "region_id": 34,
+    "distance_km": 0.0
+  },
+  "DE49074": {
+    "region_id": 34,
+    "distance_km": 0.0
+  },
+  "DE70": {
+    "region_id": 35,
+    "distance_km": 0.0
+  },
+  "DE701": {
+    "region_id": 35,
+    "distance_km": 0.0
+  },
+  "DE7017": {
+    "region_id": 35,
+    "distance_km": 0.0
+  },
+  "DE70173": {
+    "region_id": 35,
+    "distance_km": 0.0
+  },
+  "BG34": {
+    "region_id": 36,
+    "distance_km": 0.0
+  },
+  "BG340": {
+    "region_id": 36,
+    "distance_km": 0.0
+  },
+  "BG3400": {
+    "region_id": 36,
+    "distance_km": 0.0
+  },
+  "DE38": {
+    "region_id": 37,
+    "distance_km": 0.0
+  },
+  "DE381": {
+    "region_id": 37,
+    "distance_km": 0.0
+  },
+  "DE3810": {
+    "region_id": 37,
+    "distance_km": 0.0
+  },
+  "DE38100": {
+    "region_id": 37,
+    "distance_km": 0.0
+  },
+  "DE93": {
+    "region_id": 38,
+    "distance_km": 0.0
+  },
+  "DE930": {
+    "region_id": 38,
+    "distance_km": 0.0
+  },
+  "DE9304": {
+    "region_id": 38,
+    "distance_km": 0.0
+  },
+  "DE93047": {
+    "region_id": 38,
+    "distance_km": 0.0
+  },
+  "AT90": {
+    "region_id": 39,
+    "distance_km": 0.0
+  },
+  "AT902": {
+    "region_id": 39,
+    "distance_km": 0.0
+  },
+  "AT9020": {
+    "region_id": 39,
+    "distance_km": 0.0
+  },
+  "RO40": {
+    "region_id": 40,
+    "distance_km": 0.0
+  },
+  "RO400": {
+    "region_id": 40,
+    "distance_km": 0.0
+  },
+  "RO4000": {
+    "region_id": 40,
+    "distance_km": 0.0
+  },
+  "RO400001": {
+    "region_id": 40,
+    "distance_km": 0.0
+  },
+  "RO50": {
+    "region_id": 41,
+    "distance_km": 0.0
+  },
+  "RO500": {
+    "region_id": 41,
+    "distance_km": 0.0
+  },
+  "RO5000": {
+    "region_id": 41,
+    "distance_km": 0.0
+  },
+  "RO500001": {
+    "region_id": 41,
+    "distance_km": 0.0
+  },
+  "NO40": {
+    "region_id": 42,
+    "distance_km": 0.0
+  },
+  "NO400": {
+    "region_id": 42,
+    "distance_km": 0.0
+  },
+  "NO4001": {
+    "region_id": 42,
+    "distance_km": 0.0
+  },
+  "ES16": {
+    "region_id": 43,
+    "distance_km": 0.0
+  },
+  "ES160": {
+    "region_id": 43,
+    "distance_km": 0.0
+  },
+  "ES1600": {
+    "region_id": 43,
+    "distance_km": 0.0
+  },
+  "ES16001": {
+    "region_id": 43,
+    "distance_km": 0.0
+  },
+  "NO37": {
+    "region_id": 44,
+    "distance_km": 0.0
+  },
+  "NO371": {
+    "region_id": 44,
+    "distance_km": 0.0
+  },
+  "NO3717": {
+    "region_id": 44,
+    "distance_km": 0.0
+  },
+  "NO23": {
+    "region_id": 45,
+    "distance_km": 0.0
+  },
+  "NO231": {
+    "region_id": 45,
+    "distance_km": 0.0
+  },
+  "NO2317": {
+    "region_id": 45,
+    "distance_km": 0.0
+  },
+  "SE90": {
+    "region_id": 46,
+    "distance_km": 0.0
+  },
+  "SE901": {
+    "region_id": 46,
+    "distance_km": 0.0
+  },
+  "SE9010": {
+    "region_id": 46,
+    "distance_km": 0.0
+  },
+  "SE90101": {
+    "region_id": 46,
+    "distance_km": 0.0
+  },
+  "FI99": {
+    "region_id": 47,
+    "distance_km": 0.0
+  },
+  "FI998": {
+    "region_id": 47,
+    "distance_km": 0.0
+  },
+  "FI9980": {
+    "region_id": 47,
+    "distance_km": 0.0
+  },
+  "FI99800": {
+    "region_id": 47,
+    "distance_km": 0.0
+  },
+  "FI87": {
+    "region_id": 48,
+    "distance_km": 0.0
+  },
+  "FI871": {
+    "region_id": 48,
+    "distance_km": 0.0
+  },
+  "FI8710": {
+    "region_id": 48,
+    "distance_km": 0.0
+  },
+  "FI87100": {
+    "region_id": 48,
+    "distance_km": 0.0
+  },
+  "FI991": {
+    "region_id": 49,
+    "distance_km": 0.0
+  },
+  "FI9910": {
+    "region_id": 49,
+    "distance_km": 0.0
+  },
+  "FI99100": {
+    "region_id": 49,
+    "distance_km": 0.0
+  },
+  "FI88": {
+    "region_id": 50,
+    "distance_km": 0.0
+  },
+  "FI886": {
+    "region_id": 50,
+    "distance_km": 0.0
+  },
+  "FI8860": {
+    "region_id": 50,
+    "distance_km": 0.0
+  },
+  "FI88600": {
+    "region_id": 50,
+    "distance_km": 0.0
+  },
+  "SE94": {
+    "region_id": 51,
+    "distance_km": 0.0
+  },
+  "SE941": {
+    "region_id": 51,
+    "distance_km": 0.0
+  },
+  "SE9410": {
+    "region_id": 51,
+    "distance_km": 0.0
+  },
+  "SE94101": {
+    "region_id": 51,
+    "distance_km": 0.0
+  },
+  "RO68": {
+    "region_id": 52,
+    "distance_km": 0.0
+  },
+  "RO686": {
+    "region_id": 52,
+    "distance_km": 0.0
+  },
+  "RO6860": {
+    "region_id": 52,
+    "distance_km": 0.0
+  },
+  "RO686001": {
+    "region_id": 52,
+    "distance_km": 0.0
+  },
+  "LV34": {
+    "region_id": 53,
+    "distance_km": 0.0
+  },
+  "LV340": {
+    "region_id": 53,
+    "distance_km": 0.0
+  },
+  "LV3401": {
+    "region_id": 53,
+    "distance_km": 0.0
+  },
+  "FI60": {
+    "region_id": 54,
+    "distance_km": 0.0
+  },
+  "FI601": {
+    "region_id": 54,
+    "distance_km": 0.0
+  },
+  "FI6010": {
+    "region_id": 54,
+    "distance_km": 0.0
+  },
+  "FI60100": {
+    "region_id": 54,
+    "distance_km": 0.0
+  },
+  "SE93": {
+    "region_id": 55,
+    "distance_km": 0.0
+  },
+  "SE931": {
+    "region_id": 55,
+    "distance_km": 0.0
+  },
+  "SE9310": {
+    "region_id": 55,
+    "distance_km": 0.0
+  },
+  "SE93101": {
+    "region_id": 55,
+    "distance_km": 0.0
+  },
+  "GB10002": {
+    "region_id": 56,
+    "distance_km": 0.0
+  },
+  "GB10003": {
+    "region_id": 57,
+    "distance_km": 0.0
+  },
+  "GB10004": {
+    "region_id": 58,
+    "distance_km": 0.0
+  },
+  "ES47002": {
+    "region_id": 59,
+    "distance_km": 0.0
+  },
+  "IT37": {
+    "region_id": 60,
+    "distance_km": 0.0
+  },
+  "IT371": {
+    "region_id": 60,
+    "distance_km": 0.0
+  },
+  "IT3712": {
+    "region_id": 60,
+    "distance_km": 0.0
+  },
+  "IT37121": {
+    "region_id": 60,
+    "distance_km": 0.0
+  },
+  "IT75": {
+    "region_id": 61,
+    "distance_km": 0.0
+  },
+  "IT750": {
+    "region_id": 61,
+    "distance_km": 0.0
+  },
+  "IT7501": {
+    "region_id": 61,
+    "distance_km": 0.0
+  },
+  "IT75010": {
+    "region_id": 61,
+    "distance_km": 0.0
+  },
+  "IT02": {
+    "region_id": 62,
+    "distance_km": 0.0
+  },
+  "IT020": {
+    "region_id": 62,
+    "distance_km": 0.0
+  },
+  "IT0201": {
+    "region_id": 62,
+    "distance_km": 0.0
+  },
+  "IT02010": {
+    "region_id": 62,
+    "distance_km": 0.0
+  },
+  "GB10005": {
+    "region_id": 63,
+    "distance_km": 0.0
+  },
+  "GB10006": {
+    "region_id": 64,
+    "distance_km": 0.0
+  },
+  "NO78": {
+    "region_id": 65,
+    "distance_km": 0.0
+  },
+  "NO780": {
+    "region_id": 65,
+    "distance_km": 0.0
+  },
+  "NO7800": {
+    "region_id": 65,
+    "distance_km": 0.0
+  },
+  "NO60": {
+    "region_id": 66,
+    "distance_km": 0.0
+  },
+  "NO600": {
+    "region_id": 66,
+    "distance_km": 0.0
+  },
+  "NO6001": {
+    "region_id": 66,
+    "distance_km": 0.0
+  },
+  "NO26": {
+    "region_id": 67,
+    "distance_km": 0.0
+  },
+  "NO268": {
+    "region_id": 67,
+    "distance_km": 0.0
+  },
+  "NO2680": {
+    "region_id": 67,
+    "distance_km": 0.0
+  },
+  "SE53": {
+    "region_id": 68,
+    "distance_km": 0.0
+  },
+  "SE531": {
+    "region_id": 68,
+    "distance_km": 0.0
+  },
+  "SE5310": {
+    "region_id": 68,
+    "distance_km": 0.0
+  },
+  "SE53101": {
+    "region_id": 68,
+    "distance_km": 0.0
+  },
+  "ES14002": {
+    "region_id": 69,
+    "distance_km": 0.0
+  },
+  "PT62": {
+    "region_id": 70,
+    "distance_km": 0.0
+  },
+  "PT620": {
+    "region_id": 70,
+    "distance_km": 0.0
+  },
+  "PT6200": {
+    "region_id": 70,
+    "distance_km": 0.0
+  },
+  "ES27": {
+    "region_id": 71,
+    "distance_km": 0.0
+  },
+  "ES270": {
+    "region_id": 71,
+    "distance_km": 0.0
+  },
+  "ES2700": {
+    "region_id": 71,
+    "distance_km": 0.0
+  },
+  "ES27001": {
+    "region_id": 71,
+    "distance_km": 0.0
+  },
+  "FR80": {
+    "region_id": 72,
+    "distance_km": 0.0
+  },
+  "FR800": {
+    "region_id": 72,
+    "distance_km": 0.0
+  },
+  "FR8000": {
+    "region_id": 72,
+    "distance_km": 0.0
+  },
+  "FR80000": {
+    "region_id": 72,
+    "distance_km": 0.0
+  },
+  "LU67": {
+    "region_id": 73,
+    "distance_km": 0.0
+  },
+  "LU670": {
+    "region_id": 73,
+    "distance_km": 0.0
+  },
+  "LU6700": {
+    "region_id": 73,
+    "distance_km": 0.0
+  },
+  "GR62": {
+    "region_id": 74,
+    "distance_km": 0.0
+  },
+  "GR621": {
+    "region_id": 74,
+    "distance_km": 0.0
+  },
+  "GR6210": {
+    "region_id": 74,
+    "distance_km": 0.0
+  },
+  "GR62100": {
+    "region_id": 74,
+    "distance_km": 0.0
+  },
+  "BG88": {
+    "region_id": 75,
+    "distance_km": 0.0
+  },
+  "BG880": {
+    "region_id": 75,
+    "distance_km": 0.0
+  },
+  "BG8800": {
+    "region_id": 75,
+    "distance_km": 0.0
+  },
+  "AL80": {
+    "region_id": 76,
+    "distance_km": 0.0
+  },
+  "AL800": {
+    "region_id": 76,
+    "distance_km": 0.0
+  },
+  "AL8001": {
+    "region_id": 76,
+    "distance_km": 0.0
+  },
+  "RS11": {
+    "region_id": 77,
+    "distance_km": 0.0
+  },
+  "RS110": {
+    "region_id": 77,
+    "distance_km": 0.0
+  },
+  "RS1100": {
+    "region_id": 77,
+    "distance_km": 0.0
+  },
+  "RS11000": {
+    "region_id": 77,
+    "distance_km": 0.0
+  },
+  "PL41": {
+    "region_id": 78,
+    "distance_km": 0.0
+  },
+  "PL419": {
+    "region_id": 78,
+    "distance_km": 0.0
+  },
+  "PL4190": {
+    "region_id": 78,
+    "distance_km": 0.0
+  },
+  "PL41900": {
+    "region_id": 78,
+    "distance_km": 0.0
+  },
+  "PL20": {
+    "region_id": 79,
+    "distance_km": 0.0
+  },
+  "PL200": {
+    "region_id": 79,
+    "distance_km": 0.0
+  },
+  "PL2000": {
+    "region_id": 79,
+    "distance_km": 0.0
+  },
+  "PL20001": {
+    "region_id": 79,
+    "distance_km": 0.0
+  },
+  "EE66": {
+    "region_id": 80,
+    "distance_km": 0.0
+  },
+  "EE665": {
+    "region_id": 80,
+    "distance_km": 0.0
+  },
+  "EE6650": {
+    "region_id": 80,
+    "distance_km": 0.0
+  },
+  "EE66501": {
+    "region_id": 80,
+    "distance_km": 0.0
+  },
+  "BY22": {
+    "region_id": 81,
+    "distance_km": 0.0
+  },
+  "BY225": {
+    "region_id": 81,
+    "distance_km": 0.0
+  },
+  "BY2253": {
+    "region_id": 81,
+    "distance_km": 0.0
+  },
+  "BY225320": {
+    "region_id": 81,
+    "distance_km": 0.0
+  },
+  "PL10": {
+    "region_id": 82,
+    "distance_km": 0.0
+  },
+  "PL100": {
+    "region_id": 82,
+    "distance_km": 0.0
+  },
+  "PL1000": {
+    "region_id": 82,
+    "distance_km": 0.0
+  },
+  "PL10001": {
+    "region_id": 82,
+    "distance_km": 0.0
+  },
+  "CZ53": {
+    "region_id": 83,
+    "distance_km": 0.0
+  },
+  "CZ530": {
+    "region_id": 83,
+    "distance_km": 0.0
+  },
+  "CZ5300": {
+    "region_id": 83,
+    "distance_km": 0.0
+  },
+  "CZ53002": {
+    "region_id": 83,
+    "distance_km": 0.0
+  },
+  "HU90": {
+    "region_id": 84,
+    "distance_km": 0.0
+  },
+  "HU902": {
+    "region_id": 84,
+    "distance_km": 0.0
+  },
+  "HU9021": {
+    "region_id": 84,
+    "distance_km": 0.0
+  },
+  "HU35": {
+    "region_id": 85,
+    "distance_km": 0.0
+  },
+  "HU353": {
+    "region_id": 85,
+    "distance_km": 0.0
+  },
+  "HU3530": {
+    "region_id": 85,
+    "distance_km": 0.0
+  },
+  "PL89": {
+    "region_id": 86,
+    "distance_km": 0.0
+  },
+  "PL890": {
+    "region_id": 86,
+    "distance_km": 0.0
+  },
+  "PL8900": {
+    "region_id": 86,
+    "distance_km": 0.0
+  },
+  "PL89001": {
+    "region_id": 86,
+    "distance_km": 0.0
+  },
+  "DE12": {
+    "region_id": 87,
+    "distance_km": 0.0
+  },
+  "DE125": {
+    "region_id": 87,
+    "distance_km": 0.0
+  },
+  "DE1255": {
+    "region_id": 87,
+    "distance_km": 0.0
+  },
+  "DE12555": {
+    "region_id": 87,
+    "distance_km": 0.0
+  },
+  "BY21": {
+    "region_id": 88,
+    "distance_km": 0.0
+  },
+  "BY211": {
+    "region_id": 88,
+    "distance_km": 0.0
+  },
+  "BY2110": {
+    "region_id": 88,
+    "distance_km": 0.0
+  },
+  "BY211030": {
+    "region_id": 88,
+    "distance_km": 0.0
+  },
+  "BY24": {
+    "region_id": 89,
+    "distance_km": 0.0
+  },
+  "BY246": {
+    "region_id": 89,
+    "distance_km": 0.0
+  },
+  "BY2460": {
+    "region_id": 89,
+    "distance_km": 0.0
+  },
+  "BY246000": {
+    "region_id": 89,
+    "distance_km": 0.0
+  },
+  "BY247": {
+    "region_id": 90,
+    "distance_km": 0.0
+  },
+  "BY2477": {
+    "region_id": 90,
+    "distance_km": 0.0
+  },
+  "BY247710": {
+    "region_id": 90,
+    "distance_km": 0.0
+  },
+  "UA79": {
+    "region_id": 91,
+    "distance_km": 0.0
+  },
+  "UA790": {
+    "region_id": 91,
+    "distance_km": 0.0
+  },
+  "UA7900": {
+    "region_id": 91,
+    "distance_km": 0.0
+  },
+  "UA79000": {
+    "region_id": 91,
+    "distance_km": 0.0
+  },
+  "MD31": {
+    "region_id": 92,
+    "distance_km": 0.0
+  },
+  "MD310": {
+    "region_id": 92,
+    "distance_km": 0.0
+  },
+  "MD3100": {
+    "region_id": 92,
+    "distance_km": 0.0
+  },
+  "UA09": {
+    "region_id": 93,
+    "distance_km": 0.0
+  },
+  "UA091": {
+    "region_id": 93,
+    "distance_km": 0.0
+  },
+  "UA0910": {
+    "region_id": 93,
+    "distance_km": 0.0
+  },
+  "UA09100": {
+    "region_id": 93,
+    "distance_km": 0.0
+  },
+  "UA54": {
+    "region_id": 94,
+    "distance_km": 0.0
+  },
+  "UA540": {
+    "region_id": 94,
+    "distance_km": 0.0
+  },
+  "UA5400": {
+    "region_id": 94,
+    "distance_km": 0.0
+  },
+  "UA54001": {
+    "region_id": 94,
+    "distance_km": 0.0
+  },
+  "UA69": {
+    "region_id": 95,
+    "distance_km": 0.0
+  },
+  "UA690": {
+    "region_id": 95,
+    "distance_km": 0.0
+  },
+  "UA6900": {
+    "region_id": 95,
+    "distance_km": 0.0
+  },
+  "UA69001": {
+    "region_id": 95,
+    "distance_km": 0.0
+  },
+  "UA38": {
+    "region_id": 96,
+    "distance_km": 0.0
+  },
+  "UA380": {
+    "region_id": 96,
+    "distance_km": 0.0
+  },
+  "UA3800": {
+    "region_id": 96,
+    "distance_km": 0.0
+  },
+  "UA38000": {
+    "region_id": 96,
+    "distance_km": 0.0
+  },
+  "UA84": {
+    "region_id": 97,
+    "distance_km": 0.0
+  },
+  "UA843": {
+    "region_id": 97,
+    "distance_km": 0.0
+  },
+  "UA8430": {
+    "region_id": 97,
+    "distance_km": 0.0
+  },
+  "UA84300": {
+    "region_id": 97,
+    "distance_km": 0.0
+  }
+}

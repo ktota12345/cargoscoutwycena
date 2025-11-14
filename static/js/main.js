@@ -12,13 +12,14 @@ let currentRouteData = null;
 let selectedDays = 7;
 let isNowMode = false; // Tryb "teraz"
 let nowDataLoaded = false; // Czy dane "teraz" zostały już załadowane dla tego wyszukiwania
+let cachedNowData = null; // Przechowuj dane live z trybu "teraz"
 
 // Lokalne dane kodów pocztowych
 let postalCodesData = null;
 
 // Inicjalizacja przy załadowaniu strony
 document.addEventListener('DOMContentLoaded', async function() {
-    // Inicjalizacja PostalCodeSearch
+    // Inicjalizacja PostalCodeSearch (ładuje wszystkie dane regionów)
     await initializePostalSearch();
     
     // Inicjalizacja przycisków rozwijanych (raz na start)
@@ -341,6 +342,62 @@ async function handleFormSubmit(e) {
         
         console.log(`📏 Odległość obliczona: ${Math.round(distance)} km`);
         
+        // Buduj pełne adresy z danych regionów (dla API giełd)
+        // Struktura region: { city_name, country, postal_code, ... }
+        const countryNames = {
+            'PL': 'Poland', 'DE': 'Germany', 'FR': 'France', 'ES': 'Spain', 'IT': 'Italy',
+            'GB': 'United Kingdom', 'NL': 'Netherlands', 'BE': 'Belgium', 'AT': 'Austria',
+            'CZ': 'Czech Republic', 'SK': 'Slovakia', 'HU': 'Hungary', 'RO': 'Romania',
+            'BG': 'Bulgaria', 'HR': 'Croatia', 'SI': 'Slovenia', 'LT': 'Lithuania',
+            'LV': 'Latvia', 'EE': 'Estonia', 'DK': 'Denmark', 'SE': 'Sweden',
+            'NO': 'Norway', 'FI': 'Finland', 'PT': 'Portugal', 'IE': 'Ireland',
+            'CH': 'Switzerland', 'LU': 'Luxembourg', 'GR': 'Greece'
+        };
+        
+        console.log('Debug selectedStartRegion:', selectedStartRegion);
+        console.log('Debug selectedEndRegion:', selectedEndRegion);
+        
+        // Budowanie adresu - używaj properties z GeoJSON jeśli dostępne
+        let startLocationFull = startLocationNormalized;
+        let endLocationFull = endLocationNormalized;
+        
+        // Funkcja pomocnicza do budowania adresu
+        const buildAddress = (props) => {
+            if (!props) return '';
+            
+            const parts = [];
+            const postalCode = props.postal_code?.trim();
+            const cityName = (props.city_name || props.city)?.trim();
+            const country = props.country?.trim();
+            const countryFull = country ? (countryNames[country] || country) : '';
+            
+            // Dodaj kod pocztowy i miasto razem jeśli są
+            if (postalCode && cityName) {
+                parts.push(`${postalCode} ${cityName}`);
+            } else if (cityName) {
+                parts.push(cityName);
+            } else if (postalCode) {
+                parts.push(postalCode);
+            }
+            
+            // Dodaj kraj jeśli jest
+            if (countryFull) {
+                parts.push(countryFull);
+            }
+            
+            return parts.join(', ');
+        };
+        
+        if (selectedStartRegion && selectedStartRegion.properties) {
+            startLocationFull = buildAddress(selectedStartRegion.properties) || startLocationNormalized;
+        }
+        
+        if (selectedEndRegion && selectedEndRegion.properties) {
+            endLocationFull = buildAddress(selectedEndRegion.properties) || endLocationNormalized;
+        }
+        
+        console.log(`📍 Adresy dla API: ${startLocationFull} -> ${endLocationFull}`);
+        
         // Wysłanie zapytania do API
         const response = await fetch('/api/calculate', {
             method: 'POST',
@@ -348,10 +405,12 @@ async function handleFormSubmit(e) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                start_location: startLocationNormalized,
-                end_location: endLocationNormalized,
-                start_location_raw: startLocationRaw,
+                start_location: startLocationFull,  // Pełny adres dla API giełd
+                end_location: endLocationFull,       // Pełny adres dla API giełd
+                start_location_raw: startLocationRaw,  // Kod pocztowy wpisany przez użytkownika
                 end_location_raw: endLocationRaw,
+                start_region_id: selectedStartRegion.id,  // ID regionu dla bazy danych
+                end_region_id: selectedEndRegion.id,      // ID regionu dla bazy danych
                 vehicle_type: vehicleType,
                 body_type: bodyType,
                 start_coords: [startFinalCoords[1], startFinalCoords[0]], // [lat, lng] - precyzyjne
@@ -379,6 +438,7 @@ async function handleFormSubmit(e) {
         // Reset flagi "teraz" dla nowego wyszukiwania
         nowDataLoaded = false;
         isNowMode = false;
+        cachedNowData = null;
         
         // Wyświetlenie wyników
         displayResults(data);
@@ -581,30 +641,89 @@ function displayCostSummary(data) {
     const exchangeData = data.exchange_rates_by_days['7'];
     const historicalData = data.historical_rates_by_days['7'];
     
-    const exchangeAvg = exchangeData.average_total_price;
-    const exchangeAvgRate = exchangeData.average_rate_per_km;
+    // Sprawdź czy są dane giełdowe
+    const hasExchangeData = exchangeData.has_data !== false;
+    const exchangeAvg = hasExchangeData ? exchangeData.average_total_price : null;
+    const exchangeAvgRate = hasExchangeData ? exchangeData.average_rate_per_km : null;
+    
     const historicalAvg = historicalData.has_data ? 
         historicalData.average_total_price : null;
     const historicalAvgRate = historicalData.has_data ? 
         historicalData.average_rate_per_km : null;
     
     // Stawka i kwota giełdowa
-    document.getElementById('avgExchangeRate').textContent = `${exchangeAvgRate} EUR/km`;
-    document.getElementById('avgExchange').textContent = `${exchangeAvg} EUR`;
-    document.getElementById('avgExchangeOffersPerDay').textContent = exchangeData.average_offers_per_day;
-    
-    // Szczegóły stawek giełdowych (bez dat)
-    let exchangeDetailsHtml = '';
-    exchangeData.offers.forEach(offer => {
-        exchangeDetailsHtml += `
-            <div class="detail-item">
-                <strong>${offer.exchange}</strong>: 
-                ${offer.rate_per_km} EUR/km | ${offer.total_price} EUR
-                <span class="text-muted" style="font-size: 0.85em;"> (${offer.offers_per_day} ofert/dzień)</span>
+    if (hasExchangeData) {
+        document.getElementById('avgExchangeRate').textContent = `${exchangeAvgRate} EUR/km`;
+        document.getElementById('avgExchange').textContent = `${exchangeAvg} EUR`;
+        
+        // Pokaż ogólną liczbę ofert jako główną wartość
+        const totalOffers = exchangeData.total_offers_sum || 0;
+        const recordsCount = exchangeData.records_count || 0;
+        
+        if (totalOffers > 0) {
+            document.getElementById('avgExchangeOffersPerDay').textContent = `${totalOffers} ofert`;
+            
+            if (recordsCount > 0) {
+                document.getElementById('totalOffersCount').textContent = `(w ${recordsCount} dniach)`;
+            } else {
+                document.getElementById('totalOffersCount').textContent = '';
+            }
+        } else {
+            document.getElementById('avgExchangeOffersPerDay').textContent = '0 ofert';
+            document.getElementById('totalOffersCount').textContent = '';
+        }
+        
+        // Szczegóły stawek giełdowych (tylko TimoCom i Trans.eu)
+        let exchangeDetailsHtml = '';
+        exchangeData.offers.forEach(offer => {
+            // Filtruj tylko TimoCom i Trans.eu
+            if (offer.exchange !== 'TimoCom' && offer.exchange !== 'Trans.eu') {
+                return; // Pomiń Teleroute i Transporeon
+            }
+            
+            if (offer.has_data === false) {
+                // Oferta bez danych
+                const message = offer.message || 'Brak danych';
+                exchangeDetailsHtml += `
+                    <div class="detail-item">
+                        <strong>${offer.exchange}</strong>: 
+                        <span class="text-muted" style="font-size: 0.9em;">${message}</span>
+                    </div>
+                `;
+            } else {
+                // Oferta z danymi - pokaż stawkę, cenę i liczbę ofert
+                const totalOffers = offer.total_offers_sum || 0;
+                const recordsCount = offer.records_count || 0;
+                
+                let offersInfo = '';
+                if (totalOffers > 0) {
+                    offersInfo = ` <span class="text-muted" style="font-size: 0.85em;">(${totalOffers} ofert w ${recordsCount} dniach)</span>`;
+                } else if (recordsCount > 0) {
+                    offersInfo = ` <span class="text-muted" style="font-size: 0.85em;">(${recordsCount} dni)</span>`;
+                }
+                
+                exchangeDetailsHtml += `
+                    <div class="detail-item">
+                        <strong>${offer.exchange}</strong>: 
+                        ${offer.rate_per_km} EUR/km | ${offer.total_price} EUR${offersInfo}
+                    </div>
+                `;
+            }
+        });
+        document.getElementById('exchangeDetails').innerHTML = exchangeDetailsHtml;
+    } else {
+        // Brak danych giełdowych
+        document.getElementById('avgExchangeRate').textContent = 'Brak danych';
+        document.getElementById('avgExchange').textContent = '';
+        document.getElementById('avgExchangeOffersPerDay').textContent = '-';
+        
+        const message = exchangeData.message || 'Brak danych dla tej trasy w wybranym okresie';
+        document.getElementById('exchangeDetails').innerHTML = `
+            <div class="alert alert-info mb-0" style="font-size: 0.9em;">
+                <i class="fas fa-info-circle"></i> ${message}
             </div>
         `;
-    });
-    document.getElementById('exchangeDetails').innerHTML = exchangeDetailsHtml;
+    }
     
     // Stawka i kwota historyczna
     if (historicalAvg) {
@@ -646,9 +765,65 @@ async function handleNowMode() {
     if (!currentRouteData) return;
     
     // Sprawdź czy dane już zostały załadowane dla tego wyszukiwania
-    if (nowDataLoaded) {
-        console.log('📊 Dane "teraz" już załadowane - wykorzystuję cache');
-        // Tylko zmień wizualizację na okręgi
+    if (nowDataLoaded && cachedNowData) {
+        console.log('📊 Dane "teraz" już załadowane - wyświetlam z cache');
+        
+        // Wyświetl dane z cache
+        const offersData = cachedNowData;
+        
+        if (offersData.has_data && offersData.average_rate_per_km > 0) {
+            document.getElementById('avgExchangeRate').textContent = `${offersData.average_rate_per_km} EUR/km`;
+            document.getElementById('avgExchange').textContent = `${offersData.average_total_price} EUR`;
+            
+            const totalCount = offersData.total_count || 0;
+            document.getElementById('avgExchangeOffersPerDay').textContent = `${totalCount} ofert na żywo`;
+            document.getElementById('totalOffersCount').textContent = '';
+        } else {
+            document.getElementById('avgExchangeRate').textContent = 'Brak danych';
+            document.getElementById('avgExchange').textContent = '';
+            document.getElementById('avgExchangeOffersPerDay').textContent = '0';
+            document.getElementById('totalOffersCount').textContent = '';
+        }
+        
+        // Pokaż szczegóły dla każdej giełdy
+        let detailsHtml = '<div style="margin: 10px 0;">';
+        const timocomCount = offersData.timocom_count || 0;
+        if (timocomCount > 0) {
+            detailsHtml += `
+                <div class="detail-item">
+                    <strong>TimoCom</strong>: 
+                    <span class="text-success"><i class="fas fa-check-circle"></i> ${timocomCount} ofert</span>
+                </div>
+            `;
+        } else {
+            detailsHtml += `
+                <div class="detail-item">
+                    <strong>TimoCom</strong>: 
+                    <span class="text-muted">Brak ofert</span>
+                </div>
+            `;
+        }
+        
+        const transeuCount = offersData.transeu_count || 0;
+        if (transeuCount > 0) {
+            detailsHtml += `
+                <div class="detail-item">
+                    <strong>Trans.eu</strong>: 
+                    <span class="text-success"><i class="fas fa-check-circle"></i> ${transeuCount} ofert</span>
+                </div>
+            `;
+        } else {
+            detailsHtml += `
+                <div class="detail-item">
+                    <strong>Trans.eu</strong>: 
+                    <span class="text-muted">Brak ofert</span>
+                </div>
+            `;
+        }
+        detailsHtml += '</div>';
+        document.getElementById('exchangeDetails').innerHTML = detailsHtml;
+        
+        // Zmień wizualizację na okręgi
         displayRouteWithCircles(
             currentRouteData.route,
             currentRouteData.startPreciseCoords,
@@ -672,31 +847,170 @@ async function handleNowMode() {
     
     progressContainer.style.display = 'block';
     progressBar.style.width = '0%';
-    progressText.textContent = 'Pobieranie aktualnych danych...';
+    progressText.textContent = 'Łączenie z API giełd...';
     
-    // Animacja paska postępu przez 8 sekund
-    const duration = 8000; // 8 sekund
-    const steps = 100;
-    const stepDuration = duration / steps;
+    // Pobierz aktualne oferty z API giełd - RÓWNOCZEŚNIE z paskiem postępu
+    console.log('📊 Tryb "teraz" - pobieranie aktualnych ofert z API...');
     
-    for (let i = 0; i <= steps; i++) {
-        await new Promise(resolve => setTimeout(resolve, stepDuration));
-        const percent = i;
-        progressBar.style.width = `${percent}%`;
+    // Uruchom zapytanie do API i animację paska RÓWNOCZEŚNIE
+    const apiPromise = fetch('/api/current-offers', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            start_location: currentRouteData.start_location,  // Znormalizowany adres (np. "Wrocław, Poland")
+            end_location: currentRouteData.end_location,      // Znormalizowany adres
+            start_location_raw: currentRouteData.startLocationRaw,  // Raw input użytkownika (np. "pl00")
+            end_location_raw: currentRouteData.endLocationRaw,
+            start_coords: currentRouteData.start_coords,  // [lat, lng]
+            end_coords: currentRouteData.end_coords,      // [lat, lng]
+            distance: currentRouteData.distance
+        })
+    }).then(response => response.json());
+    
+    // Animacja paska postępu RÓWNOCZEŚNIE z API
+    const progressPromise = (async () => {
+        const minDuration = 1000; // Minimum 1 sekunda
+        const maxDuration = 8000; // Maksimum 8 sekund
+        const steps = 100;
+        const stepDuration = 50; // 50ms na krok
         
-        // Zmień tekst na różnych etapach
-        if (percent < 25) {
-            progressText.textContent = 'Łączenie z giełdami transportowymi...';
-        } else if (percent < 50) {
-            progressText.textContent = 'Pobieranie ofert Trans.eu...';
-        } else if (percent < 75) {
-            progressText.textContent = 'Analiza danych TimoCom...';
-        } else if (percent < 100) {
-            progressText.textContent = 'Finalizacja danych...';
-        } else {
-            progressText.textContent = 'Gotowe!';
+        let percent = 0;
+        const startTime = Date.now();
+        
+        while (percent < 100) {
+            await new Promise(resolve => setTimeout(resolve, stepDuration));
+            percent = Math.min(100, percent + Math.random() * 3 + 1); // Losowy przyrost 1-4%
+            progressBar.style.width = `${Math.floor(percent)}%`;
+            
+            // Zmień tekst na różnych etapach
+            if (percent < 30) {
+                progressText.textContent = 'Łączenie z giełdami...';
+            } else if (percent < 60) {
+                progressText.textContent = 'Pobieranie ofert...';
+            } else if (percent < 90) {
+                progressText.textContent = 'Analiza danych...';
+            } else {
+                progressText.textContent = 'Finalizacja...';
+            }
         }
+    })();
+    
+    // Czekaj aż zarówno API jak i minimalna animacja się skończą
+    let result;
+    try {
+        result = await apiPromise;
+        
+        if (result.success && result.data) {
+            console.log('✓ Pobrano aktualne oferty z API giełd:', result.data);
+            
+            const offersData = result.data;
+            
+            // Zapisz dane do cache
+            cachedNowData = offersData;
+            
+            // Wyświetl średnią jeśli są dane
+            if (offersData.has_data && offersData.average_rate_per_km > 0) {
+                document.getElementById('avgExchangeRate').textContent = `${offersData.average_rate_per_km} EUR/km`;
+                document.getElementById('avgExchange').textContent = `${offersData.average_total_price} EUR`;
+                
+                // W trybie "teraz" pokazujemy tylko liczbę ofert (nie "per dzień")
+                const totalCount = offersData.total_count || 0;
+                document.getElementById('avgExchangeOffersPerDay').textContent = `${totalCount} ofert na żywo`;
+                document.getElementById('totalOffersCount').textContent = ''; // Nie pokazuj dodatkowej info w trybie teraz
+            } else {
+                document.getElementById('avgExchangeRate').textContent = 'Brak danych';
+                document.getElementById('avgExchange').textContent = '';
+                document.getElementById('avgExchangeOffersPerDay').textContent = '0';
+                document.getElementById('totalOffersCount').textContent = '';
+            }
+            
+            // Pokaż szczegóły dla każdej giełdy osobno
+            let detailsHtml = '<div style="margin: 10px 0;">';
+            
+            // TimoCom
+            const timocomCount = offersData.timocom_count || 0;
+            if (timocomCount > 0) {
+                detailsHtml += `
+                    <div class="detail-item">
+                        <strong>TimoCom</strong>: 
+                        <span class="text-success"><i class="fas fa-check-circle"></i> ${timocomCount} ofert</span>
+                    </div>
+                `;
+            } else {
+                detailsHtml += `
+                    <div class="detail-item">
+                        <strong>TimoCom</strong>: 
+                        <span class="text-muted"><i class="fas fa-info-circle"></i> Brak ofert z ceną</span>
+                    </div>
+                `;
+            }
+            
+            // Trans.eu
+            const transeuCount = offersData.transeu_count || 0;
+            if (transeuCount > 0) {
+                detailsHtml += `
+                    <div class="detail-item">
+                        <strong>Trans.eu</strong>: 
+                        <span class="text-success"><i class="fas fa-check-circle"></i> ${transeuCount} ofert</span>
+                    </div>
+                `;
+            } else {
+                detailsHtml += `
+                    <div class="detail-item">
+                        <strong>Trans.eu</strong>: 
+                        <span class="text-muted"><i class="fas fa-info-circle"></i> Brak ofert z ceną</span>
+                    </div>
+                `;
+            }
+            
+            detailsHtml += `
+                <small class="text-muted d-block mt-2">
+                    <i class="fas fa-clock"></i> Dane na żywo z API giełd
+                </small>
+            </div>
+            `;
+            
+            document.getElementById('exchangeDetails').innerHTML = detailsHtml;
+            
+        } else {
+            console.warn('⚠ Brak aktualnych ofert lub błąd API');
+            
+            // Pokaż komunikat "Brak danych" zamiast fallback do bazy
+            document.getElementById('avgExchangeRate').textContent = 'Brak danych';
+            document.getElementById('avgExchange').textContent = '';
+            document.getElementById('avgExchangeOffersPerDay').textContent = '';
+            document.getElementById('totalOffersCount').textContent = '';
+            document.getElementById('exchangeDetails').innerHTML = `
+                <div class="alert alert-warning" style="margin: 10px 0; font-size: 0.9em;">
+                    <i class="fas fa-exclamation-triangle"></i> Brak aktualnych ofert dla tej trasy
+                </div>
+            `;
+        }
+        
+    } catch (error) {
+        console.error('❌ Błąd pobierania aktualnych ofert:', error);
+        result = null;
+        
+        // Pokaż błąd zamiast fallback do bazy
+        document.getElementById('avgExchangeRate').textContent = 'Błąd';
+        document.getElementById('avgExchange').textContent = '';
+        document.getElementById('avgExchangeOffersPerDay').textContent = '';
+        document.getElementById('totalOffersCount').textContent = '';
+        document.getElementById('exchangeDetails').innerHTML = `
+            <div class="alert alert-danger" style="margin: 10px 0; font-size: 0.9em;">
+                <i class="fas fa-times-circle"></i> Błąd pobierania danych: ${error.message}
+            </div>
+        `;
     }
+    
+    // Poczekaj aż animacja paska się skończy (jeśli jeszcze trwa)
+    await progressPromise;
+    
+    // Ustaw pasek na 100%
+    progressBar.style.width = '100%';
+    progressText.textContent = 'Gotowe!';
     
     // POKAŻ dane po zakończeniu
     costSummary.style.opacity = '1';
@@ -709,13 +1023,6 @@ async function handleNowMode() {
     
     // Oznacz że dane zostały załadowane
     nowDataLoaded = true;
-    
-    // Tutaj w przyszłości można dodać rzeczywiste wywołania API
-    // Na razie użyjemy danych z 7 dni
-    console.log('📊 Tryb "teraz" - dane aktualne pobrane i zapisane w cache');
-    
-    // Zaktualizuj dane (używamy danych z 7 dni jako podstawa)
-    updateRatesForSelectedDays(7);
     
     // Zmień wizualizację na okręgi 100km
     displayRouteWithCircles(
@@ -865,6 +1172,9 @@ function updateRatesForSelectedDays(days) {
     const exchangeData = currentRouteData.exchange_rates_by_days[daysKey];
     const historicalData = currentRouteData.historical_rates_by_days[daysKey];
     
+    // DEBUG: Sprawdź dane dla tego okresu
+    console.log(`🔄 Okres: ${days} dni - Oferty: ${exchangeData?.total_offers_sum || 0}, Dni z danymi: ${exchangeData?.records_count || 0}`);
+    
     // Pobierz elementy box
     const exchangeBox = document.querySelector('.rate-group-box:nth-child(1)');
     const historicalBox = document.querySelector('.rate-group-box:nth-child(2)');
@@ -876,44 +1186,85 @@ function updateRatesForSelectedDays(days) {
     // Opóźnij aktualizację danych dla efektu
     setTimeout(() => {
         // Aktualizuj stawki giełdowe
-        if (exchangeData) {
+        if (exchangeData && exchangeData.has_data !== false) {
             document.getElementById('avgExchangeRate').textContent = `${exchangeData.average_rate_per_km} EUR/km`;
             document.getElementById('avgExchange').textContent = `${exchangeData.average_total_price} EUR`;
-            document.getElementById('avgExchangeOffersPerDay').textContent = exchangeData.average_offers_per_day;
             
-            // Aktualizuj szczegóły (bez dat)
+            // Pokaż ogólną liczbę ofert jako główną wartość
+            const totalOffers = exchangeData.total_offers_sum || 0;
+            const recordsCount = exchangeData.records_count || 0;
+            
+            if (totalOffers > 0) {
+                document.getElementById('avgExchangeOffersPerDay').textContent = `${totalOffers} ofert`;
+                
+                if (recordsCount > 0) {
+                    // Pokaż liczbę dni w nawiasie
+                    document.getElementById('totalOffersCount').textContent = `(w ${recordsCount} dniach)`;
+                } else {
+                    document.getElementById('totalOffersCount').textContent = '';
+                }
+            } else {
+                document.getElementById('avgExchangeOffersPerDay').textContent = '0 ofert';
+                document.getElementById('totalOffersCount').textContent = '';
+            }
+            
+            // Aktualizuj szczegóły (tylko TimoCom i Trans.eu)
             let exchangeDetailsHtml = '';
             exchangeData.offers.forEach(offer => {
-                exchangeDetailsHtml += `
-                    <div class="detail-item">
-                        <strong>${offer.exchange}</strong>: 
-                        ${offer.rate_per_km} EUR/km | ${offer.total_price} EUR
-                        <span class="text-muted" style="font-size: 0.85em;"> (${offer.offers_per_day} ofert/dzień)</span>
-                    </div>
-                `;
+                // Filtruj tylko TimoCom i Trans.eu
+                if (offer.exchange !== 'TimoCom' && offer.exchange !== 'Trans.eu') {
+                    return; // Pomiń Teleroute i Transporeon
+                }
+                
+                if (offer.has_data === false) {
+                    // Oferta bez danych
+                    const message = offer.message || 'Brak danych';
+                    exchangeDetailsHtml += `
+                        <div class="detail-item">
+                            <strong>${offer.exchange}</strong>: 
+                            <span class="text-muted" style="font-size: 0.9em;">${message}</span>
+                        </div>
+                    `;
+                } else {
+                    // Oferta z danymi - pokaż stawkę, cenę i liczbę ofert
+                    const totalOffers = offer.total_offers_sum || 0;
+                    const recordsCount = offer.records_count || 0;
+                    
+                    let offersInfo = '';
+                    if (totalOffers > 0) {
+                        offersInfo = ` <span class="text-muted" style="font-size: 0.85em;">(${totalOffers} ofert w ${recordsCount} dniach)</span>`;
+                    } else if (recordsCount > 0) {
+                        offersInfo = ` <span class="text-muted" style="font-size: 0.85em;">(${recordsCount} dni)</span>`;
+                    }
+                    
+                    exchangeDetailsHtml += `
+                        <div class="detail-item">
+                            <strong>${offer.exchange}</strong>: 
+                            ${offer.rate_per_km} EUR/km | ${offer.total_price} EUR${offersInfo}
+                        </div>
+                    `;
+                }
             });
             document.getElementById('exchangeDetails').innerHTML = exchangeDetailsHtml;
+        } else {
+            // Brak danych giełdowych
+            document.getElementById('avgExchangeRate').textContent = 'Brak danych';
+            document.getElementById('avgExchange').textContent = '';
+            document.getElementById('avgExchangeOffersPerDay').textContent = '';
+            document.getElementById('totalOffersCount').textContent = '';
+            
+            const message = exchangeData.message || 'Brak danych dla tej trasy w wybranym okresie';
+            document.getElementById('exchangeDetails').innerHTML = `
+                <div class="alert alert-info mb-0" style="font-size: 0.9em;">
+                    <i class="fas fa-info-circle"></i> ${message}
+                </div>
+            `;
         }
         
-        // Aktualizuj stawki historyczne
-        if (historicalData && historicalData.has_data) {
-            document.getElementById('avgHistoricalRate').textContent = `${historicalData.average_rate_per_km} EUR/km`;
-            document.getElementById('avgHistorical').textContent = `${historicalData.average_total_price} EUR`;
-            document.getElementById('avgHistoricalOffersPerDay').textContent = historicalData.orders_per_day;
-            document.getElementById('historicalOffersPerDayContainer').style.display = 'block';
-            
-            // Aktualizuj szczegóły (bez dat)
-            let historicalDetailsHtml = '';
-            historicalData.orders.forEach(order => {
-                historicalDetailsHtml += `
-                    <div class="detail-item">
-                        <strong>${order.order_id}</strong>: 
-                        ${order.rate_per_km} EUR/km | ${order.total_price} EUR
-                    </div>
-                `;
-            });
-            document.getElementById('historicalDetails').innerHTML = historicalDetailsHtml;
-        }
+        // Aktualizuj stawki historyczne - ZAWSZE "Brak danych"
+        document.getElementById('avgHistoricalRate').textContent = 'Brak danych';
+        document.getElementById('avgHistorical').textContent = '';
+        document.getElementById('historicalOffersPerDayContainer').style.display = 'none';
         
         // Usuń klasę animacji i dodaj efekt pulse
         if (exchangeBox) {
