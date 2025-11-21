@@ -73,12 +73,17 @@ def get_aws_route_distance(start_lat: float, start_lng: float, end_lat: float, e
         lub None w przypadku błędu
     """
     if not AWS_LOCATION_API_KEY:
-        print("[AWS] Brak API key - używam fallback")
+        print("[AWS] ❌ BŁĄD: Brak API key - używam fallback")
+        print(f"[AWS] AWS_LOCATION_API_KEY = {AWS_LOCATION_API_KEY}")
         return None
     
     try:
         # AWS Location Service Routes API v2 endpoint
         url = f"https://routes.geo.{AWS_REGION}.amazonaws.com/v2/routes?key={AWS_LOCATION_API_KEY}"
+        
+        print(f"[AWS] 🌐 URL: {url[:80]}...")
+        print(f"[AWS] 📍 Origin: [{start_lng}, {start_lat}]")
+        print(f"[AWS] 📍 Destination: [{end_lng}, {end_lat}]")
         
         headers = {
             "Content-Type": "application/json"
@@ -92,7 +97,9 @@ def get_aws_route_distance(start_lat: float, start_lng: float, end_lat: float, e
             "LegGeometryFormat": "Simple"  # Żądaj geometrii trasy
         }
         
+        print(f"[AWS] 📤 Wysyłam request do AWS...")
         response = requests.post(url, json=payload, headers=headers, timeout=15)
+        print(f"[AWS] 📥 Otrzymano odpowiedź: status={response.status_code}")
         
         if response.status_code == 200:
             data = response.json()
@@ -127,14 +134,23 @@ def get_aws_route_distance(start_lat: float, start_lng: float, end_lat: float, e
                 
                 return result
         
-        print(f"[AWS] ✗ Błąd API: {response.status_code}")
+        print(f"[AWS] ❌ Błąd API: status={response.status_code}")
+        print(f"[AWS] Response body: {response.text[:500]}")
         return None
             
     except requests.exceptions.Timeout:
-        print("[AWS] ✗ Timeout")
+        print("[AWS] ❌ Timeout (15s) - brak odpowiedzi od AWS")
+        return None
+    except requests.exceptions.ConnectionError as e:
+        print(f"[AWS] ❌ ConnectionError: {e}")
+        return None
+    except requests.exceptions.RequestException as e:
+        print(f"[AWS] ❌ RequestException: {e}")
         return None
     except Exception as e:
-        print(f"[AWS] ✗ Błąd: {e}")
+        print(f"[AWS] ❌ Nieoczekiwany błąd: {type(e).__name__}: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 # Załaduj mapowanie Trans.eu -> TimoCom z pliku JSON
@@ -925,13 +941,20 @@ def calculate_distance():
     Endpoint do obliczania rzeczywistego dystansu drogowego przez AWS Location Service API
     Zwraca dystans w kilometrach, opcjonalnie geometrię trasy, lub fallback do Haversine
     """
+    print("\n" + "="*60)
+    print("🔵 WYWOŁANO /api/calculate-distance")
+    print("="*60)
+    
     data = request.json
+    print(f"📥 Otrzymane dane: {data}")
+    
     start_coords = data.get('start_coords')  # [lat, lng]
     end_coords = data.get('end_coords')      # [lat, lng]
     fallback_distance = data.get('fallback_distance')  # Haversine z frontendu
     include_geometry = data.get('include_geometry', False)  # Czy zwrócić geometrię trasy
     
     if not start_coords or not end_coords:
+        print("❌ BŁĄD: Brak współrzędnych")
         return jsonify({'error': 'Brak współrzędnych'}), 400
     
     start_lat, start_lng = start_coords
@@ -940,6 +963,11 @@ def calculate_distance():
     print(f"\n📏 Obliczanie dystansu AWS (geometry={include_geometry}):")
     print(f"   Start: [{start_lat}, {start_lng}]")
     print(f"   Cel: [{end_lat}, {end_lng}]")
+    print(f"   Fallback distance: {fallback_distance} km")
+    print(f"   AWS_LOCATION_API_KEY set: {bool(AWS_LOCATION_API_KEY)}")
+    if AWS_LOCATION_API_KEY:
+        print(f"   AWS_LOCATION_API_KEY prefix: {AWS_LOCATION_API_KEY[:20]}...")
+    print(f"   AWS_REGION: {AWS_REGION}")
     
     # Wywołaj AWS API z możliwością pobrania geometrii
     aws_result = get_aws_route_distance(start_lat, start_lng, end_lat, end_lng, 
@@ -958,14 +986,19 @@ def calculate_distance():
         if include_geometry and 'geometry' in aws_result:
             response_data['geometry'] = aws_result['geometry']
             response_data['duration'] = aws_result.get('duration', 0)
-            print(f"   ✓ Dystans AWS: {aws_result['distance']} km, Punkty: {len(aws_result['geometry'])}")
+            print(f"   ✅ SUKCES: Dystans AWS: {aws_result['distance']} km, Punkty: {len(aws_result['geometry'])}")
         else:
-            print(f"   ✓ Dystans AWS: {aws_result['distance']} km")
+            print(f"   ✅ SUKCES: Dystans AWS: {aws_result['distance']} km")
         
+        print(f"📤 Zwracam response: method=aws, distance={aws_result['distance']}")
+        print("="*60 + "\n")
         return jsonify(response_data)
     else:
         # Błąd AWS - użyj fallback (Haversine)
+        print(f"   ⚠️  AWS zwrócił None - używam fallback")
         print(f"   ⚠️  Fallback do Haversine: {fallback_distance} km")
+        print(f"📤 Zwracam response: method=haversine_fallback, distance={fallback_distance}")
+        print("="*60 + "\n")
         return jsonify({
             'success': True,
             'distance': fallback_distance,
