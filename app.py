@@ -3,11 +3,12 @@ import random
 import os
 from datetime import datetime, timedelta
 from decimal import Decimal
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
 from freight_api import get_current_offers
+import requests
 
 # Załaduj zmienne środowiskowe z pliku .env
 load_dotenv()
@@ -20,6 +21,10 @@ DB_PORT = os.getenv("POSTGRES_PORT")
 DB_USER = os.getenv("POSTGRES_USER")
 DB_NAME = os.getenv("POSTGRES_DB")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+
+# Konfiguracja AWS Location Service
+AWS_LOCATION_API_KEY = os.getenv("AWS_LOCATION_API_KEY")
+AWS_REGION = os.getenv("AWS_REGION", "eu-central-1")
 
 # Funkcja do nawiązywania połączenia z bazą danych
 def _get_db_connection():
@@ -51,6 +56,86 @@ def _decimal_to_float(record: Dict[str, Any]) -> Dict[str, Any]:
         else:
             converted[key] = value
     return converted
+
+# Funkcja do obliczania dystansu przez AWS Location Service API
+def get_aws_route_distance(start_lat: float, start_lng: float, end_lat: float, end_lng: float, 
+                           return_geometry: bool = False) -> Optional[Dict]:
+    """
+    Wywołuje AWS Location Service Routes API aby obliczyć rzeczywisty dystans drogowy.
+    
+    Args:
+        start_lat, start_lng: Współrzędne startu
+        end_lat, end_lng: Współrzędne końca
+        return_geometry: Czy zwrócić również geometrię trasy (dla mapy)
+    
+    Returns:
+        Dict z 'distance' (km) i opcjonalnie 'geometry' (lista punktów [lng, lat])
+        lub None w przypadku błędu
+    """
+    if not AWS_LOCATION_API_KEY:
+        print("[AWS] Brak API key - używam fallback")
+        return None
+    
+    try:
+        # AWS Location Service Routes API v2 endpoint
+        url = f"https://routes.geo.{AWS_REGION}.amazonaws.com/v2/routes?key={AWS_LOCATION_API_KEY}"
+        
+        headers = {
+            "Content-Type": "application/json"
+        }
+        
+        payload = {
+            "Origin": [start_lng, start_lat],
+            "Destination": [end_lng, end_lat],
+            "TravelMode": "Truck",
+            "OptimizeRoutingFor": "FastestRoute",
+            "LegGeometryFormat": "Simple"  # Żądaj geometrii trasy
+        }
+        
+        response = requests.post(url, json=payload, headers=headers, timeout=15)
+        
+        if response.status_code == 200:
+            data = response.json()
+            if 'Routes' in data and len(data['Routes']) > 0:
+                route = data['Routes'][0]
+                
+                # Suma dystansów ze wszystkich legs
+                total_distance = 0
+                for leg in route.get('Legs', []):
+                    vehicle_details = leg.get('VehicleLegDetails', {})
+                    travel_steps = vehicle_details.get('TravelSteps', [])
+                    for step in travel_steps:
+                        total_distance += step.get('Distance', 0)
+                
+                distance_km = total_distance / 1000.0
+                result = {'distance': round(distance_km, 2)}
+                
+                # Dodaj geometrię jeśli żądana
+                if return_geometry:
+                    geometry_points = []
+                    for leg in route.get('Legs', []):
+                        leg_geometry = leg.get('Geometry', {})
+                        if 'LineString' in leg_geometry:
+                            # LineString to lista punktów [lng, lat]
+                            geometry_points.extend(leg_geometry['LineString'])
+                    
+                    result['geometry'] = geometry_points
+                    result['duration'] = route.get('Summary', {}).get('Duration', 0)  # Czas w sekundach
+                    print(f"[AWS] ✓ Dystans: {distance_km:.2f} km, Punkty trasy: {len(geometry_points)}")
+                else:
+                    print(f"[AWS] ✓ Dystans AWS: {distance_km:.2f} km")
+                
+                return result
+        
+        print(f"[AWS] ✗ Błąd API: {response.status_code}")
+        return None
+            
+    except requests.exceptions.Timeout:
+        print("[AWS] ✗ Timeout")
+        return None
+    except Exception as e:
+        print(f"[AWS] ✗ Błąd: {e}")
+        return None
 
 # Załaduj mapowanie Trans.eu -> TimoCom z pliku JSON
 _TRANSEU_TO_TIMOCOM_MAPPING = None
@@ -742,9 +827,15 @@ def calculate_route():
     historical_data_30 = generate_historical_data(distance, start_location, end_location, 30)
     historical_data_90 = generate_historical_data(distance, start_location, end_location, 90)
     
+    # Pobierz metodę obliczania dystansu z zapytania (jeśli dostępna)
+    distance_method = data.get('distance_method', 'unknown')
+    haversine_distance = data.get('haversine_distance')
+    
     result = {
         'route': route_data,
         'distance': distance,
+        'distance_method': distance_method,  # 'aws', 'haversine', 'haversine_fallback'
+        'haversine_distance': haversine_distance,  # Oryginalny dystans Haversine dla porównania
         'start_location': start_location,
         'end_location': end_location,
         'start_location_raw': start_location_raw,
@@ -827,6 +918,60 @@ def get_current_freight_offers():
                 'message': f'Błąd połączenia z API giełd: {str(e)}'
             }
         }), 500
+
+@app.route('/api/calculate-distance', methods=['POST'])
+def calculate_distance():
+    """
+    Endpoint do obliczania rzeczywistego dystansu drogowego przez AWS Location Service API
+    Zwraca dystans w kilometrach, opcjonalnie geometrię trasy, lub fallback do Haversine
+    """
+    data = request.json
+    start_coords = data.get('start_coords')  # [lat, lng]
+    end_coords = data.get('end_coords')      # [lat, lng]
+    fallback_distance = data.get('fallback_distance')  # Haversine z frontendu
+    include_geometry = data.get('include_geometry', False)  # Czy zwrócić geometrię trasy
+    
+    if not start_coords or not end_coords:
+        return jsonify({'error': 'Brak współrzędnych'}), 400
+    
+    start_lat, start_lng = start_coords
+    end_lat, end_lng = end_coords
+    
+    print(f"\n📏 Obliczanie dystansu AWS (geometry={include_geometry}):")
+    print(f"   Start: [{start_lat}, {start_lng}]")
+    print(f"   Cel: [{end_lat}, {end_lng}]")
+    
+    # Wywołaj AWS API z możliwością pobrania geometrii
+    aws_result = get_aws_route_distance(start_lat, start_lng, end_lat, end_lng, 
+                                       return_geometry=include_geometry)
+    
+    if aws_result is not None:
+        # Sukces - użyj dystansu AWS
+        response_data = {
+            'success': True,
+            'distance': aws_result['distance'],
+            'method': 'aws',
+            'fallback_distance': fallback_distance
+        }
+        
+        # Dodaj geometrię jeśli była pobrana
+        if include_geometry and 'geometry' in aws_result:
+            response_data['geometry'] = aws_result['geometry']
+            response_data['duration'] = aws_result.get('duration', 0)
+            print(f"   ✓ Dystans AWS: {aws_result['distance']} km, Punkty: {len(aws_result['geometry'])}")
+        else:
+            print(f"   ✓ Dystans AWS: {aws_result['distance']} km")
+        
+        return jsonify(response_data)
+    else:
+        # Błąd AWS - użyj fallback (Haversine)
+        print(f"   ⚠️  Fallback do Haversine: {fallback_distance} km")
+        return jsonify({
+            'success': True,
+            'distance': fallback_distance,
+            'method': 'haversine_fallback',
+            'message': 'AWS API niedostępny - użyto Haversine'
+        })
 
 if __name__ == '__main__':
     # Pobierz port z zmiennej środowiskowej (dla Render) lub użyj 5000 lokalnie

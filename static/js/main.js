@@ -333,14 +333,60 @@ async function handleFormSubmit(e) {
             }
         }
         
-        // Oblicz odległość między lokalizacjami (precyzyjnymi lub centroidami)
-        const distance = turf.distance(
+        // Oblicz odległość Haversine (w linii prostej) jako fallback
+        const haversineDistance = turf.distance(
             turf.point(startFinalCoords),
             turf.point(endFinalCoords),
             { units: 'kilometers' }
         );
         
-        console.log(`📏 Odległość obliczona: ${Math.round(distance)} km`);
+        console.log(`📏 Odległość Haversine: ${Math.round(haversineDistance)} km`);
+        
+        // Wywołaj AWS Location Service API dla rzeczywistego dystansu drogowego
+        let distance = haversineDistance;
+        let distanceMethod = 'haversine';
+        let awsRouteGeometry = null;
+        let awsRouteDuration = null;
+        
+        try {
+            console.log('🌐 Wywołuję AWS Location Service API...');
+            const distanceResponse = await fetch('/api/calculate-distance', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    start_coords: [startFinalCoords[1], startFinalCoords[0]], // [lat, lng]
+                    end_coords: [endFinalCoords[1], endFinalCoords[0]],       // [lat, lng]
+                    fallback_distance: Math.round(haversineDistance),
+                    include_geometry: true  // Poproś o geometrię trasy
+                })
+            });
+            
+            if (distanceResponse.ok) {
+                const distanceData = await distanceResponse.json();
+                if (distanceData.success) {
+                    distance = distanceData.distance;
+                    distanceMethod = distanceData.method;
+                    
+                    if (distanceMethod === 'aws') {
+                        console.log(`✅ Dystans AWS (rzeczywisty drogowy): ${Math.round(distance)} km`);
+                        
+                        // Zapisz geometrię trasy jeśli jest dostępna
+                        if (distanceData.geometry && distanceData.geometry.length > 0) {
+                            awsRouteGeometry = distanceData.geometry;
+                            awsRouteDuration = distanceData.duration;
+                            console.log(`✅ Pobrano geometrię trasy AWS: ${awsRouteGeometry.length} punktów`);
+                            console.log(`⏱️  Czas przejazdu: ${Math.round(awsRouteDuration / 60)} minut`);
+                        }
+                    } else {
+                        console.log(`⚠️  AWS niedostępny - używam Haversine: ${Math.round(distance)} km`);
+                    }
+                }
+            }
+        } catch (error) {
+            console.warn('⚠️  Błąd AWS API - używam Haversine:', error);
+        }
         
         // Buduj pełne adresy z danych regionów (dla API giełd)
         // Struktura region: { city_name, country, postal_code, ... }
@@ -417,7 +463,9 @@ async function handleFormSubmit(e) {
                 end_coords: [endFinalCoords[1], endFinalCoords[0]], // [lat, lng] - precyzyjne
                 start_precise_coords: startPreciseCoords ? [startPreciseCoords[1], startPreciseCoords[0]] : null,
                 end_precise_coords: endPreciseCoords ? [endPreciseCoords[1], endPreciseCoords[0]] : null,
-                calculated_distance: Math.round(distance)
+                calculated_distance: Math.round(distance),
+                distance_method: distanceMethod,  // 'aws' lub 'haversine' lub 'haversine_fallback'
+                haversine_distance: Math.round(haversineDistance)  // Oryginalny dystans Haversine
             })
         });
         
@@ -434,6 +482,8 @@ async function handleFormSubmit(e) {
         data.endPreciseCoords = endPreciseCoords;
         data.startLocationRaw = startLocationRaw;
         data.endLocationRaw = endLocationRaw;
+        data.awsRouteGeometry = awsRouteGeometry;  // Geometria trasy z AWS (jeśli dostępna)
+        data.awsRouteDuration = awsRouteDuration;  // Czas przejazdu (sekundy)
         
         // Reset flagi "teraz" dla nowego wyszukiwania
         nowDataLoaded = false;
@@ -481,7 +531,7 @@ function displayResults(data) {
     }
     
     // Wyświetlenie trasy na mapie z regionami i precyzyjnymi znacznikami
-    displayRoute(data.route, data.startRegion, data.endRegion, data.startPreciseCoords, data.endPreciseCoords, data.startLocationRaw, data.endLocationRaw);
+    displayRoute(data.route, data.startRegion, data.endRegion, data.startPreciseCoords, data.endPreciseCoords, data.startLocationRaw, data.endLocationRaw, data.awsRouteGeometry, data.awsRouteDuration);
     
     // Wyświetlenie informacji o trasie
     displayRouteInfo(data);
@@ -510,7 +560,7 @@ function initMap() {
 }
 
 // Wyświetlenie trasy na mapie
-function displayRoute(routeData, startRegion, endRegion, startPreciseCoords, endPreciseCoords, startLocationRaw, endLocationRaw) {
+function displayRoute(routeData, startRegion, endRegion, startPreciseCoords, endPreciseCoords, startLocationRaw, endLocationRaw, awsRouteGeometry, awsRouteDuration) {
     // Usunięcie poprzedniej trasy
     if (routeLayer) {
         map.removeLayer(routeLayer);
@@ -542,25 +592,38 @@ function displayRoute(routeData, startRegion, endRegion, startPreciseCoords, end
         }).addTo(routeLayer).bindPopup(`<b>Region końcowy</b><br>${endRegion.identifier}`);
     }
     
-    // Linia trasy - użyj precyzyjnych współrzędnych jeśli dostępne
+    // Linia trasy - PRIORYTET: geometria AWS > precyzyjne punkty > routeData
     let routePoints = routeData.route;
-    if (startPreciseCoords && endPreciseCoords) {
-        // Użyj precyzyjnych punktów
-        routePoints = [
-            [startPreciseCoords[1], startPreciseCoords[0]], // [lat, lng]
-            [endPreciseCoords[1], endPreciseCoords[0]]      // [lat, lng]
-        ];
-        console.log('📍 Używam precyzyjnych punktów do linii trasy');
-    } else {
-        console.log('📍 Używam punktów z routeData do linii trasy');
-    }
-    
-    const routeLine = L.polyline(routePoints, {
+    let routeStyle = {
         color: '#1d8b34',
         weight: 4,
         opacity: 0.7,
         dashArray: '10, 10'
-    }).addTo(routeLayer);
+    };
+    
+    // Sprawdź czy mamy geometrię trasy z AWS
+    const awsGeometry = awsRouteGeometry;
+    if (awsGeometry && awsGeometry.length > 0) {
+        // Konwertuj geometrię AWS [lng, lat] na format Leaflet [lat, lng]
+        routePoints = awsGeometry.map(point => [point[1], point[0]]);
+        routeStyle = {
+            color: '#2196F3',  // Niebieski dla trasy AWS
+            weight: 5,
+            opacity: 0.8
+        };
+        console.log(`🗺️  Używam dokładnej trasy AWS: ${routePoints.length} punktów`);
+    } else if (startPreciseCoords && endPreciseCoords) {
+        // Użyj precyzyjnych punktów (prosta linia)
+        routePoints = [
+            [startPreciseCoords[1], startPreciseCoords[0]], // [lat, lng]
+            [endPreciseCoords[1], endPreciseCoords[0]]      // [lat, lng]
+        ];
+        console.log('📍 Używam precyzyjnych punktów do prostej linii');
+    } else {
+        console.log('📍 Używam punktów z routeData do linii');
+    }
+    
+    const routeLine = L.polyline(routePoints, routeStyle).addTo(routeLayer);
     
     // PRECYZYJNE ZNACZNIKI dla faktycznie wpisanych kodów pocztowych
     if (startPreciseCoords) {
@@ -614,7 +677,37 @@ function displayRouteInfo(data) {
     // Wyświetl faktyczne kody wpisane przez użytkownika (jeśli dostępne)
     document.getElementById('infoStart').textContent = data.start_location_raw || data.start_location;
     document.getElementById('infoEnd').textContent = data.end_location_raw || data.end_location;
-    document.getElementById('infoDistance').textContent = data.distance;
+    
+    // Dystans - dodaj czas przejazdu jeśli dostępny
+    let distanceText = data.distance;
+    if (data.awsRouteDuration) {
+        const hours = Math.floor(data.awsRouteDuration / 3600);
+        const minutes = Math.floor((data.awsRouteDuration % 3600) / 60);
+        distanceText += ` (~${hours}h ${minutes}m)`;
+    }
+    document.getElementById('infoDistance').textContent = distanceText;
+    
+    // Wyświetl badge z metodą obliczania dystansu
+    const badge = document.getElementById('distanceMethodBadge');
+    const method = data.distance_method;
+    
+    if (method === 'aws') {
+        badge.textContent = 'AWS API';
+        badge.className = 'badge bg-success';
+        const tooltipText = 'Rzeczywisty dystans drogowy obliczony przez AWS Location Service (uwzględnia autostrady, drogi i ograniczenia dla ciężarówek)';
+        badge.title = data.awsRouteGeometry ? tooltipText + ' + Dokładna trasa na mapie' : tooltipText;
+        badge.style.display = 'inline';
+    } else if (method === 'haversine_fallback') {
+        badge.textContent = 'Haversine (fallback)';
+        badge.className = 'badge bg-warning text-dark';
+        badge.title = 'AWS API niedostępny - używam dystansu w linii prostej';
+        badge.style.display = 'inline';
+    } else {
+        badge.textContent = 'Haversine';
+        badge.className = 'badge bg-secondary';
+        badge.title = 'Dystans w linii prostej (może różnić się od rzeczywistego)';
+        badge.style.display = 'inline';
+    }
 }
 
 // Wyświetlenie szczegółów opłat drogowych
@@ -1154,7 +1247,9 @@ function initializeDaysSelector() {
                         currentRouteData.startPreciseCoords, 
                         currentRouteData.endPreciseCoords, 
                         currentRouteData.startLocationRaw, 
-                        currentRouteData.endLocationRaw
+                        currentRouteData.endLocationRaw,
+                        currentRouteData.awsRouteGeometry,
+                        currentRouteData.awsRouteDuration
                     );
                 }
             }

@@ -1,0 +1,527 @@
+[
+  {
+    "original_route": "NL89-CZ50",
+    "start_country": "NL",
+    "start_postal": "89",
+    "end_country": "CZ",
+    "end_postal": "50",
+    "transeu_start": 39,
+    "transeu_end": 130,
+    "timocom_start": {
+      "timocom_id": 16,
+      "distance_km": 39.42,
+      "trans_country": "NL",
+      "trans_city": "Custom_NL_1"
+    },
+    "timocom_end": {
+      "timocom_id": 78,
+      "distance_km": 122.46,
+      "trans_country": "PL",
+      "trans_city": "Custom_PL_2"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-CZ38",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "CZ",
+    "end_postal": "38",
+    "transeu_start": 114,
+    "transeu_end": 111,
+    "timocom_start": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "timocom_end": {
+      "timocom_id": 39,
+      "distance_km": 94.48,
+      "trans_country": "AT",
+      "trans_city": "Linz"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-CZ39",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "CZ",
+    "end_postal": "39",
+    "transeu_start": 114,
+    "transeu_end": 111,
+    "timocom_start": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "timocom_end": {
+      "timocom_id": 39,
+      "distance_km": 94.48,
+      "trans_country": "AT",
+      "trans_city": "Linz"
+    },
+    "mapping_success": true,
+    "status": "cached",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-DE06",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "DE",
+    "end_postal": "06",
+    "transeu_start": 114,
+    "transeu_end": 106,
+    "timocom_start": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "timocom_end": {
+      "timocom_id": 37,
+      "distance_km": 54.58,
+      "trans_country": "DE",
+      "trans_city": "Custom_DE_2"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-SK92",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "SK",
+    "end_postal": "92",
+    "transeu_start": 114,
+    "transeu_end": 115,
+    "timocom_start": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "timocom_end": {
+      "timocom_id": 84,
+      "distance_km": 0.0,
+      "trans_country": "HU",
+      "trans_city": "Győr"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE06-CZ66",
+    "start_country": "DE",
+    "start_postal": "06",
+    "end_country": "CZ",
+    "end_postal": "66",
+    "transeu_start": 106,
+    "transeu_end": 114,
+    "timocom_start": {
+      "timocom_id": 37,
+      "distance_km": 54.58,
+      "trans_country": "DE",
+      "trans_city": "Custom_DE_2"
+    },
+    "timocom_end": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE49-CZ66",
+    "start_country": "DE",
+    "start_postal": "49",
+    "end_country": "CZ",
+    "end_postal": "66",
+    "transeu_start": 98,
+    "transeu_end": 114,
+    "timocom_start": 34,
+    "timocom_end": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "PL62-CZ66",
+    "start_country": "PL",
+    "start_postal": "62",
+    "end_country": "CZ",
+    "end_postal": "66",
+    "transeu_start": 128,
+    "transeu_end": 114,
+    "timocom_start": {
+      "timocom_id": 86,
+      "distance_km": 33.13,
+      "trans_country": "PL",
+      "trans_city": "Bydgoszcz"
+    },
+    "timocom_end": {
+      "timocom_id": 83,
+      "distance_km": 55.84,
+      "trans_country": "CZ",
+      "trans_city": "Brno"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE27-DE18",
+    "start_country": "DE",
+    "start_postal": "27",
+    "end_country": "DE",
+    "end_postal": "18",
+    "transeu_start": 97,
+    "transeu_end": 96,
+    "timocom_start": {
+      "timocom_id": 37,
+      "distance_km": 74.32,
+      "trans_country": "DE",
+      "trans_city": "Hamburg"
+    },
+    "timocom_end": {
+      "timocom_id": 87,
+      "distance_km": 108.29,
+      "trans_country": "DE",
+      "trans_city": "Rostock"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE25-DE27",
+    "start_country": "DE",
+    "start_postal": "25",
+    "end_country": "DE",
+    "end_postal": "27",
+    "transeu_start": 97,
+    "transeu_end": 97,
+    "timocom_start": {
+      "timocom_id": 37,
+      "distance_km": 74.32,
+      "trans_country": "DE",
+      "trans_city": "Hamburg"
+    },
+    "timocom_end": {
+      "timocom_id": 37,
+      "distance_km": 74.32,
+      "trans_country": "DE",
+      "trans_city": "Hamburg"
+    },
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "can't adapt type 'dict'"
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "30d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        },
+        "90d": {
+          "has_data": false,
+          "error": "column o.avg_price_per_km does not exist\nLINE 4:                 ROUND(AVG(o.avg_price_per_km), 4) AS avg_pri...\n                                  ^\n"
+        }
+      }
+    }
+  }
+]

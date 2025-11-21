@@ -1,0 +1,472 @@
+[
+  {
+    "original_route": "NL89-CZ50",
+    "start_country": "NL",
+    "start_postal": "89",
+    "end_country": "CZ",
+    "end_postal": "50",
+    "transeu_start": 39,
+    "transeu_end": 130,
+    "timocom_start": 16,
+    "timocom_end": 78,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 0.9977,
+          "total_offers": 3864
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.038,
+          "total_offers": 25314
+        },
+        "90d": {
+          "has_data": true,
+          "days": 75,
+          "avg_rate_per_km": 1.0785,
+          "total_offers": 29702
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": true,
+          "days": 5,
+          "avg_rate_per_km": 0.9633,
+          "total_records": 12
+        },
+        "30d": {
+          "has_data": true,
+          "days": 19,
+          "avg_rate_per_km": 0.8667,
+          "total_records": 52
+        },
+        "90d": {
+          "has_data": true,
+          "days": 44,
+          "avg_rate_per_km": 1.1459,
+          "total_records": 115
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-CZ38",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "CZ",
+    "end_postal": "38",
+    "transeu_start": 114,
+    "transeu_end": 111,
+    "timocom_start": 83,
+    "timocom_end": 39,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.5439,
+          "total_offers": 9635
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.6466,
+          "total_offers": 49433
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1.6799,
+          "total_offers": 56964
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-CZ39",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "CZ",
+    "end_postal": "39",
+    "transeu_start": 114,
+    "transeu_end": 111,
+    "timocom_start": 83,
+    "timocom_end": 39,
+    "mapping_success": true,
+    "status": "cached",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.5439,
+          "total_offers": 9635
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.6466,
+          "total_offers": 49433
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1.6799,
+          "total_offers": 56964
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-DE06",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "DE",
+    "end_postal": "06",
+    "transeu_start": 114,
+    "transeu_end": 106,
+    "timocom_start": 83,
+    "timocom_end": 37,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.7081,
+          "total_offers": 13759
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.5949,
+          "total_offers": 63157
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1.6005,
+          "total_offers": 73218
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  },
+  {
+    "original_route": "CZ66-SK92",
+    "start_country": "CZ",
+    "start_postal": "66",
+    "end_country": "SK",
+    "end_postal": "92",
+    "transeu_start": 114,
+    "transeu_end": 115,
+    "timocom_start": 83,
+    "timocom_end": 84,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.7816,
+          "total_offers": 20251
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1223.1372,
+          "total_offers": 101213
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1042.9191,
+          "total_offers": 115219
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false,
+          "error": "server closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\nserver closed the connection unexpectedly\n\tThis probably means the server terminated abnormally\n\tbefore or while processing the request.\n"
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE06-CZ66",
+    "start_country": "DE",
+    "start_postal": "06",
+    "end_country": "CZ",
+    "end_postal": "66",
+    "transeu_start": 106,
+    "transeu_end": 114,
+    "timocom_start": 37,
+    "timocom_end": 83,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.3384,
+          "total_offers": 14487
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.4814,
+          "total_offers": 66128
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1.51,
+          "total_offers": 75687
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE49-CZ66",
+    "start_country": "DE",
+    "start_postal": "49",
+    "end_country": "CZ",
+    "end_postal": "66",
+    "transeu_start": 98,
+    "transeu_end": 114,
+    "timocom_start": 34,
+    "timocom_end": 83,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.2116,
+          "total_offers": 13312
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.2314,
+          "total_offers": 73779
+        },
+        "90d": {
+          "has_data": true,
+          "days": 76,
+          "avg_rate_per_km": 1.4008,
+          "total_offers": 86881
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.8759,
+          "total_records": 27
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.8408,
+          "total_records": 85
+        },
+        "90d": {
+          "has_data": true,
+          "days": 69,
+          "avg_rate_per_km": 1.8483,
+          "total_records": 205
+        }
+      }
+    }
+  },
+  {
+    "original_route": "PL62-CZ66",
+    "start_country": "PL",
+    "start_postal": "62",
+    "end_country": "CZ",
+    "end_postal": "66",
+    "transeu_start": 128,
+    "transeu_end": 114,
+    "timocom_start": 86,
+    "timocom_end": 83,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.4723,
+          "total_offers": 4688
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.5204,
+          "total_offers": 20490
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1.5191,
+          "total_offers": 22733
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE27-DE18",
+    "start_country": "DE",
+    "start_postal": "27",
+    "end_country": "DE",
+    "end_postal": "18",
+    "transeu_start": 97,
+    "transeu_end": 96,
+    "timocom_start": 37,
+    "timocom_end": 87,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": true,
+          "days": 8,
+          "avg_rate_per_km": 1.7423,
+          "total_offers": 13975
+        },
+        "30d": {
+          "has_data": true,
+          "days": 31,
+          "avg_rate_per_km": 1.885,
+          "total_offers": 78079
+        },
+        "90d": {
+          "has_data": true,
+          "days": 38,
+          "avg_rate_per_km": 1.9391,
+          "total_offers": 94116
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  },
+  {
+    "original_route": "DE25-DE27",
+    "start_country": "DE",
+    "start_postal": "25",
+    "end_country": "DE",
+    "end_postal": "27",
+    "transeu_start": 97,
+    "transeu_end": 97,
+    "timocom_start": 37,
+    "timocom_end": 37,
+    "mapping_success": true,
+    "status": "success",
+    "data": {
+      "timocom": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      },
+      "transeu": {
+        "7d": {
+          "has_data": false
+        },
+        "30d": {
+          "has_data": false
+        },
+        "90d": {
+          "has_data": false
+        }
+      }
+    }
+  }
+]
