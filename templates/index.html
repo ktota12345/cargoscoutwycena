@@ -62,26 +62,6 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-md-3">
-                                    <label for="vehicleType" class="form-label">Typ samochodu</label>
-                                    <select class="form-select" id="vehicleType" required>
-                                        <option value="bus">Bus</option>
-                                        <option value="solo">Solo</option>
-                                        <option value="naczepa" selected>Naczepa</option>
-                                        <option value="zestaw">Zestaw</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3" id="bodyTypeContainer">
-                                    <label for="bodyType" class="form-label">Nadwozie</label>
-                                    <select class="form-select" id="bodyType">
-                                        <option value="standard" selected>Standard</option>
-                                        <option value="mega">Mega</option>
-                                        <option value="jumbo">Jumbo</option>
-                                        <option value="chlodnia">Chłodnia</option>
-                                    </select>
-                                </div>
-                            </div>
                         </form>
                     </div>
                 </div>
@@ -95,20 +75,9 @@
                 <div class="col-md-12">
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="card-title mb-0">
-                                    <i class="fas fa-euro-sign"></i> Podsumowanie
-                                </h5>
-                                <div class="btn-group days-selector" role="group" aria-label="Okres czasu">
-                                    <button type="button" class="btn btn-outline-primary active" data-days="7">7 dni</button>
-                                    <button type="button" class="btn btn-outline-primary" data-days="30">30 dni</button>
-                                    <button type="button" class="btn btn-outline-primary" data-days="90">90 dni</button>
-                                    <button type="button" class="btn btn-outline-primary" data-days="now" id="btnNow">
-                                        <i class="fas fa-bolt"></i> teraz
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Pasek postępu dla trybu "teraz" -->
+                            <h5 class="card-title mb-3">
+                                <i class="fas fa-euro-sign"></i> Podsumowanie
+                            </h5>
                             <div id="nowLoadingProgress" style="display: none;" class="mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="fas fa-sync fa-spin text-primary me-2"></i>
