@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const startLocation = document.getElementById('startLocation').value.trim();
         const endLocation = document.getElementById('endLocation').value.trim();
-        const vehicleType = document.getElementById('vehicleType').value;
-        const bodyType = document.getElementById('bodyType').value;
         
         if (!startLocation || !endLocation) {
             alert('Podaj kody pocztowe start i end');
@@ -23,18 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         console.log(`📝 Kody: ${startLocation} -> ${endLocation}`);
-        console.log(`🚛 Typ: ${vehicleType}, Nadwozie: ${bodyType}`);
         
-        // Wywołaj API z prostymi kodami pocztowymi
-        // Dystans: 500km jako placeholder (można dodać kalkulację AWS później)
-        await calculateRoute(startLocation, endLocation, 500, vehicleType, bodyType);
+        // Wywołaj API - dystans jest obliczany przez backend
+        await calculateRoute(startLocation, endLocation, 'FTL', 'Firanka');
     });
 });
 
 
-async function calculateRoute(startCode, endCode, distance, vehicleType, bodyType) {
+async function calculateRoute(startCode, endCode, vehicleType, bodyType) {
     try {
-        console.log(`🌐 Wywołuję API: ${startCode} -> ${endCode}, ${distance}km, ${vehicleType}/${bodyType}`);
+        console.log(`🌐 Wywołuję API: ${startCode} -> ${endCode}, ${vehicleType}/${bodyType}`);
+        
+        // Pokaż spinner
+        showLoadingSpinner();
         
         const response = await fetch('/api/calculate', {
             method: 'POST',
@@ -44,11 +43,8 @@ async function calculateRoute(startCode, endCode, distance, vehicleType, bodyTyp
             body: JSON.stringify({
                 start_location: startCode,
                 end_location: endCode,
-                calculated_distance: distance,
                 vehicle_type: vehicleType,
-                body_type: bodyType,
-                start_coords: [52.0, 19.0],  // Placeholder
-                end_coords: [50.0, 20.0]      // Placeholder
+                body_type: bodyType
             })
         });
         
@@ -62,13 +58,32 @@ async function calculateRoute(startCode, endCode, distance, vehicleType, bodyTyp
         
         console.log('✅ Dane z API:', data);
         
+        // Ukryj spinner
+        hideLoadingSpinner();
+        
         // Pokaż wyniki
         displayResults(data);
         
     } catch (error) {
         console.error('❌ Błąd:', error);
+        hideLoadingSpinner();
         alert(`Błąd połączenia: ${error.message}`);
     }
+}
+
+
+function showLoadingSpinner() {
+    const spinner = document.getElementById('loadingSpinner');
+    if (spinner) spinner.style.display = 'block';
+    
+    const resultsSection = document.getElementById('resultsSection');
+    if (resultsSection) resultsSection.style.display = 'none';
+}
+
+
+function hideLoadingSpinner() {
+    const spinner = document.getElementById('loadingSpinner');
+    if (spinner) spinner.style.display = 'none';
 }
 
 
@@ -114,6 +129,9 @@ function displayResults(data) {
         document.getElementById('avgHistorical').textContent = '';
     }
     
+    // Wyświetl przewoźników historycznych
+    displayHistoricalCarriers(data.historical_rates || {});
+    
     // Scroll do wyników
     resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -157,6 +175,41 @@ function displayHistoricalDetails(orders) {
             <td>${order.rate_per_km ? order.rate_per_km.toFixed(2) : '-'}</td>
             <td>${order.total_price ? order.total_price.toFixed(2) : '-'} EUR</td>
             <td>${order.order_count || 0}</td>
+        </tr>`;
+    });
+    
+    html += '</tbody></table></div>';
+    container.innerHTML = html;
+}
+
+
+function displayHistoricalCarriers(historicalData) {
+    const container = document.getElementById('historicalCarriersTable');
+    if (!container) return;
+    
+    const orders = historicalData.orders || [];
+    
+    if (orders.length === 0) {
+        container.innerHTML = '<p class="text-muted">Brak danych o przewoźnikach historycznych dla tej trasy.</p>';
+        return;
+    }
+    
+    let html = '<div class="table-responsive"><table class="table table-hover"><thead><tr>';
+    html += '<th><i class="fas fa-truck"></i> Przewoźnik</th>';
+    html += '<th><i class="fas fa-box"></i> Typ</th>';
+    html += '<th><i class="fas fa-euro-sign"></i> EUR/km</th>';
+    html += '<th><i class="fas fa-money-bill-wave"></i> Całkowita kwota</th>';
+    html += '<th><i class="fas fa-clipboard-list"></i> Liczba zleceń</th>';
+    html += '</tr></thead><tbody>';
+    
+    orders.forEach(order => {
+        const badgeColor = order.type === 'FTL' ? 'primary' : 'info';
+        html += `<tr>
+            <td><strong>${order.carrier || 'Nieznany'}</strong></td>
+            <td><span class="badge bg-${badgeColor}">${order.type}</span></td>
+            <td>${order.rate_per_km ? order.rate_per_km.toFixed(2) : '-'}</td>
+            <td><strong>${order.total_price ? order.total_price.toFixed(2) : '-'}</strong> EUR</td>
+            <td><span class="badge bg-secondary">${order.order_count || 0}</span></td>
         </tr>`;
     });
     

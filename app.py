@@ -56,7 +56,6 @@ def calculate_route():
     
     start_location = data.get('start_location', '')
     end_location = data.get('end_location', '')
-    calculated_distance = data.get('calculated_distance')
     vehicle_type = data.get('vehicle_type', 'naczepa')
     body_type = data.get('body_type', 'standard')
     
@@ -73,9 +72,6 @@ def calculate_route():
             'message': 'Użyj formatu: <KRAJ><CYFRY> np. PL20, DE49'
         }), 400
     
-    if not calculated_distance:
-        return jsonify({'error': 'Brak dystansu'}), 400
-    
     if not BACKEND_API_URL or not BACKEND_API_KEY:
         return jsonify({
             'error': 'Brak konfiguracji Backend API',
@@ -84,14 +80,13 @@ def calculate_route():
     
     # Wywołaj Backend API
     try:
-        print(f"🌐 Backend API: {normalized_start} -> {normalized_end}, {calculated_distance} km")
+        print(f"🌐 Backend API: {normalized_start} -> {normalized_end}")
         
         response = requests.post(
             BACKEND_API_URL,
             json={
                 'start_postal_code': normalized_start,
-                'end_postal_code': normalized_end,
-                'dystans': calculated_distance
+                'end_postal_code': normalized_end
             },
             headers={
                 'X-API-Key': BACKEND_API_KEY,
@@ -109,10 +104,14 @@ def calculate_route():
                 # Przekształć do formatu UI
                 backend_data = api_data.get('data', {})
                 pricing = backend_data.get('pricing', {})
+                route_distance_data = backend_data.get('route_distance', {})
+                
+                # Użyj dystansu z API
+                actual_distance = route_distance_data.get('distance_km', 0)
                 
                 # Przygotuj odpowiedź
                 result = {
-                    'distance': calculated_distance,
+                    'distance': actual_distance,
                     'start_location': start_location,
                     'end_location': end_location,
                     'vehicle_type': vehicle_type,
@@ -125,11 +124,11 @@ def calculate_route():
                         'route': []
                     },
                     # Dane z API - filtrowane według typu samochodu
-                    'exchange_rates': transform_to_ui_format(pricing, calculated_distance, 30, vehicle_type, body_type),
+                    'exchange_rates': transform_to_ui_format(pricing, actual_distance, 30, vehicle_type, body_type),
                     'exchange_rates_by_days': {
-                        '7': transform_to_ui_format(pricing, calculated_distance, 7, vehicle_type, body_type),
-                        '30': transform_to_ui_format(pricing, calculated_distance, 30, vehicle_type, body_type),
-                        '90': transform_to_ui_format(pricing, calculated_distance, 90, vehicle_type, body_type)
+                        '7': transform_to_ui_format(pricing, actual_distance, 7, vehicle_type, body_type),
+                        '30': transform_to_ui_format(pricing, actual_distance, 30, vehicle_type, body_type),
+                        '90': transform_to_ui_format(pricing, actual_distance, 90, vehicle_type, body_type)
                     },
                     'historical_rates': transform_historical(pricing),
                     'historical_rates_by_days': {
@@ -166,60 +165,52 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
     offers = []
     
     # Mapowanie typu samochodu na klucze API
-    # solo -> solo
-    # naczepa + standard -> trailer
-    # naczepa + mega/jumbo -> mega_trailer
-    # bus, zestaw -> pokaż wszystkie
+    # API zwraca: 3_5t, 12t, trailer
+    # 3_5t -> do 3.5t
+    # 12t -> do 12t
+    # trailer -> naczepa
     
     # TimoCom
     timocom = pricing.get('timocom', {}).get(period_key, {})
     if timocom.get('avg_price_per_km'):
-        # Solo
-        if vehicle_type == 'solo' and timocom['avg_price_per_km'].get('solo'):
+        avg_prices = timocom['avg_price_per_km']
+        total_offers = timocom.get('total_offers', 0)
+        offers_by_type = timocom.get('offers_by_vehicle_type', {})
+        
+        # 3.5t
+        if avg_prices.get('3_5t'):
             offers.append({
                 'exchange': 'TimoCom',
-                'vehicle_type': 'Solo',
-                'rate_per_km': timocom['avg_price_per_km']['solo'],
-                'total_price': round(timocom['avg_price_per_km']['solo'] * distance, 2),
+                'vehicle_type': 'Do 3.5t',
+                'rate_per_km': avg_prices['3_5t'],
+                'total_price': round(avg_prices['3_5t'] * distance, 2),
                 'currency': 'EUR',
                 'has_data': True,
-                'total_offers_sum': timocom.get('total_offers', 0)
+                'total_offers_sum': offers_by_type.get('3_5t', 0)
             })
         
-        # Naczepa Standard
-        if vehicle_type == 'naczepa' and body_type == 'standard' and timocom['avg_price_per_km'].get('trailer'):
+        # 12t
+        if avg_prices.get('12t'):
             offers.append({
                 'exchange': 'TimoCom',
-                'vehicle_type': 'Naczepa Standard',
-                'rate_per_km': timocom['avg_price_per_km']['trailer'],
-                'total_price': round(timocom['avg_price_per_km']['trailer'] * distance, 2),
+                'vehicle_type': 'Do 12t',
+                'rate_per_km': avg_prices['12t'],
+                'total_price': round(avg_prices['12t'] * distance, 2),
                 'currency': 'EUR',
                 'has_data': True,
-                'total_offers_sum': timocom.get('total_offers', 0)
+                'total_offers_sum': offers_by_type.get('12t', 0)
             })
         
-        # Naczepa Mega/Jumbo
-        if vehicle_type == 'naczepa' and body_type in ['mega', 'jumbo'] and timocom['avg_price_per_km'].get('mega_trailer'):
-            offers.append({
-                'exchange': 'TimoCom',
-                'vehicle_type': f'Naczepa {body_type.capitalize()}',
-                'rate_per_km': timocom['avg_price_per_km']['mega_trailer'],
-                'total_price': round(timocom['avg_price_per_km']['mega_trailer'] * distance, 2),
-                'currency': 'EUR',
-                'has_data': True,
-                'total_offers_sum': timocom.get('total_offers', 0)
-            })
-        
-        # Bus, Zestaw - pokaż trailer jako domyślny
-        if vehicle_type in ['bus', 'zestaw'] and timocom['avg_price_per_km'].get('trailer'):
+        # Naczepa (trailer)
+        if avg_prices.get('trailer'):
             offers.append({
                 'exchange': 'TimoCom',
                 'vehicle_type': 'Naczepa',
-                'rate_per_km': timocom['avg_price_per_km']['trailer'],
-                'total_price': round(timocom['avg_price_per_km']['trailer'] * distance, 2),
+                'rate_per_km': avg_prices['trailer'],
+                'total_price': round(avg_prices['trailer'] * distance, 2),
                 'currency': 'EUR',
                 'has_data': True,
-                'total_offers_sum': timocom.get('total_offers', 0)
+                'total_offers_sum': offers_by_type.get('trailer', 0)
             })
     
     # Trans.eu
