@@ -209,29 +209,33 @@ function displayHistoricalCarriers(historicalData) {
     let html = '<div class="table-responsive"><table class="table table-hover table-sm" style="font-size: 0.85rem;"><thead><tr>';
     html += '<th><i class="fas fa-truck"></i> Przewoźnik</th>';
     html += '<th style="min-width: 90px;"><i class="fas fa-box"></i> Typ</th>';
-    html += '<th style="min-width: 75px;"><i class="fas fa-euro-sign"></i> Stawka</th>';
+    html += '<th style="min-width: 95px;"><i class="fas fa-euro-sign"></i> Stawka</th>';
     html += '<th style="min-width: 75px;"><i class="fas fa-money-bill-wave"></i> Kwota</th>';
     html += '<th style="min-width: 85px;"><i class="fas fa-clipboard-list"></i> Zlecenia</th>';
     html += '</tr></thead><tbody>';
     
     // FTL carriers
     ftlCarriers.forEach(carrier => {
+        const currency = carrier.currency || 'EUR';
+        const currencyDisplay = currency === 'EUR' ? '€' : currency;
         html += `<tr>
             <td><strong>${carrier.carrier || 'Nieznany'}</strong></td>
             <td><span class="badge bg-primary">FTL</span></td>
-            <td>${carrier.rate_per_km ? carrier.rate_per_km.toFixed(2) : '-'}</td>
-            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong></td>
+            <td>${carrier.rate_per_km ? carrier.rate_per_km.toFixed(2) : '-'} ${currencyDisplay}/km</td>
+            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong> ${currencyDisplay}</td>
             <td><span class="badge bg-secondary">${carrier.order_count || 0}</span></td>
         </tr>`;
     });
     
     // LTL carriers
     ltlCarriers.forEach(carrier => {
+        const currency = carrier.currency || 'EUR';
+        const currencyDisplay = currency === 'EUR' ? '€' : currency;
         html += `<tr>
             <td><strong>${carrier.carrier || 'Nieznany'}</strong></td>
             <td><span class="badge bg-info">LTL</span></td>
-            <td>${carrier.rate_per_km ? carrier.rate_per_km.toFixed(2) : '-'}</td>
-            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong></td>
+            <td>${carrier.rate_per_km ? carrier.rate_per_km.toFixed(2) : '-'} ${currencyDisplay}/km</td>
+            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong> ${currencyDisplay}</td>
             <td><span class="badge bg-secondary">${carrier.order_count || 0}</span></td>
         </tr>`;
     });
@@ -253,25 +257,59 @@ function displayHistoricalOrders(orders) {
     let html = '<div class="table-responsive"><table class="table table-hover table-sm" style="font-size: 0.85rem;"><thead><tr>';
     html += '<th style="min-width: 110px;"><i class="fas fa-calendar"></i> Data</th>';
     html += '<th><i class="fas fa-truck"></i> Przewoźnik</th>';
+    html += '<th style="min-width: 60px;"><i class="fas fa-address-book"></i></th>';
     html += '<th style="min-width: 90px;"><i class="fas fa-cubes"></i> Ładunek</th>';
-    html += '<th style="min-width: 75px;"><i class="fas fa-euro-sign"></i> Stawka</th>';
+    html += '<th style="min-width: 95px;"><i class="fas fa-euro-sign"></i> Stawka</th>';
     html += '<th style="min-width: 75px;"><i class="fas fa-money-bill-wave"></i> Kwota</th>';
     html += '<th style="min-width: 85px;"><i class="fas fa-road"></i> Dystans</th>';
     html += '</tr></thead><tbody>';
     
-    orders.forEach(order => {
+    orders.forEach((order, index) => {
+        const currency = order.currency || 'EUR';
+        const currencyDisplay = currency === 'EUR' ? '€' : currency;
+        const email = order.carrier_email || '';
+        const contact = order.carrier_contact || '';
+        
         html += `<tr>
             <td style="white-space: nowrap;">${order.date || '-'}</td>
             <td><strong>${order.carrier || 'Nieznany'}</strong></td>
+            <td style="white-space: nowrap;">
+                ${email ? `<i class="fas fa-envelope text-primary me-2" style="cursor: pointer;" 
+                    onclick="copyToClipboard('${email.replace(/'/g, "\\'")}', 'email-${index}')" 
+                    title="${email}"></i>
+                    <span id="email-${index}" class="copy-notification" style="display:none; font-size:0.7rem; color:green;">Skopiowano!</span>` : ''}
+                ${contact ? `<i class="fas fa-info-circle text-info" style="cursor: pointer;" 
+                    onclick="copyToClipboard('${contact.replace(/'/g, "\\'")}', 'contact-${index}')" 
+                    title="${contact}"></i>
+                    <span id="contact-${index}" class="copy-notification" style="display:none; font-size:0.7rem; color:green;">Skopiowano!</span>` : ''}
+            </td>
             <td>${order.cargo_type || '-'}</td>
-            <td>${order.rate_per_km ? order.rate_per_km.toFixed(2) : '-'}</td>
-            <td><strong>${order.amount ? order.amount.toFixed(2) : '-'}</strong></td>
+            <td>${order.rate_per_km ? order.rate_per_km.toFixed(2) : '-'} ${currencyDisplay}/km</td>
+            <td><strong>${order.amount ? order.amount.toFixed(2) : '-'}</strong> ${currencyDisplay}</td>
             <td>${order.distance ? order.distance.toFixed(0) : '-'} km</td>
         </tr>`;
     });
     
     html += '</tbody></table></div>';
     container.innerHTML = html;
+}
+
+
+// Funkcja kopiowania do schowka
+function copyToClipboard(text, notificationId) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Pokaż komunikat "Skopiowano!"
+        const notification = document.getElementById(notificationId);
+        if (notification) {
+            notification.style.display = 'inline';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 2000);
+        }
+    }).catch(err => {
+        console.error('Błąd kopiowania:', err);
+        alert('Nie udało się skopiować do schowka');
+    });
 }
 
 

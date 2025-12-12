@@ -185,7 +185,10 @@ def get_all_historical_orders(backend_data):
             'cargo_type': order.get('cargo_type'),
             'rate_per_km': order.get('carrier_price_per_km'),
             'amount': order.get('carrier_amount'),
-            'distance': order.get('route_distance') or order.get('distance')
+            'currency': order.get('carrier_currency', 'EUR'),
+            'distance': order.get('route_distance') or order.get('distance'),
+            'carrier_email': order.get('carrier_email'),
+            'carrier_contact': order.get('carrier_contact')
         })
     
     print(f"✅ Przekształcono {len(result)} zleceń")
@@ -293,6 +296,7 @@ def transform_historical(pricing):
                     'carrier': c.get('carrier_name'),
                     'rate_per_km': c.get('avg_carrier_price_per_km'),
                     'total_price': c.get('avg_carrier_amount'),
+                    'currency': c.get('carrier_currency', 'EUR'),
                     'order_count': c.get('order_count', 0)
                 })
         
@@ -313,6 +317,7 @@ def transform_historical(pricing):
                     'carrier': c.get('carrier_name'),
                     'rate_per_km': c.get('avg_carrier_price_per_km'),
                     'total_price': c.get('avg_carrier_amount'),
+                    'currency': c.get('carrier_currency', 'EUR'),
                     'order_count': c.get('order_count', 0)
                 })
         
