@@ -208,12 +208,12 @@ function displayHistoricalCarriers(historicalData) {
         return;
     }
     
-    let html = '<div class="table-responsive"><table class="table table-hover"><thead><tr>';
+    let html = '<div class="table-responsive"><table class="table table-hover table-sm" style="font-size: 0.85rem;"><thead><tr>';
     html += '<th><i class="fas fa-truck"></i> Przewoźnik</th>';
-    html += '<th><i class="fas fa-box"></i> Typ</th>';
-    html += '<th><i class="fas fa-euro-sign"></i> EUR/km</th>';
-    html += '<th><i class="fas fa-money-bill-wave"></i> Całkowita kwota</th>';
-    html += '<th><i class="fas fa-clipboard-list"></i> Liczba zleceń</th>';
+    html += '<th style="min-width: 90px;"><i class="fas fa-box"></i> Typ</th>';
+    html += '<th style="min-width: 75px;"><i class="fas fa-euro-sign"></i> Stawka</th>';
+    html += '<th style="min-width: 75px;"><i class="fas fa-money-bill-wave"></i> Kwota</th>';
+    html += '<th style="min-width: 85px;"><i class="fas fa-clipboard-list"></i> Zlecenia</th>';
     html += '</tr></thead><tbody>';
     
     // FTL carriers
@@ -222,7 +222,7 @@ function displayHistoricalCarriers(historicalData) {
             <td><strong>${carrier.carrier || 'Nieznany'}</strong></td>
             <td><span class="badge bg-primary">FTL</span></td>
             <td>${carrier.rate_per_km ? carrier.rate_per_km.toFixed(2) : '-'}</td>
-            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong> EUR</td>
+            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong></td>
             <td><span class="badge bg-secondary">${carrier.order_count || 0}</span></td>
         </tr>`;
     });
@@ -233,7 +233,7 @@ function displayHistoricalCarriers(historicalData) {
             <td><strong>${carrier.carrier || 'Nieznany'}</strong></td>
             <td><span class="badge bg-info">LTL</span></td>
             <td>${carrier.rate_per_km ? carrier.rate_per_km.toFixed(2) : '-'}</td>
-            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong> EUR</td>
+            <td><strong>${carrier.total_price ? carrier.total_price.toFixed(2) : '-'}</strong></td>
             <td><span class="badge bg-secondary">${carrier.order_count || 0}</span></td>
         </tr>`;
     });
