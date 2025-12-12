@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(`📝 Kody: ${startLocation} -> ${endLocation}`);
         
         // Wywołaj API - dystans jest obliczany przez backend
-        await calculateRoute(startLocation, endLocation, 'FTL', 'Firanka');
+        await calculateRoute(startLocation, endLocation);
     });
 });
 
 
-async function calculateRoute(startCode, endCode, vehicleType, bodyType) {
+async function calculateRoute(startCode, endCode) {
     try {
-        console.log(`🌐 Wywołuję API: ${startCode} -> ${endCode}, ${vehicleType}/${bodyType}`);
+        console.log(`🌐 Wywołuję API: ${startCode} -> ${endCode}`);
         
         // Pokaż spinner
         showLoadingSpinner();
@@ -42,9 +42,7 @@ async function calculateRoute(startCode, endCode, vehicleType, bodyType) {
             },
             body: JSON.stringify({
                 start_location: startCode,
-                end_location: endCode,
-                vehicle_type: vehicleType,
-                body_type: bodyType
+                end_location: endCode
             })
         });
         

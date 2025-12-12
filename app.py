@@ -56,15 +56,12 @@ def calculate_route():
     
     start_location = data.get('start_location', '')
     end_location = data.get('end_location', '')
-    vehicle_type = data.get('vehicle_type', 'naczepa')
-    body_type = data.get('body_type', 'standard')
     
     # Normalizuj kody
     normalized_start = normalize_postal_code(start_location)
     normalized_end = normalize_postal_code(end_location)
     
     print(f"📝 {start_location} -> {normalized_start}, {end_location} -> {normalized_end}")
-    print(f"🚛 Typ: {vehicle_type}, Nadwozie: {body_type}")
     
     if not normalized_start or not normalized_end:
         return jsonify({
@@ -114,8 +111,6 @@ def calculate_route():
                     'distance': actual_distance,
                     'start_location': start_location,
                     'end_location': end_location,
-                    'vehicle_type': vehicle_type,
-                    'body_type': body_type,
                     'start_coords': data.get('start_coords'),
                     'end_coords': data.get('end_coords'),
                     'route': {
@@ -123,12 +118,12 @@ def calculate_route():
                         'end': data.get('end_coords', [50.0, 20.0]),
                         'route': []
                     },
-                    # Dane z API - filtrowane według typu samochodu
-                    'exchange_rates': transform_to_ui_format(pricing, actual_distance, 30, vehicle_type, body_type),
+                    # Dane z API
+                    'exchange_rates': transform_to_ui_format(pricing, actual_distance, 30),
                     'exchange_rates_by_days': {
-                        '7': transform_to_ui_format(pricing, actual_distance, 7, vehicle_type, body_type),
-                        '30': transform_to_ui_format(pricing, actual_distance, 30, vehicle_type, body_type),
-                        '90': transform_to_ui_format(pricing, actual_distance, 90, vehicle_type, body_type)
+                        '7': transform_to_ui_format(pricing, actual_distance, 7),
+                        '30': transform_to_ui_format(pricing, actual_distance, 30),
+                        '90': transform_to_ui_format(pricing, actual_distance, 90)
                     },
                     'historical_rates': transform_historical(pricing),
                     'historical_rates_by_days': {
@@ -197,16 +192,13 @@ def get_all_historical_orders(backend_data):
     return result
 
 
-def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body_type='standard'):
-    """Przekształć dane giełd z API do formatu UI - filtrowane według typu samochodu"""
+def transform_to_ui_format(pricing, distance, days):
+    """Przekształć dane giełd z API do formatu UI"""
     period_key = f"{days}d"
     offers = []
     
-    # Mapowanie typu samochodu na klucze API
     # API zwraca: 3_5t, 12t, trailer
-    # 3_5t -> do 3.5t
-    # 12t -> do 12t
-    # trailer -> naczepa
+    # Pokazujemy wszystkie typy
     
     # TimoCom
     timocom = pricing.get('timocom', {}).get(period_key, {})
