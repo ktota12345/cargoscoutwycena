@@ -104,19 +104,9 @@
                                     <div class="col-md-6">
                                         <div class="rate-group-box">
                                             <h6 class="rate-group-title">
-                                                <i class="fas fa-exchange-alt"></i> Średnia stawka giełdowa
+                                                <i class="fas fa-exchange-alt"></i> Stawki giełdowe
                                             </h6>
-                                            <p class="rate-value">
-                                                <span id="avgExchangeRate"></span> | <span id="avgExchange"></span>
-                                            </p>
-                                            <p class="text-muted" style="font-size: 0.9em; margin-top: -8px;">
-                                                <i class="fas fa-chart-line"></i> <span id="avgExchangeOffersPerDay"></span>
-                                                <span id="totalOffersCount" class="ms-2" style="font-size: 0.85em;"></span>
-                                            </p>
-                                            <a href="#" id="toggleExchangeDetails" class="text-decoration-none">
-                                                <i class="fas fa-chevron-down"></i> szczegóły
-                                            </a>
-                                            <div id="exchangeDetails" style="display: none;" class="details-box mt-2"></div>
+                                            <div id="exchangeDetails" class="mt-2"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -124,14 +114,16 @@
                                             <h6 class="rate-group-title">
                                                 <i class="fas fa-history"></i> Średnia stawka historyczna
                                             </h6>
-                                            <p class="rate-value">
-                                                <span id="avgHistoricalRate"></span> | <span id="avgHistorical"></span>
-                                            </p>
-                                            <p class="text-muted" style="font-size: 0.9em; margin-top: -8px;" id="historicalOffersPerDayContainer">
-                                                <i class="fas fa-chart-line"></i> <span id="avgHistoricalOffersPerDay"></span> zleceń/dzień
-                                            </p>
-                                            <span id="historicalDetailsToggle"></span>
-                                            <div id="historicalDetails" style="display: none;" class="details-box mt-2"></div>
+                                            <!-- FTL -->
+                                            <div class="mb-2">
+                                                <strong>FTL:</strong>
+                                                <span id="avgHistoricalRateFTL"></span> | <span id="avgHistoricalFTL"></span>
+                                            </div>
+                                            <!-- LTL -->
+                                            <div>
+                                                <strong>LTL:</strong>
+                                                <span id="avgHistoricalRateLTL"></span> | <span id="avgHistoricalLTL"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -148,6 +140,21 @@
                                     <div id="tollDetails" style="display: none;" class="details-box mb-2"></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zlecenia historyczne -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-history"></i> Zlecenia historyczne
+                            </h5>
+                            <p class="text-muted small">Wszystkie zlecenia na tej trasie posortowane od najnowszych</p>
+                            <div id="historicalOrdersTable"></div>
                         </div>
                     </div>
                 </div>

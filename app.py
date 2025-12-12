@@ -136,6 +136,7 @@ def calculate_route():
                         '30': transform_historical(pricing),
                         '90': transform_historical(pricing)
                     },
+                    'historical_orders': get_all_historical_orders(backend_data),
                     'tolls': {'estimated': 0, 'currency': 'EUR'},
                     'suggested_carriers': [],
                     '_api_response': backend_data  # Debug
@@ -159,6 +160,43 @@ def calculate_route():
         return jsonify({'error': str(e)}), 500
 
 
+def get_all_historical_orders(backend_data):
+    """Pobierz wszystkie zlecenia historyczne z API"""
+    # Zlecenia są w pricing.historical.180d.orders
+    pricing = backend_data.get('pricing', {})
+    historical = pricing.get('historical', {})
+    period_180d = historical.get('180d', {})
+    orders = period_180d.get('orders', [])
+    
+    print(f"📦 Orders znalezione: {len(orders) if orders else 0}")
+    
+    if not orders:
+        return []
+    
+    # Przekształć zlecenia do formatu UI
+    result = []
+    for order in orders:
+        # Formatuj datę do yyyy-mm-dd
+        order_date = order.get('order_date', '')
+        if order_date and 'T' in order_date:
+            order_date = order_date.split('T')[0]  # Weź tylko część przed 'T'
+        elif order_date and ' ' in order_date:
+            order_date = order_date.split(' ')[0]  # Weź tylko część przed spacją
+        
+        result.append({
+            'date': order_date,
+            'carrier': order.get('carrier_name'),
+            'type': order.get('order_type'),  # FTL lub LTL
+            'cargo_type': order.get('cargo_type'),
+            'rate_per_km': order.get('carrier_price_per_km'),
+            'amount': order.get('carrier_amount'),
+            'distance': order.get('route_distance') or order.get('distance')
+        })
+    
+    print(f"✅ Przekształcono {len(result)} zleceń")
+    return result
+
+
 def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body_type='standard'):
     """Przekształć dane giełd z API do formatu UI - filtrowane według typu samochodu"""
     period_key = f"{days}d"
@@ -176,6 +214,7 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
         avg_prices = timocom['avg_price_per_km']
         total_offers = timocom.get('total_offers', 0)
         offers_by_type = timocom.get('offers_by_vehicle_type', {})
+        total_prices = timocom.get('total_price', {})
         
         # 3.5t
         if avg_prices.get('3_5t'):
@@ -183,7 +222,7 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
                 'exchange': 'TimoCom',
                 'vehicle_type': 'Do 3.5t',
                 'rate_per_km': avg_prices['3_5t'],
-                'total_price': round(avg_prices['3_5t'] * distance, 2),
+                'total_price': total_prices.get('3_5t'),
                 'currency': 'EUR',
                 'has_data': True,
                 'total_offers_sum': offers_by_type.get('3_5t', 0)
@@ -195,7 +234,7 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
                 'exchange': 'TimoCom',
                 'vehicle_type': 'Do 12t',
                 'rate_per_km': avg_prices['12t'],
-                'total_price': round(avg_prices['12t'] * distance, 2),
+                'total_price': total_prices.get('12t'),
                 'currency': 'EUR',
                 'has_data': True,
                 'total_offers_sum': offers_by_type.get('12t', 0)
@@ -207,7 +246,7 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
                 'exchange': 'TimoCom',
                 'vehicle_type': 'Naczepa',
                 'rate_per_km': avg_prices['trailer'],
-                'total_price': round(avg_prices['trailer'] * distance, 2),
+                'total_price': total_prices.get('trailer'),
                 'currency': 'EUR',
                 'has_data': True,
                 'total_offers_sum': offers_by_type.get('trailer', 0)
@@ -220,7 +259,6 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
             'exchange': 'Trans.eu',
             'vehicle_type': 'Lorry',
             'rate_per_km': transeu['avg_price_per_km']['lorry'],
-            'total_price': round(transeu['avg_price_per_km']['lorry'] * distance, 2),
             'currency': 'EUR',
             'has_data': True,
             'total_offers_sum': transeu.get('total_offers', 0)
@@ -243,43 +281,58 @@ def transform_to_ui_format(pricing, distance, days, vehicle_type='naczepa', body
 
 
 def transform_historical(pricing):
-    """Przekształć dane historyczne z API"""
+    """Przekształć dane historyczne z API - osobno FTL i LTL"""
     historical = pricing.get('historical', {}).get('180d', {})
     ftl = historical.get('FTL')
     ltl = historical.get('LTL')
     
-    if not ftl and not ltl:
-        return {'has_data': False, 'orders': []}
-    
-    orders = []
-    
-    if ftl and ftl.get('top_carriers'):
-        for c in ftl['top_carriers']:
-            orders.append({
-                'carrier': c.get('carrier_name'),
-                'rate_per_km': c.get('avg_carrier_price_per_km'),
-                'total_price': c.get('avg_carrier_amount'),
-                'type': 'FTL',
-                'order_count': c.get('order_count', 0)
-            })
-    
-    if ltl and ltl.get('top_carriers'):
-        for c in ltl['top_carriers']:
-            orders.append({
-                'carrier': c.get('carrier_name'),
-                'rate_per_km': c.get('avg_carrier_price_per_km'),
-                'total_price': c.get('avg_carrier_amount'),
-                'type': 'LTL',
-                'order_count': c.get('order_count', 0)
-            })
-    
-    rates = [o['rate_per_km'] for o in orders if o.get('rate_per_km')]
-    
-    return {
-        'has_data': True,
-        'orders': orders,
-        'average_rate_per_km': round(sum(rates) / len(rates), 2) if rates else None
+    result = {
+        'has_data': False,
+        'ftl': {'has_data': False, 'avg_rate_per_km': None, 'avg_amount': None, 'carriers': []},
+        'ltl': {'has_data': False, 'avg_rate_per_km': None, 'avg_amount': None, 'carriers': []}
     }
+    
+    # FTL
+    if ftl:
+        ftl_carriers = []
+        if ftl.get('top_carriers'):
+            for c in ftl['top_carriers']:
+                ftl_carriers.append({
+                    'carrier': c.get('carrier_name'),
+                    'rate_per_km': c.get('avg_carrier_price_per_km'),
+                    'total_price': c.get('avg_carrier_amount'),
+                    'order_count': c.get('order_count', 0)
+                })
+        
+        result['ftl'] = {
+            'has_data': True,
+            'avg_rate_per_km': ftl.get('avg_price_per_km', {}).get('carrier'),
+            'avg_amount': ftl.get('total_price', {}).get('carrier'),  # Użyj total_price z API
+            'carriers': ftl_carriers
+        }
+        result['has_data'] = True
+    
+    # LTL
+    if ltl:
+        ltl_carriers = []
+        if ltl.get('top_carriers'):
+            for c in ltl['top_carriers']:
+                ltl_carriers.append({
+                    'carrier': c.get('carrier_name'),
+                    'rate_per_km': c.get('avg_carrier_price_per_km'),
+                    'total_price': c.get('avg_carrier_amount'),
+                    'order_count': c.get('order_count', 0)
+                })
+        
+        result['ltl'] = {
+            'has_data': True,
+            'avg_rate_per_km': ltl.get('avg_price_per_km', {}).get('carrier'),
+            'avg_amount': ltl.get('total_price', {}).get('carrier'),  # Użyj total_price z API
+            'carriers': ltl_carriers
+        }
+        result['has_data'] = True
+    
+    return result
 
 
 @app.route('/api/calculate-distance', methods=['POST'])
